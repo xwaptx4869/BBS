@@ -1,0 +1,335 @@
+2019-04-02 11:04:10,082 ERROR 10776 [-/127.0.0.1/-/178ms POST /backend/v1/friendlink/edit/] nodejs.ReferenceError: cheaktitle is not defined
+    at FriendLinkService.editFriendLink (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:136:13)
+    at FriendLinkController.editFriendLink (C:\Users\Administrator\Desktop\API\app\controller\backend\friendlink.js:41:50)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 10776
+hostname: 20161212-102137
+
+2019-04-02 11:06:58,932 ERROR 7056 [-/127.0.0.1/-/4ms POST /backend/v1/friendlink/delete/6] nodejs.TypeError: Cannot read property 'destroy' of undefined
+    at FriendLinkService.deleteFriendLink (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:164:64)
+    at FriendLinkController.deleteFriendLink (C:\Users\Administrator\Desktop\API\app\controller\backend\friendlink.js:35:50)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 7056
+hostname: 20161212-102137
+
+2019-04-02 11:07:50,611 ERROR 7056 [-/127.0.0.1/-/13932ms POST /backend/v1/friendlink/delete/6] nodejs.TypeError: Cannot read property 'destroy' of undefined
+    at FriendLinkService.deleteFriendLink (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:164:64)
+    at FriendLinkController.deleteFriendLink (C:\Users\Administrator\Desktop\API\app\controller\backend\friendlink.js:35:50)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 7056
+hostname: 20161212-102137
+
+2019-04-02 11:36:26,471 ERROR 6092 [-/127.0.0.1/-/75ms POST /backend/v1/friendlink/edit/] nodejs.TypeError: Cannot read property 'findAll' of undefined
+    at FriendLinkService.editFriendLink (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:139:58)
+    at FriendLinkController.editFriendLink (C:\Users\Administrator\Desktop\API\app\controller\backend\friendlink.js:41:50)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 6092
+hostname: 20161212-102137
+
+2019-04-02 11:39:16,029 ERROR 8896 nodejs.ClusterClientNoResponseError: client no response in 71024ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 8896
+hostname: 20161212-102137
+
+2019-04-02 14:03:31,564 ERROR 8896 nodejs.ClusterClientNoResponseError: client no response in 6732303ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 8896
+hostname: 20161212-102137
+
+2019-04-02 14:06:51,592 ERROR 8896 nodejs.ClusterClientNoResponseError: client no response in 74057ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 8896
+hostname: 20161212-102137
+
+2019-04-02 14:41:51,308 ERROR 13828 [-/127.0.0.1/-/15625ms POST /backend/v1/friendlink/edit/] nodejs.SequelizeValidationError: Validation error: Validation isUrl on src failed
+    at Promise.all.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2719:22)
+From previous event:
+    at Function.update (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2706:23)
+    at FriendLinkService.editFriendLink (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:153:70)
+name: "SequelizeValidationError"
+errors: [{"message":"Validation isUrl on src failed","type":"Validation error","path":"src","value":"sadasdasdasdas","origin":"FUNCTION","instance":{"id":null,"created_at":"2019-04-02T02:53:59.000Z","updated_at":"2019-04-02T06:41:51.277Z","name":"hehe","src":"sadasdasdasdas"},"validatorKey":"isUrl","validatorName":"isUrl","validatorArgs":[{}],"__raw":{"validatorName":"isUrl","validatorArgs":"~0~validatorArgs"}}]
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 13828
+hostname: 20161212-102137
+
+2019-04-02 14:42:01,771 ERROR 13828 [-/127.0.0.1/-/5495ms POST /backend/v1/friendlink/edit/] nodejs.SequelizeValidationError: Validation error: Validation isUrl on src failed
+    at Promise.all.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2719:22)
+From previous event:
+    at Function.update (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2706:23)
+    at FriendLinkService.editFriendLink (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:153:70)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+name: "SequelizeValidationError"
+errors: [{"message":"Validation isUrl on src failed","type":"Validation error","path":"src","value":"sadasdasdasdas","origin":"FUNCTION","instance":{"id":null,"created_at":"2019-04-02T02:53:59.000Z","updated_at":"2019-04-02T06:42:01.755Z","name":"hehe","src":"sadasdasdasdas"},"validatorKey":"isUrl","validatorName":"isUrl","validatorArgs":[{}],"__raw":{"validatorName":"isUrl","validatorArgs":"~0~validatorArgs"}}]
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 13828
+hostname: 20161212-102137
+
+2019-04-02 14:42:05,041 ERROR 13828 [-/127.0.0.1/-/33ms POST /backend/v1/friendlink/edit/] nodejs.SequelizeValidationError: Validation error: Validation isUrl on src failed
+    at Promise.all.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2719:22)
+From previous event:
+    at Function.update (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2706:23)
+    at FriendLinkService.editFriendLink (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:153:70)
+name: "SequelizeValidationError"
+errors: [{"message":"Validation isUrl on src failed","type":"Validation error","path":"src","value":"sadasdasdasdas","origin":"FUNCTION","instance":{"id":null,"created_at":"2019-04-02T02:53:59.000Z","updated_at":"2019-04-02T06:42:05.035Z","name":"hehe","src":"sadasdasdasdas"},"validatorKey":"isUrl","validatorName":"isUrl","validatorArgs":[{}],"__raw":{"validatorName":"isUrl","validatorArgs":"~0~validatorArgs"}}]
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 13828
+hostname: 20161212-102137
+
+2019-04-02 14:43:52,100 ERROR 8896 nodejs.ClusterClientNoResponseError: client no response in 60815ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 8896
+hostname: 20161212-102137
+
+2019-04-02 14:44:06,323 ERROR 13828 [-/127.0.0.1/-/59090ms POST /backend/v1/friendlink/edit/] nodejs.SequelizeValidationError: Validation error: Validation isUrl on src failed
+    at Promise.all.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2719:22)
+From previous event:
+    at Function.update (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2706:23)
+    at FriendLinkService.editFriendLink (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:153:70)
+name: "SequelizeValidationError"
+errors: [{"message":"Validation isUrl on src failed","type":"Validation error","path":"src","value":"sadasdasdasdas","origin":"FUNCTION","instance":{"id":null,"created_at":"2019-04-02T02:53:59.000Z","updated_at":"2019-04-02T06:44:06.313Z","name":"hehe","src":"sadasdasdasdas"},"validatorKey":"isUrl","validatorName":"isUrl","validatorArgs":[{}],"__raw":{"validatorName":"isUrl","validatorArgs":"~0~validatorArgs"}}]
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 13828
+hostname: 20161212-102137
+
+2019-04-02 14:44:58,521 ERROR 13828 [-/127.0.0.1/-/54ms POST /backend/v1/friendlink/edit/] nodejs.SequelizeValidationError: Validation error: Validation isUrl on src failed
+    at Promise.all.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2719:22)
+From previous event:
+    at Function.update (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2706:23)
+    at FriendLinkService.editFriendLink (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:153:70)
+name: "SequelizeValidationError"
+errors: [{"message":"Validation isUrl on src failed","type":"Validation error","path":"src","value":"122","origin":"FUNCTION","instance":{"id":null,"created_at":"2019-04-02T02:53:59.000Z","updated_at":"2019-04-02T06:44:58.512Z","name":"hehe","src":"122"},"validatorKey":"isUrl","validatorName":"isUrl","validatorArgs":[{}],"__raw":{"validatorName":"isUrl","validatorArgs":"~0~validatorArgs"}}]
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 13828
+hostname: 20161212-102137
+
+2019-04-02 14:49:43,111 ERROR 9948 [-/127.0.0.1/-/64ms POST /backend/v1/friendlink/edit/] nodejs.SequelizeValidationError: Validation error: Validation isUrl on src failed
+    at Promise.all.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2719:22)
+From previous event:
+    at Function.update (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2706:23)
+    at FriendLinkService.editFriendLink (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:154:70)
+name: "SequelizeValidationError"
+errors: [{"message":"Validation isUrl on src failed","type":"Validation error","path":"src","value":"1111","origin":"FUNCTION","instance":{"id":null,"created_at":"2019-04-02T02:53:59.000Z","updated_at":"2019-04-02T06:49:43.090Z","name":"朱瞻基","src":"1111"},"validatorKey":"isUrl","validatorName":"isUrl","validatorArgs":[{}],"__raw":{"validatorName":"isUrl","validatorArgs":"~0~validatorArgs"}}]
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 9948
+hostname: 20161212-102137
+
+2019-04-02 14:51:31,157 ERROR 12812 [-/127.0.0.1/-/139ms POST /backend/v1/friendlink/edit/] nodejs.SequelizeValidationError: Validation error: Validation isUrl on src failed
+    at Promise.all.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2719:22)
+From previous event:
+    at Function.update (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2706:23)
+    at FriendLinkService.editFriendLink (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:150:70)
+name: "SequelizeValidationError"
+errors: [{"message":"Validation isUrl on src failed","type":"Validation error","path":"src","value":"1","origin":"FUNCTION","instance":{"id":null,"created_at":"2019-04-02T02:53:59.000Z","updated_at":"2019-04-02T06:51:31.133Z","name":"朱瞻基","src":"1"},"validatorKey":"isUrl","validatorName":"isUrl","validatorArgs":[{}],"__raw":{"validatorName":"isUrl","validatorArgs":"~0~validatorArgs"}}]
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 12812
+hostname: 20161212-102137
+
+2019-04-02 14:53:12,199 ERROR 708 [-/127.0.0.1/-/84ms POST /backend/v1/friendlink/edit/] nodejs.SequelizeValidationError: Validation error: Validation isUrl on src failed
+    at Promise.all.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2719:22)
+From previous event:
+    at Function.update (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2706:23)
+    at FriendLinkService.editFriendLink (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:150:70)
+name: "SequelizeValidationError"
+errors: [{"message":"Validation isUrl on src failed","type":"Validation error","path":"src","value":"1","origin":"FUNCTION","instance":{"id":null,"created_at":"2019-04-02T02:53:59.000Z","updated_at":"2019-04-02T06:53:12.182Z","name":"朱瞻基","src":"1"},"validatorKey":"isUrl","validatorName":"isUrl","validatorArgs":[{}],"__raw":{"validatorName":"isUrl","validatorArgs":"~0~validatorArgs"}}]
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 708
+hostname: 20161212-102137
+
+2019-04-03 08:02:23,376 ERROR 8896 nodejs.ClusterClientNoResponseError: client no response in 48687621ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 8896
+hostname: 20161212-102137
+

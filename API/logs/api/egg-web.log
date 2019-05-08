@@ -1,0 +1,2 @@
+2019-04-12 07:50:56,466 INFO 9000 [egg-logrotator] app logger reload: got log-reload message
+2019-04-12 09:26:41,772 WARN 9000 [ClusterClient:Watcher] follower closed, and try to init it again

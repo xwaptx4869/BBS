@@ -1,0 +1,510 @@
+2019-03-18 10:44:40,719 INFO 5360 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2019-03-18 10:45:44,492 INFO 10292 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2019-03-18 10:49:04,577 INFO 10292 [egg-sequelize](6ms) Executed (default): SELECT `username`, `phone`, `email` FROM `users` AS `user` WHERE `user`.`username` = 'xuwei123' LIMIT 1;
+2019-03-18 10:49:04,592 ERROR 10292 [-/127.0.0.1/-/5180ms POST /backend/v1/register] nodejs.SequelizeDatabaseError: Table 'api.users' doesn't exist
+    at Query.formatError (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\sequelize.js:555:8)
+    at C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\sequelize.js:454:28)
+    at QueryInterface.select (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\query-interface.js:1104:27)
+    at Promise.try.then.then.then (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\model.js:1598:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.findAll (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\model.js:1595:8)
+    at Function.findOne (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\model.js:1752:17)
+    at UserService.checkUser (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\app\service\user.js:42:38)
+    at UserService.create (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\app\service\user.js:64:19)
+    at UserController.register (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\app\controller\backend\user.js:13:44)
+    at Object.callFn (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'api.users' doesn't exist","sql":"SELECT `username`, `phone`, `email` FROM `users` AS `user` WHERE `user`.`username` = 'xuwei123' LIMIT 1;"}
+original: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'api.users' doesn't exist","sql":"SELECT `username`, `phone`, `email` FROM `users` AS `user` WHERE `user`.`username` = 'xuwei123' LIMIT 1;"}
+sql: "SELECT `username`, `phone`, `email` FROM `users` AS `user` WHERE `user`.`username` = 'xuwei123' LIMIT 1;"
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 10292
+hostname: 20161212-102137
+
+2019-03-18 10:51:08,947 INFO 10292 [egg-sequelize](9ms) Executed (default): SELECT `username`, `phone`, `email` FROM `users` AS `user` WHERE `user`.`username` = 'xuwei123' LIMIT 1;
+2019-03-18 10:51:08,964 ERROR 10292 [-/127.0.0.1/-/3504ms POST /backend/v1/register] nodejs.SequelizeDatabaseError: Unknown column 'phone' in 'field list'
+    at Query.formatError (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\sequelize.js:555:8)
+    at C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\sequelize.js:454:28)
+    at QueryInterface.select (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\query-interface.js:1104:27)
+    at Promise.try.then.then.then (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\model.js:1598:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.findAll (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\model.js:1595:8)
+    at Function.findOne (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\model.js:1752:17)
+    at UserService.checkUser (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\app\service\user.js:42:38)
+    at UserService.create (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\app\service\user.js:64:19)
+    at UserController.register (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\app\controller\backend\user.js:13:44)
+    at Object.callFn (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'phone' in 'field list'","sql":"SELECT `username`, `phone`, `email` FROM `users` AS `user` WHERE `user`.`username` = 'xuwei123' LIMIT 1;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'phone' in 'field list'","sql":"SELECT `username`, `phone`, `email` FROM `users` AS `user` WHERE `user`.`username` = 'xuwei123' LIMIT 1;"}
+sql: "SELECT `username`, `phone`, `email` FROM `users` AS `user` WHERE `user`.`username` = 'xuwei123' LIMIT 1;"
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 10292
+hostname: 20161212-102137
+
+2019-03-18 10:51:43,157 INFO 8708 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2019-03-18 10:51:54,491 INFO 8708 [egg-sequelize](1ms) Executed (default): SELECT `username`, `phone`, `email` FROM `users` AS `user` WHERE `user`.`username` = 'xuwei123' LIMIT 1;
+2019-03-18 10:51:54,505 ERROR 8708 [-/127.0.0.1/-/64ms POST /backend/v1/register] nodejs.SequelizeDatabaseError: Unknown column 'phone' in 'field list'
+    at Query.formatError (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\sequelize.js:555:8)
+    at C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\sequelize.js:454:28)
+    at QueryInterface.select (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\query-interface.js:1104:27)
+    at Promise.try.then.then.then (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\model.js:1598:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.findAll (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\model.js:1595:8)
+    at Function.findOne (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\model.js:1752:17)
+    at UserService.checkUser (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\app\service\user.js:42:38)
+    at UserService.create (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\app\service\user.js:64:19)
+    at UserController.register (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\app\controller\backend\user.js:13:44)
+    at Object.callFn (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'phone' in 'field list'","sql":"SELECT `username`, `phone`, `email` FROM `users` AS `user` WHERE `user`.`username` = 'xuwei123' LIMIT 1;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'phone' in 'field list'","sql":"SELECT `username`, `phone`, `email` FROM `users` AS `user` WHERE `user`.`username` = 'xuwei123' LIMIT 1;"}
+sql: "SELECT `username`, `phone`, `email` FROM `users` AS `user` WHERE `user`.`username` = 'xuwei123' LIMIT 1;"
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 8708
+hostname: 20161212-102137
+
+2019-03-18 10:52:35,486 INFO 8708 [egg-sequelize](1ms) Executed (default): SELECT `username`, `phone`, `email` FROM `users` AS `user` WHERE `user`.`username` = 'xuwei123' LIMIT 1;
+2019-03-18 10:52:35,886 INFO 8708 [egg-sequelize](90ms) Executed (default): INSERT INTO `users` (`id`,`username`,`password`,`phone_verified`,`email_verified`,`is_active`,`role`,`created_at`,`updated_at`) VALUES (DEFAULT,'xuwei123','$2a$10$rWe5uUmvPfq4ipbgMwl0PezMekGytNcQneDF4nyGsA7niegJVlMTe','false','false','true',0,'2019-03-18 02:52:35','2019-03-18 02:52:35');
+2019-03-18 10:52:35,891 ERROR 8708 [-/127.0.0.1/-/422ms POST /backend/v1/register] nodejs.SequelizeDatabaseError: Unknown column 'id' in 'field list'
+    at Query.formatError (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\sequelize.js:555:8)
+    at C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\sequelize.js:454:28)
+    at QueryInterface.insert (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\query-interface.js:901:27)
+    at Promise.try.then.then.then (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\model.js:3685:53)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at model.save (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\model.js:3661:8)
+    at Function.create (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\model.js:2023:8)
+    at UserService.create (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\app\service\user.js:67:38)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'id' in 'field list'","sql":"INSERT INTO `users` (`id`,`username`,`password`,`phone_verified`,`email_verified`,`is_active`,`role`,`created_at`,`updated_at`) VALUES (DEFAULT,'xuwei123','$2a$10$rWe5uUmvPfq4ipbgMwl0PezMekGytNcQneDF4nyGsA7niegJVlMTe','false','false','true',0,'2019-03-18 02:52:35','2019-03-18 02:52:35');"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'id' in 'field list'","sql":"INSERT INTO `users` (`id`,`username`,`password`,`phone_verified`,`email_verified`,`is_active`,`role`,`created_at`,`updated_at`) VALUES (DEFAULT,'xuwei123','$2a$10$rWe5uUmvPfq4ipbgMwl0PezMekGytNcQneDF4nyGsA7niegJVlMTe','false','false','true',0,'2019-03-18 02:52:35','2019-03-18 02:52:35');"}
+sql: "INSERT INTO `users` (`id`,`username`,`password`,`phone_verified`,`email_verified`,`is_active`,`role`,`created_at`,`updated_at`) VALUES (DEFAULT,'xuwei123','$2a$10$rWe5uUmvPfq4ipbgMwl0PezMekGytNcQneDF4nyGsA7niegJVlMTe','false','false','true',0,'2019-03-18 02:52:35','2019-03-18 02:52:35');"
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 8708
+hostname: 20161212-102137
+
+2019-03-18 10:54:51,558 INFO 8708 [egg-sequelize](1ms) Executed (default): SELECT `username`, `phone`, `email` FROM `users` AS `user` WHERE `user`.`username` = 'xuwei123' LIMIT 1;
+2019-03-18 10:54:51,831 INFO 8708 [egg-sequelize](1ms) Executed (default): INSERT INTO `users` (`id`,`username`,`password`,`phone_verified`,`email_verified`,`is_active`,`role`,`created_at`,`updated_at`) VALUES (DEFAULT,'xuwei123','$2a$10$jn..hFM8LNZDiHf/cmpF7.hu6RVbofGdIo53PS1.NES9WGa6beyWG','false','false','true',0,'2019-03-18 02:54:51','2019-03-18 02:54:51');
+2019-03-18 10:54:51,835 ERROR 8708 [-/127.0.0.1/-/293ms POST /backend/v1/register] nodejs.SequelizeDatabaseError: Data too long for column 'password' at row 1
+    at Query.formatError (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\sequelize.js:555:8)
+    at C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\sequelize.js:454:28)
+    at QueryInterface.insert (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\query-interface.js:901:27)
+    at Promise.try.then.then.then (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\model.js:3685:53)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at model.save (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\model.js:3661:8)
+    at Function.create (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\model.js:2023:8)
+    at UserService.create (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\app\service\user.js:67:38)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_DATA_TOO_LONG","errno":1406,"sqlState":"22001","sqlMessage":"Data too long for column 'password' at row 1","sql":"INSERT INTO `users` (`id`,`username`,`password`,`phone_verified`,`email_verified`,`is_active`,`role`,`created_at`,`updated_at`) VALUES (DEFAULT,'xuwei123','$2a$10$jn..hFM8LNZDiHf/cmpF7.hu6RVbofGdIo53PS1.NES9WGa6beyWG','false','false','true',0,'2019-03-18 02:54:51','2019-03-18 02:54:51');"}
+original: {"code":"ER_DATA_TOO_LONG","errno":1406,"sqlState":"22001","sqlMessage":"Data too long for column 'password' at row 1","sql":"INSERT INTO `users` (`id`,`username`,`password`,`phone_verified`,`email_verified`,`is_active`,`role`,`created_at`,`updated_at`) VALUES (DEFAULT,'xuwei123','$2a$10$jn..hFM8LNZDiHf/cmpF7.hu6RVbofGdIo53PS1.NES9WGa6beyWG','false','false','true',0,'2019-03-18 02:54:51','2019-03-18 02:54:51');"}
+sql: "INSERT INTO `users` (`id`,`username`,`password`,`phone_verified`,`email_verified`,`is_active`,`role`,`created_at`,`updated_at`) VALUES (DEFAULT,'xuwei123','$2a$10$jn..hFM8LNZDiHf/cmpF7.hu6RVbofGdIo53PS1.NES9WGa6beyWG','false','false','true',0,'2019-03-18 02:54:51','2019-03-18 02:54:51');"
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 8708
+hostname: 20161212-102137
+
+2019-03-18 10:55:49,900 INFO 8076 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2019-03-18 10:55:58,819 INFO 8076 [egg-sequelize](3ms) Executed (default): SELECT `username`, `phone`, `email` FROM `users` AS `user` WHERE `user`.`username` = 'xuwei123' LIMIT 1;
+2019-03-18 10:55:59,204 INFO 8076 [egg-sequelize](1ms) Executed (default): INSERT INTO `users` (`id`,`username`,`password`,`phone_verified`,`email_verified`,`is_active`,`role`,`created_at`,`updated_at`) VALUES (DEFAULT,'xuwei123','$2a$10$ipXixsJoeox0XY7tJ4apDuZso8CHt2rqxN3k7iFdhkSE2AaAlfEEK','false','false','true',0,'2019-03-18 02:55:58','2019-03-18 02:55:58');
+2019-03-18 10:55:59,215 ERROR 8076 [-/127.0.0.1/-/3985ms POST /backend/v1/register] nodejs.SequelizeDatabaseError: Data too long for column 'password' at row 1
+    at Query.formatError (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\sequelize.js:555:8)
+    at C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\sequelize.js:454:28)
+    at QueryInterface.insert (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\query-interface.js:901:27)
+    at Promise.try.then.then.then (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\model.js:3685:53)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at model.save (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\model.js:3661:8)
+    at Function.create (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\model.js:2023:8)
+    at UserService.create (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\app\service\user.js:67:38)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_DATA_TOO_LONG","errno":1406,"sqlState":"22001","sqlMessage":"Data too long for column 'password' at row 1","sql":"INSERT INTO `users` (`id`,`username`,`password`,`phone_verified`,`email_verified`,`is_active`,`role`,`created_at`,`updated_at`) VALUES (DEFAULT,'xuwei123','$2a$10$ipXixsJoeox0XY7tJ4apDuZso8CHt2rqxN3k7iFdhkSE2AaAlfEEK','false','false','true',0,'2019-03-18 02:55:58','2019-03-18 02:55:58');"}
+original: {"code":"ER_DATA_TOO_LONG","errno":1406,"sqlState":"22001","sqlMessage":"Data too long for column 'password' at row 1","sql":"INSERT INTO `users` (`id`,`username`,`password`,`phone_verified`,`email_verified`,`is_active`,`role`,`created_at`,`updated_at`) VALUES (DEFAULT,'xuwei123','$2a$10$ipXixsJoeox0XY7tJ4apDuZso8CHt2rqxN3k7iFdhkSE2AaAlfEEK','false','false','true',0,'2019-03-18 02:55:58','2019-03-18 02:55:58');"}
+sql: "INSERT INTO `users` (`id`,`username`,`password`,`phone_verified`,`email_verified`,`is_active`,`role`,`created_at`,`updated_at`) VALUES (DEFAULT,'xuwei123','$2a$10$ipXixsJoeox0XY7tJ4apDuZso8CHt2rqxN3k7iFdhkSE2AaAlfEEK','false','false','true',0,'2019-03-18 02:55:58','2019-03-18 02:55:58');"
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 8076
+hostname: 20161212-102137
+
+2019-03-18 10:57:12,297 INFO 8076 [egg-sequelize](1ms) Executed (default): SELECT `username`, `phone`, `email` FROM `users` AS `user` WHERE `user`.`username` = 'xuwei123' LIMIT 1;
+2019-03-18 10:57:12,737 INFO 8076 [egg-sequelize](82ms) Executed (default): INSERT INTO `users` (`id`,`username`,`password`,`phone_verified`,`email_verified`,`is_active`,`role`,`created_at`,`updated_at`) VALUES (DEFAULT,'xuwei123','$2a$10$Kn9hMS1XewzJ5w/xCuBWpuda5OWisQYxG/ByBO.CGot124IRU/0Nu','false','false','true',0,'2019-03-18 02:57:12','2019-03-18 02:57:12');
+2019-03-18 11:06:56,173 INFO 10608 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2019-03-18 11:06:56,187 INFO 10608 [egg-sequelize](2ms) Executed (default): DROP TABLE IF EXISTS `userprofiles`;
+2019-03-18 11:06:56,290 INFO 10608 [egg-sequelize](98ms) Executed (default): DROP TABLE IF EXISTS `users`;
+2019-03-18 11:06:56,305 INFO 10608 [egg-sequelize](5ms) Executed (default): DROP TABLE IF EXISTS `social_oauths`;
+2019-03-18 11:06:56,324 INFO 10608 [egg-sequelize](2ms) Executed (default): DROP TABLE IF EXISTS `social_oauths`;
+2019-03-18 11:06:56,575 INFO 10608 [egg-sequelize](216ms) Executed (default): CREATE TABLE IF NOT EXISTS `social_oauths` (`id` INTEGER NOT NULL auto_increment , `site` VARCHAR(32) DEFAULT 'WEAPP', `site_uid` VARCHAR(255), `unionid` VARCHAR(255), `site_uname` VARCHAR(255), `access_token` VARCHAR(255), `refresh_token` VARCHAR(255), `expire_date` DATETIME, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-03-18 11:06:56,604 INFO 10608 [egg-sequelize](9ms) Executed (default): SHOW INDEX FROM `social_oauths` FROM `api`
+2019-03-18 11:06:56,859 INFO 10608 [egg-sequelize](241ms) Executed (default): ALTER TABLE `social_oauths` ADD INDEX `social_oauths_site_uid` (`site_uid`)
+2019-03-18 11:06:57,222 INFO 10608 [egg-sequelize](604ms) Executed (default): ALTER TABLE `social_oauths` ADD INDEX `social_oauths_unionid` (`unionid`)
+2019-03-18 11:06:57,340 INFO 10608 [egg-sequelize](7ms) Executed (default): DROP TABLE IF EXISTS `users`;
+2019-03-18 11:06:57,672 INFO 10608 [egg-sequelize](318ms) Executed (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER NOT NULL auto_increment , `username` VARCHAR(32), `password` VARCHAR(60), `phone` VARCHAR(32), `phone_verified` INTEGER DEFAULT false, `email` VARCHAR(60), `email_verified` INTEGER DEFAULT false, `avatar` VARCHAR(255), `is_active` INTEGER DEFAULT true, `role` INTEGER DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-03-18 11:06:57,679 INFO 10608 [egg-sequelize](3ms) Executed (default): SHOW INDEX FROM `users` FROM `api`
+2019-03-18 11:06:57,922 INFO 10608 [egg-sequelize](235ms) Executed (default): ALTER TABLE `users` ADD INDEX `users_username` (`username`)
+2019-03-18 11:06:58,158 INFO 10608 [egg-sequelize](469ms) Executed (default): ALTER TABLE `users` ADD INDEX `users_email` (`email`)
+2019-03-18 11:06:58,345 INFO 10608 [egg-sequelize](652ms) Executed (default): ALTER TABLE `users` ADD INDEX `users_phone` (`phone`)
+2019-03-18 11:06:58,352 INFO 10608 [egg-sequelize](1ms) Executed (default): DROP TABLE IF EXISTS `userprofiles`;
+2019-03-18 11:06:58,604 INFO 10608 [egg-sequelize](246ms) Executed (default): CREATE TABLE IF NOT EXISTS `userprofiles` (`id` INTEGER NOT NULL auto_increment , `sex` INTEGER DEFAULT 0, `city` VARCHAR(32), `province` VARCHAR(32), `country` VARCHAR(32), `about_me` VARCHAR(255), `fans_count` INTEGER, `follow_count` INTEGER, `like_count` INTEGER, `signature` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-03-18 11:06:58,613 INFO 10608 [egg-sequelize](4ms) Executed (default): SHOW INDEX FROM `userprofiles` FROM `api`
+2019-03-18 11:07:38,141 INFO 10608 [egg-sequelize](2ms) Executed (default): SELECT `username`, `phone`, `email` FROM `users` AS `user` WHERE `user`.`username` = 'xuwei123' LIMIT 1;
+2019-03-18 11:07:38,153 ERROR 10608 [-/127.0.0.1/-/1730ms POST /backend/v1/register] nodejs.SequelizeDatabaseError: Table 'api.users' doesn't exist
+    at Query.formatError (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\sequelize.js:555:8)
+    at C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\sequelize.js:454:28)
+    at QueryInterface.select (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\query-interface.js:1104:27)
+    at Promise.try.then.then.then (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\model.js:1598:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.findAll (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\model.js:1595:8)
+    at Function.findOne (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\model.js:1752:17)
+    at UserService.checkUser (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\app\service\user.js:42:38)
+    at UserService.create (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\app\service\user.js:64:19)
+    at UserController.register (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\app\controller\backend\user.js:13:44)
+    at Object.callFn (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'api.users' doesn't exist","sql":"SELECT `username`, `phone`, `email` FROM `users` AS `user` WHERE `user`.`username` = 'xuwei123' LIMIT 1;"}
+original: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'api.users' doesn't exist","sql":"SELECT `username`, `phone`, `email` FROM `users` AS `user` WHERE `user`.`username` = 'xuwei123' LIMIT 1;"}
+sql: "SELECT `username`, `phone`, `email` FROM `users` AS `user` WHERE `user`.`username` = 'xuwei123' LIMIT 1;"
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 10608
+hostname: 20161212-102137
+
+2019-03-18 11:08:03,401 INFO 11432 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2019-03-18 11:08:03,627 INFO 11432 [egg-sequelize](229ms) Executed (default): DROP TABLE IF EXISTS `userprofiles`;
+2019-03-18 11:08:03,633 INFO 11432 [egg-sequelize](1ms) Executed (default): DROP TABLE IF EXISTS `users`;
+2019-03-18 11:08:03,741 INFO 11432 [egg-sequelize](102ms) Executed (default): DROP TABLE IF EXISTS `social_oauths`;
+2019-03-18 11:08:03,756 INFO 11432 [egg-sequelize](2ms) Executed (default): DROP TABLE IF EXISTS `social_oauths`;
+2019-03-18 11:08:03,981 INFO 11432 [egg-sequelize](204ms) Executed (default): CREATE TABLE IF NOT EXISTS `social_oauths` (`id` INTEGER NOT NULL auto_increment , `site` VARCHAR(32) DEFAULT 'WEAPP', `site_uid` VARCHAR(255), `unionid` VARCHAR(255), `site_uname` VARCHAR(255), `access_token` VARCHAR(255), `refresh_token` VARCHAR(255), `expire_date` DATETIME, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-03-18 11:08:04,005 INFO 11432 [egg-sequelize](13ms) Executed (default): SHOW INDEX FROM `social_oauths` FROM `api`
+2019-03-18 11:08:04,206 INFO 11432 [egg-sequelize](188ms) Executed (default): ALTER TABLE `social_oauths` ADD INDEX `social_oauths_site_uid` (`site_uid`)
+2019-03-18 11:08:04,395 INFO 11432 [egg-sequelize](377ms) Executed (default): ALTER TABLE `social_oauths` ADD INDEX `social_oauths_unionid` (`unionid`)
+2019-03-18 11:08:04,402 INFO 11432 [egg-sequelize](2ms) Executed (default): DROP TABLE IF EXISTS `users`;
+2019-03-18 11:08:04,650 INFO 11432 [egg-sequelize](242ms) Executed (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER NOT NULL auto_increment , `username` VARCHAR(32), `password` VARCHAR(60), `phone` VARCHAR(32), `phone_verified` INTEGER DEFAULT false, `email` VARCHAR(60), `email_verified` INTEGER DEFAULT false, `avatar` VARCHAR(255), `is_active` INTEGER DEFAULT true, `role` INTEGER DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-03-18 11:08:04,656 INFO 11432 [egg-sequelize](3ms) Executed (default): SHOW INDEX FROM `users` FROM `api`
+2019-03-18 11:08:04,874 INFO 11432 [egg-sequelize](194ms) Executed (default): ALTER TABLE `users` ADD INDEX `users_username` (`username`)
+2019-03-18 11:08:05,077 INFO 11432 [egg-sequelize](397ms) Executed (default): ALTER TABLE `users` ADD INDEX `users_email` (`email`)
+2019-03-18 11:08:05,288 INFO 11432 [egg-sequelize](580ms) Executed (default): ALTER TABLE `users` ADD INDEX `users_phone` (`phone`)
+2019-03-18 11:08:05,313 INFO 11432 [egg-sequelize](2ms) Executed (default): DROP TABLE IF EXISTS `userprofiles`;
+2019-03-18 11:08:05,580 INFO 11432 [egg-sequelize](256ms) Executed (default): CREATE TABLE IF NOT EXISTS `userprofiles` (`id` INTEGER NOT NULL auto_increment , `sex` INTEGER DEFAULT 0, `city` VARCHAR(32), `province` VARCHAR(32), `country` VARCHAR(32), `about_me` VARCHAR(255), `fans_count` INTEGER, `follow_count` INTEGER, `like_count` INTEGER, `signature` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-03-18 11:08:05,588 INFO 11432 [egg-sequelize](4ms) Executed (default): SHOW INDEX FROM `userprofiles` FROM `api`
+2019-03-18 11:08:26,787 INFO 11432 [egg-sequelize](65ms) Executed (default): SELECT `username`, `phone`, `email` FROM `users` AS `user` WHERE `user`.`username` = 'xuwei123' LIMIT 1;
+2019-03-18 11:08:27,212 INFO 11432 [egg-sequelize](56ms) Executed (default): INSERT INTO `users` (`id`,`username`,`password`,`phone_verified`,`email_verified`,`is_active`,`role`,`created_at`,`updated_at`) VALUES (DEFAULT,'xuwei123','$2a$10$edp/.U4ifVTlsqbefPsgvuU5WOkPgnYUPArv6gYo/dBt4CE8hhQhu','false','false','true',0,'2019-03-18 03:08:26','2019-03-18 03:08:26');
+2019-03-18 11:18:46,518 INFO 8164 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2019-03-18 11:18:46,817 INFO 8164 [egg-sequelize](293ms) Executed (default): DROP TABLE IF EXISTS `userprofiles`;
+2019-03-18 11:18:46,824 INFO 8164 [egg-sequelize](2ms) Executed (default): DROP TABLE IF EXISTS `users`;
+2019-03-18 11:18:47,060 INFO 8164 [egg-sequelize](230ms) Executed (default): DROP TABLE IF EXISTS `social_oauths`;
+2019-03-18 11:18:47,073 INFO 8164 [egg-sequelize](2ms) Executed (default): DROP TABLE IF EXISTS `social_oauths`;
+2019-03-18 11:18:47,363 INFO 8164 [egg-sequelize](271ms) Executed (default): CREATE TABLE IF NOT EXISTS `social_oauths` (`id` INTEGER NOT NULL auto_increment , `site` VARCHAR(32) DEFAULT 'WEAPP', `site_uid` VARCHAR(255), `unionid` VARCHAR(255), `site_uname` VARCHAR(255), `access_token` VARCHAR(255), `refresh_token` VARCHAR(255), `expire_date` DATETIME, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-03-18 11:18:47,381 INFO 8164 [egg-sequelize](9ms) Executed (default): SHOW INDEX FROM `social_oauths` FROM `api`
+2019-03-18 11:23:37,900 INFO 12040 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2019-03-18 11:23:37,908 INFO 12040 [egg-sequelize](1ms) Executed (default): DROP TABLE IF EXISTS `userprofiles`;
+2019-03-18 11:23:37,914 INFO 12040 [egg-sequelize](2ms) Executed (default): DROP TABLE IF EXISTS `users`;
+2019-03-18 11:23:38,065 INFO 12040 [egg-sequelize](147ms) Executed (default): DROP TABLE IF EXISTS `social_oauths`;
+2019-03-18 11:23:38,074 INFO 12040 [egg-sequelize](2ms) Executed (default): DROP TABLE IF EXISTS `social_oauths`;
+2019-03-18 11:23:38,278 INFO 12040 [egg-sequelize](195ms) Executed (default): CREATE TABLE IF NOT EXISTS `social_oauths` (`id` INTEGER NOT NULL auto_increment , `site` VARCHAR(32) DEFAULT 'WEAPP', `site_uid` VARCHAR(255), `unionid` VARCHAR(255), `site_uname` VARCHAR(255), `access_token` VARCHAR(255), `refresh_token` VARCHAR(255), `expire_date` DATETIME, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-03-18 11:23:38,288 INFO 12040 [egg-sequelize](6ms) Executed (default): SHOW INDEX FROM `social_oauths` FROM `api`
+2019-03-18 11:23:38,504 INFO 12040 [egg-sequelize](200ms) Executed (default): ALTER TABLE `social_oauths` ADD INDEX `social_oauths_unionid` (`unionid`)
+2019-03-18 11:23:38,694 INFO 12040 [egg-sequelize](391ms) Executed (default): ALTER TABLE `social_oauths` ADD INDEX `social_oauths_site_uid` (`site_uid`)
+2019-03-18 11:23:38,704 INFO 12040 [egg-sequelize](3ms) Executed (default): DROP TABLE IF EXISTS `users`;
+2019-03-18 11:23:38,948 INFO 12040 [egg-sequelize](231ms) Executed (default): CREATE TABLE IF NOT EXISTS `users` (`username` VARCHAR(32), `password` VARCHAR(60), `avatar` VARCHAR(255), `id` INTEGER auto_increment , `created_at` DATETIME, `updated_at` DATETIME, `nickname` VARCHAR(10), `like_count` INTEGER, `mood` VARCHAR(40), `role` INTEGER DEFAULT 0, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-03-18 11:23:38,957 INFO 12040 [egg-sequelize](4ms) Executed (default): SHOW INDEX FROM `users` FROM `api`
+2019-03-18 11:23:39,175 INFO 12040 [egg-sequelize](204ms) Executed (default): ALTER TABLE `users` ADD INDEX `users_username` (`username`)
+2019-03-18 11:23:39,183 INFO 12040 [egg-sequelize](3ms) Executed (default): DROP TABLE IF EXISTS `userprofiles`;
+2019-03-18 11:23:39,508 INFO 12040 [egg-sequelize](308ms) Executed (default): CREATE TABLE IF NOT EXISTS `userprofiles` (`id` INTEGER NOT NULL auto_increment , `sex` INTEGER DEFAULT 0, `city` VARCHAR(32), `province` VARCHAR(32), `country` VARCHAR(32), `about_me` VARCHAR(255), `fans_count` INTEGER, `follow_count` INTEGER, `like_count` INTEGER, `signature` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-03-18 11:23:39,521 INFO 12040 [egg-sequelize](4ms) Executed (default): SHOW INDEX FROM `userprofiles` FROM `api`
+2019-03-18 11:23:57,384 INFO 12040 [egg-sequelize](2ms) Executed (default): SELECT `username`, `phone`, `email` FROM `users` AS `user` WHERE `user`.`username` = 'xuwei123' LIMIT 1;
+2019-03-18 11:23:57,408 ERROR 12040 [-/127.0.0.1/-/115ms POST /backend/v1/register] nodejs.SequelizeDatabaseError: Unknown column 'phone' in 'field list'
+    at Query.formatError (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\sequelize.js:555:8)
+    at C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\sequelize.js:454:28)
+    at QueryInterface.select (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\query-interface.js:1104:27)
+    at Promise.try.then.then.then (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\model.js:1598:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.findAll (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\model.js:1595:8)
+    at Function.findOne (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\sequelize\lib\model.js:1752:17)
+    at UserService.checkUser (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\app\service\user.js:42:38)
+    at UserService.create (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\app\service\user.js:64:19)
+    at UserController.register (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\app\controller\backend\user.js:13:44)
+    at Object.callFn (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'phone' in 'field list'","sql":"SELECT `username`, `phone`, `email` FROM `users` AS `user` WHERE `user`.`username` = 'xuwei123' LIMIT 1;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'phone' in 'field list'","sql":"SELECT `username`, `phone`, `email` FROM `users` AS `user` WHERE `user`.`username` = 'xuwei123' LIMIT 1;"}
+sql: "SELECT `username`, `phone`, `email` FROM `users` AS `user` WHERE `user`.`username` = 'xuwei123' LIMIT 1;"
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 12040
+hostname: 20161212-102137
+
+2019-03-18 11:25:02,013 INFO 7136 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-03-18 11:25:02,141 INFO 7136 [egg-sequelize](117ms) Executed (default): DROP TABLE IF EXISTS `userprofiles`;
+2019-03-18 11:25:02,263 INFO 7136 [egg-sequelize](116ms) Executed (default): DROP TABLE IF EXISTS `users`;
+2019-03-18 11:25:02,390 INFO 7136 [egg-sequelize](124ms) Executed (default): DROP TABLE IF EXISTS `social_oauths`;
+2019-03-18 11:25:02,408 INFO 7136 [egg-sequelize](2ms) Executed (default): DROP TABLE IF EXISTS `social_oauths`;
+2019-03-18 11:25:02,674 INFO 7136 [egg-sequelize](250ms) Executed (default): CREATE TABLE IF NOT EXISTS `social_oauths` (`id` INTEGER NOT NULL auto_increment , `site` VARCHAR(32) DEFAULT 'WEAPP', `site_uid` VARCHAR(255), `unionid` VARCHAR(255), `site_uname` VARCHAR(255), `access_token` VARCHAR(255), `refresh_token` VARCHAR(255), `expire_date` DATETIME, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-03-18 11:25:02,694 INFO 7136 [egg-sequelize](12ms) Executed (default): SHOW INDEX FROM `social_oauths` FROM `api`
+2019-03-18 11:25:02,906 INFO 7136 [egg-sequelize](199ms) Executed (default): ALTER TABLE `social_oauths` ADD INDEX `social_oauths_site_uid` (`site_uid`)
+2019-03-18 11:25:03,116 INFO 7136 [egg-sequelize](408ms) Executed (default): ALTER TABLE `social_oauths` ADD INDEX `social_oauths_unionid` (`unionid`)
+2019-03-18 11:25:03,131 INFO 7136 [egg-sequelize](4ms) Executed (default): DROP TABLE IF EXISTS `users`;
+2019-03-18 11:25:03,431 INFO 7136 [egg-sequelize](287ms) Executed (default): CREATE TABLE IF NOT EXISTS `users` (`username` VARCHAR(32), `password` VARCHAR(60), `avatar` VARCHAR(255), `id` INTEGER auto_increment , `created_at` DATETIME, `updated_at` DATETIME, `nickname` VARCHAR(10), `like_count` INTEGER, `mood` VARCHAR(40), `role` INTEGER DEFAULT 0, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-03-18 11:25:03,440 INFO 7136 [egg-sequelize](4ms) Executed (default): SHOW INDEX FROM `users` FROM `api`
+2019-03-18 11:25:03,738 INFO 7136 [egg-sequelize](280ms) Executed (default): ALTER TABLE `users` ADD INDEX `users_username` (`username`)
+2019-03-18 11:25:03,750 INFO 7136 [egg-sequelize](4ms) Executed (default): DROP TABLE IF EXISTS `userprofiles`;
+2019-03-18 11:25:04,034 INFO 7136 [egg-sequelize](272ms) Executed (default): CREATE TABLE IF NOT EXISTS `userprofiles` (`id` INTEGER NOT NULL auto_increment , `sex` INTEGER DEFAULT 0, `city` VARCHAR(32), `province` VARCHAR(32), `country` VARCHAR(32), `about_me` VARCHAR(255), `fans_count` INTEGER, `follow_count` INTEGER, `like_count` INTEGER, `signature` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-03-18 11:25:04,044 INFO 7136 [egg-sequelize](4ms) Executed (default): SHOW INDEX FROM `userprofiles` FROM `api`
+2019-03-18 11:25:12,269 INFO 7136 [egg-sequelize](14ms) Executed (default): SELECT `username` FROM `users` AS `user` WHERE `user`.`username` = 'xuwei123' LIMIT 1;
+2019-03-18 11:25:12,715 INFO 7136 [egg-sequelize](32ms) Executed (default): INSERT INTO `users` (`username`,`password`,`id`,`created_at`,`updated_at`,`role`) VALUES ('xuwei123','$2a$10$/UT64en4ACNXD0gVqsv8meKXBiPODn0lC1Eml5u47Z2/nCJHV0yum',DEFAULT,'2019-03-18 03:25:12','2019-03-18 03:25:12',0);

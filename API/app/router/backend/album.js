@@ -1,0 +1,17 @@
+'use strict'
+
+module.exports = app => {
+	app.router.post(
+		'/backend/v1/album',
+		app.controller.backend.album.getAlbumList
+	)
+	app.router.post(
+        '/backend/v1/album/add',
+         app.controller.backend.album.addAlbum)
+    app.router.post(
+        '/backend/v1/album/delete/:id',
+        app.controller.backend.album.deleteAlbum)
+    app.router.post(
+        '/backend/v1/album/edit',
+        app.controller.backend.album.editAlbum)
+}

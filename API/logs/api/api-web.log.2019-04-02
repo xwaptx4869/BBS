@@ -1,0 +1,595 @@
+2019-04-02 09:54:27,014 INFO 11372 [egg-sequelize](10ms) Executed (default): SELECT `content`, `user_id`, `created_at`, `updated_at`, `id` FROM `replies` AS `reply` LIMIT 0, 10;
+2019-04-02 09:54:28,103 INFO 11372 [egg-sequelize](4ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` LIMIT 0, 10;
+2019-04-02 09:54:28,851 INFO 11372 [egg-sequelize](4ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 09:54:31,009 INFO 11372 [egg-sequelize](7ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` LIMIT 0, 10;
+2019-04-02 09:54:32,515 INFO 11372 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 09:54:39,819 INFO 11372 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = '323' LIMIT 1;
+2019-04-02 10:51:55,205 INFO 11372 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = '‘asdasdas’' LIMIT 1;
+2019-04-02 10:52:37,877 INFO 11372 [egg-sequelize](4ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'www.baid.comsadasd' LIMIT 1;
+2019-04-02 10:52:40,407 INFO 11372 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'www.baid.comsadasd1' LIMIT 1;
+2019-04-02 10:52:44,383 INFO 11372 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'www.baid.comsadasds' LIMIT 1;
+2019-04-02 10:52:47,040 INFO 11372 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'www.baid.comsadasdss' LIMIT 1;
+2019-04-02 10:52:47,288 INFO 11372 [egg-sequelize](190ms) Executed (default): INSERT INTO `friendlinks` (`created_at`,`updated_at`,`name`,`src`,`id`) VALUES ('2019-04-02 02:52:47','2019-04-02 02:52:47','222','www.baid.comsadasdss',DEFAULT);
+2019-04-02 10:52:47,368 INFO 11372 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 10:53:06,497 INFO 11372 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'https://fanyi.baidu.' LIMIT 1;
+2019-04-02 10:53:11,837 INFO 11372 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'fanyi.baidu.' LIMIT 1;
+2019-04-02 10:53:16,990 INFO 11372 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'fanyi.baidu.com' LIMIT 1;
+2019-04-02 10:53:17,078 INFO 11372 [egg-sequelize](76ms) Executed (default): INSERT INTO `friendlinks` (`created_at`,`updated_at`,`name`,`src`,`id`) VALUES ('2019-04-02 02:53:16','2019-04-02 02:53:16','呵呵哒','fanyi.baidu.com',DEFAULT);
+2019-04-02 10:53:17,212 INFO 11372 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 10:53:36,686 INFO 11372 [egg-sequelize](11ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'https://github.com' LIMIT 1;
+2019-04-02 10:53:36,761 INFO 11372 [egg-sequelize](57ms) Executed (default): INSERT INTO `friendlinks` (`created_at`,`updated_at`,`name`,`src`,`id`) VALUES ('2019-04-02 02:53:36','2019-04-02 02:53:36','gihub','https://github.com',DEFAULT);
+2019-04-02 10:53:36,923 INFO 11372 [egg-sequelize](5ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 10:53:58,993 INFO 11372 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'http://10.20.120.200' LIMIT 1;
+2019-04-02 10:53:59,075 INFO 11372 [egg-sequelize](56ms) Executed (default): INSERT INTO `friendlinks` (`created_at`,`updated_at`,`name`,`src`,`id`) VALUES ('2019-04-02 02:53:59','2019-04-02 02:53:59','hehe','http://10.20.120.200',DEFAULT);
+2019-04-02 10:53:59,270 INFO 11372 [egg-sequelize](13ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 10:54:17,584 INFO 11372 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 9;
+2019-04-02 10:54:17,596 INFO 11372 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'http://10.20.120.200' LIMIT 1;
+2019-04-02 11:01:36,122 INFO 10776 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2019-04-02 11:04:10,082 ERROR 10776 [-/127.0.0.1/-/178ms POST /backend/v1/friendlink/edit/] nodejs.ReferenceError: cheaktitle is not defined
+    at FriendLinkService.editFriendLink (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:136:13)
+    at FriendLinkController.editFriendLink (C:\Users\Administrator\Desktop\API\app\controller\backend\friendlink.js:41:50)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 10776
+hostname: 20161212-102137
+
+2019-04-02 11:04:10,179 INFO 10776 [egg-sequelize](9ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 9;
+2019-04-02 11:04:39,223 INFO 4144 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2019-04-02 11:05:07,523 INFO 4144 [egg-sequelize](7ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 7;
+2019-04-02 11:05:07,621 INFO 4144 [egg-sequelize](104ms) Executed (default): UPDATE `friendlinks` SET `created_at`='2019-04-02 02:53:16',`updated_at`='2019-04-02 03:05:07',`name`='呵呵哒',`src`='fanyi.baidu.com' WHERE `id` = 7
+2019-04-02 11:05:07,648 INFO 4144 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 7;
+2019-04-02 11:05:07,817 INFO 4144 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 11:05:21,326 INFO 4144 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 5;
+2019-04-02 11:05:21,429 INFO 4144 [egg-sequelize](92ms) Executed (default): UPDATE `friendlinks` SET `created_at`='2019-03-26 06:55:58',`updated_at`='2019-04-02 03:05:21',`name`='朱见深',`src`='http://10.20.120.200' WHERE `id` = 5
+2019-04-02 11:05:21,480 INFO 4144 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 5;
+2019-04-02 11:05:21,569 INFO 4144 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 11:05:28,993 INFO 4144 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'http://10.20.120.200' LIMIT 1;
+2019-04-02 11:06:10,496 INFO 6264 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2019-04-02 11:06:11,171 INFO 6264 [egg-sequelize](21ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 5;
+2019-04-02 11:06:11,268 INFO 6264 [egg-sequelize](89ms) Executed (default): UPDATE `friendlinks` SET `created_at`='2019-03-26 06:55:58',`updated_at`='2019-04-02 03:06:11',`name`='朱见深',`src`='http://10.20.120.200' WHERE `id` = 5
+2019-04-02 11:06:11,295 INFO 6264 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'http://10.20.120.200' LIMIT 1;
+2019-04-02 11:06:16,128 INFO 6264 [egg-sequelize](10ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 5;
+2019-04-02 11:06:16,198 INFO 6264 [egg-sequelize](72ms) Executed (default): UPDATE `friendlinks` SET `created_at`='2019-03-26 06:55:58',`updated_at`='2019-04-02 03:06:16',`name`='朱见深1',`src`='http://10.20.120.200' WHERE `id` = 5
+2019-04-02 11:06:16,210 INFO 6264 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'http://10.20.120.200' LIMIT 1;
+2019-04-02 11:06:48,371 INFO 7056 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-04-02 11:06:48,800 INFO 7056 [egg-sequelize](49ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 5;
+2019-04-02 11:06:48,903 INFO 7056 [egg-sequelize](84ms) Executed (default): UPDATE `friendlinks` SET `created_at`='2019-03-26 06:55:58',`updated_at`='2019-04-02 03:06:48',`name`='朱见深',`src`='http://10.20.120.200' WHERE `id` = 5
+2019-04-02 11:06:48,916 INFO 7056 [egg-sequelize](4ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 5;
+2019-04-02 11:06:48,976 INFO 7056 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 11:06:58,933 ERROR 7056 [-/127.0.0.1/-/4ms POST /backend/v1/friendlink/delete/6] nodejs.TypeError: Cannot read property 'destroy' of undefined
+    at FriendLinkService.deleteFriendLink (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:164:64)
+    at FriendLinkController.deleteFriendLink (C:\Users\Administrator\Desktop\API\app\controller\backend\friendlink.js:35:50)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 7056
+hostname: 20161212-102137
+
+2019-04-02 11:07:50,612 ERROR 7056 [-/127.0.0.1/-/13932ms POST /backend/v1/friendlink/delete/6] nodejs.TypeError: Cannot read property 'destroy' of undefined
+    at FriendLinkService.deleteFriendLink (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:164:64)
+    at FriendLinkController.deleteFriendLink (C:\Users\Administrator\Desktop\API\app\controller\backend\friendlink.js:35:50)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 7056
+hostname: 20161212-102137
+
+2019-04-02 11:07:53,623 INFO 8656 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-04-02 11:08:05,676 INFO 8656 [egg-sequelize](95ms) Executed (default): DELETE FROM `friendlinks` WHERE `id` = '6'
+2019-04-02 11:08:05,946 INFO 8656 [egg-sequelize](11ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 11:08:09,093 INFO 8656 [egg-sequelize](113ms) Executed (default): DELETE FROM `friendlinks` WHERE `id` = '7'
+2019-04-02 11:08:09,251 INFO 8656 [egg-sequelize](5ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 11:36:16,365 INFO 6092 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-04-02 11:36:26,471 ERROR 6092 [-/127.0.0.1/-/75ms POST /backend/v1/friendlink/edit/] nodejs.TypeError: Cannot read property 'findAll' of undefined
+    at FriendLinkService.editFriendLink (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:139:58)
+    at FriendLinkController.editFriendLink (C:\Users\Administrator\Desktop\API\app\controller\backend\friendlink.js:41:50)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 6092
+hostname: 20161212-102137
+
+2019-04-02 11:36:26,514 INFO 6092 [egg-sequelize](5ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 5;
+2019-04-02 11:36:44,040 INFO 12308 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2019-04-02 11:36:52,892 INFO 12308 [egg-sequelize](8ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 3;
+2019-04-02 11:36:52,946 INFO 12308 [egg-sequelize](44ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 3 AND `friendlink`.`src` = 'www.baid.com';
+2019-04-02 11:36:53,056 INFO 12308 [egg-sequelize](57ms) Executed (default): UPDATE `friendlinks` SET `created_at`='2019-03-22 08:13:31',`updated_at`='2019-04-02 03:36:52',`name`='许三多的友情链接332423',`src`='www.baid.com' WHERE `id` = 3
+2019-04-02 11:36:53,068 INFO 12308 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 3;
+2019-04-02 11:36:53,147 INFO 12308 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 11:36:57,830 INFO 12308 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 5;
+2019-04-02 11:36:57,840 INFO 12308 [egg-sequelize](11ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 5 AND `friendlink`.`src` = 'http://10.20.120.200';
+2019-04-02 11:36:57,929 INFO 12308 [egg-sequelize](63ms) Executed (default): UPDATE `friendlinks` SET `created_at`='2019-03-26 06:55:58',`updated_at`='2019-04-02 03:36:57',`name`='朱见深',`src`='http://10.20.120.200' WHERE `id` = 5
+2019-04-02 11:36:57,946 INFO 12308 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 5;
+2019-04-02 11:36:58,034 INFO 12308 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 11:37:09,581 INFO 12308 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 9;
+2019-04-02 11:37:09,596 INFO 12308 [egg-sequelize](18ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 9 AND `friendlink`.`src` = 'http://10.20.120.200';
+2019-04-02 11:37:09,702 INFO 12308 [egg-sequelize](67ms) Executed (default): UPDATE `friendlinks` SET `created_at`='2019-04-02 02:53:59',`updated_at`='2019-04-02 03:37:09',`name`='hehe',`src`='http://10.20.120.200' WHERE `id` = 9
+2019-04-02 11:37:09,711 INFO 12308 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 9;
+2019-04-02 11:37:09,765 INFO 12308 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 11:37:27,069 INFO 12308 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 9;
+2019-04-02 11:37:27,098 INFO 12308 [egg-sequelize](6ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 9 AND `friendlink`.`src` = 'https://github.com';
+2019-04-02 11:37:27,162 INFO 12308 [egg-sequelize](33ms) Executed (default): UPDATE `friendlinks` SET `created_at`='2019-04-02 02:53:59',`updated_at`='2019-04-02 03:37:27',`name`='hehe',`src`='https://github.com' WHERE `id` = 9
+2019-04-02 11:37:27,171 INFO 12308 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 9;
+2019-04-02 11:37:27,225 INFO 12308 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 11:38:05,042 INFO 12308 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 8;
+2019-04-02 11:38:05,059 INFO 12308 [egg-sequelize](4ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 8 AND `friendlink`.`src` = 'https://github.com';
+2019-04-02 11:39:19,152 INFO 12308 [egg-sequelize](50ms) Executed (default): UPDATE `friendlinks` SET `created_at`='2019-04-02 02:53:36',`updated_at`='2019-04-02 03:39:19',`name`='gihub',`src`='https://github.com' WHERE `id` = 8
+2019-04-02 11:39:19,174 INFO 12308 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 8;
+2019-04-02 11:39:37,051 INFO 12308 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'https://github.com' LIMIT 1;
+2019-04-02 14:10:12,112 INFO 1108 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2019-04-02 14:12:34,213 INFO 1108 [egg-sequelize](6ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 2;
+2019-04-02 14:12:34,245 INFO 1108 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'www.baid.comsadasds' LIMIT 1;
+2019-04-02 14:12:42,386 INFO 1108 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 2;
+2019-04-02 14:12:42,457 INFO 1108 [egg-sequelize](72ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'www.baid.comsadasds' LIMIT 1;
+2019-04-02 14:12:42,810 INFO 1108 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'www.baid.comsadasds' LIMIT 1;
+2019-04-02 14:12:42,836 INFO 1108 [egg-sequelize](29ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 2;
+2019-04-02 14:30:34,450 INFO 12036 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2019-04-02 14:31:18,106 INFO 12036 [egg-sequelize](7ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 8;
+2019-04-02 14:31:18,153 INFO 12036 [egg-sequelize](26ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'https://github.com' AND NOT (`friendlink`.`id` = 8);
+2019-04-02 14:31:24,352 INFO 12036 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 8;
+2019-04-02 14:31:24,368 INFO 12036 [egg-sequelize](17ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'https://github.cn' AND NOT (`friendlink`.`id` = 8);
+2019-04-02 14:32:28,767 INFO 12036 [egg-sequelize](4ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 8;
+2019-04-02 14:32:28,802 INFO 12036 [egg-sequelize](37ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'https://github.cn' AND NOT (`friendlink`.`id` = 8);
+2019-04-02 14:33:26,827 INFO 12036 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 8;
+2019-04-02 14:33:26,832 INFO 12036 [egg-sequelize](6ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'https://github.cn' AND NOT (`friendlink`.`id` = 8);
+2019-04-02 14:33:44,129 INFO 13672 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-04-02 14:33:56,845 INFO 13672 [egg-sequelize](18ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 8;
+2019-04-02 14:33:56,879 INFO 13672 [egg-sequelize](6ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'https://github.com' AND NOT (`friendlink`.`id` IN (8));
+2019-04-02 14:35:01,017 INFO 13672 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 8;
+2019-04-02 14:35:01,045 INFO 13672 [egg-sequelize](9ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'https://github.com' AND NOT (`friendlink`.`id` IN (8));
+2019-04-02 14:35:11,078 INFO 13672 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 8;
+2019-04-02 14:35:11,082 INFO 13672 [egg-sequelize](6ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'https://github.com' AND NOT (`friendlink`.`id` IN (8));
+2019-04-02 14:35:14,132 INFO 13672 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 8;
+2019-04-02 14:35:14,148 INFO 13672 [egg-sequelize](18ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'https://github.cn' AND NOT (`friendlink`.`id` IN (8));
+2019-04-02 14:39:18,397 INFO 14060 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2019-04-02 14:39:24,997 INFO 14060 [egg-sequelize](8ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 8;
+2019-04-02 14:39:25,009 INFO 14060 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'https://github.cn' AND NOT (`friendlink`.`id` IN (8));
+2019-04-02 14:39:40,300 INFO 13240 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2019-04-02 14:39:46,658 INFO 13240 [egg-sequelize](4ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 8;
+2019-04-02 14:39:46,686 INFO 13240 [egg-sequelize](9ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'https://github.com' AND NOT (`friendlink`.`id` IN (8));
+2019-04-02 14:39:54,348 INFO 13240 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 9;
+2019-04-02 14:39:54,354 INFO 13240 [egg-sequelize](7ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'sadasdada' AND NOT (`friendlink`.`id` IN (9));
+2019-04-02 14:40:09,644 INFO 13240 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'sadasdadawaaaaaaaaaa' AND NOT (`friendlink`.`id` IN (9));
+2019-04-02 14:40:09,650 INFO 13240 [egg-sequelize](8ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 9;
+2019-04-02 14:40:29,937 INFO 13976 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2019-04-02 14:40:36,718 INFO 13976 [egg-sequelize](5ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 9;
+2019-04-02 14:40:36,728 INFO 13976 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'asdasdas';
+2019-04-02 14:40:40,900 INFO 13976 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 9;
+2019-04-02 14:40:40,905 INFO 13976 [egg-sequelize](6ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'sadasdasdasdas';
+2019-04-02 14:41:28,951 INFO 13828 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2019-04-02 14:41:40,209 INFO 13828 [egg-sequelize](7ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 9;
+2019-04-02 14:41:40,219 INFO 13828 [egg-sequelize](4ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'sadasdasdasdas' LIMIT 1;
+2019-04-02 14:41:51,309 ERROR 13828 [-/127.0.0.1/-/15625ms POST /backend/v1/friendlink/edit/] nodejs.SequelizeValidationError: Validation error: Validation isUrl on src failed
+    at Promise.all.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2719:22)
+From previous event:
+    at Function.update (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2706:23)
+    at FriendLinkService.editFriendLink (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:153:70)
+name: "SequelizeValidationError"
+errors: [{"message":"Validation isUrl on src failed","type":"Validation error","path":"src","value":"sadasdasdasdas","origin":"FUNCTION","instance":{"id":null,"created_at":"2019-04-02T02:53:59.000Z","updated_at":"2019-04-02T06:41:51.277Z","name":"hehe","src":"sadasdasdasdas"},"validatorKey":"isUrl","validatorName":"isUrl","validatorArgs":[{}],"__raw":{"validatorName":"isUrl","validatorArgs":"~0~validatorArgs"}}]
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 13828
+hostname: 20161212-102137
+
+2019-04-02 14:42:01,726 INFO 13828 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 9;
+2019-04-02 14:42:01,744 INFO 13828 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'sadasdasdasdas' LIMIT 1;
+2019-04-02 14:42:01,771 ERROR 13828 [-/127.0.0.1/-/5495ms POST /backend/v1/friendlink/edit/] nodejs.SequelizeValidationError: Validation error: Validation isUrl on src failed
+    at Promise.all.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2719:22)
+From previous event:
+    at Function.update (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2706:23)
+    at FriendLinkService.editFriendLink (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:153:70)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+name: "SequelizeValidationError"
+errors: [{"message":"Validation isUrl on src failed","type":"Validation error","path":"src","value":"sadasdasdasdas","origin":"FUNCTION","instance":{"id":null,"created_at":"2019-04-02T02:53:59.000Z","updated_at":"2019-04-02T06:42:01.755Z","name":"hehe","src":"sadasdasdasdas"},"validatorKey":"isUrl","validatorName":"isUrl","validatorArgs":[{}],"__raw":{"validatorName":"isUrl","validatorArgs":"~0~validatorArgs"}}]
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 13828
+hostname: 20161212-102137
+
+2019-04-02 14:42:05,016 INFO 13828 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 9;
+2019-04-02 14:42:05,026 INFO 13828 [egg-sequelize](11ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'sadasdasdasdas' LIMIT 1;
+2019-04-02 14:42:05,041 ERROR 13828 [-/127.0.0.1/-/33ms POST /backend/v1/friendlink/edit/] nodejs.SequelizeValidationError: Validation error: Validation isUrl on src failed
+    at Promise.all.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2719:22)
+From previous event:
+    at Function.update (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2706:23)
+    at FriendLinkService.editFriendLink (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:153:70)
+name: "SequelizeValidationError"
+errors: [{"message":"Validation isUrl on src failed","type":"Validation error","path":"src","value":"sadasdasdasdas","origin":"FUNCTION","instance":{"id":null,"created_at":"2019-04-02T02:53:59.000Z","updated_at":"2019-04-02T06:42:05.035Z","name":"hehe","src":"sadasdasdasdas"},"validatorKey":"isUrl","validatorName":"isUrl","validatorArgs":[{}],"__raw":{"validatorName":"isUrl","validatorArgs":"~0~validatorArgs"}}]
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 13828
+hostname: 20161212-102137
+
+2019-04-02 14:43:54,338 INFO 13828 [egg-sequelize](6ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 9;
+2019-04-02 14:43:54,346 INFO 13828 [egg-sequelize](9ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'sadasdasdasdas' LIMIT 1;
+2019-04-02 14:44:06,324 ERROR 13828 [-/127.0.0.1/-/59090ms POST /backend/v1/friendlink/edit/] nodejs.SequelizeValidationError: Validation error: Validation isUrl on src failed
+    at Promise.all.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2719:22)
+From previous event:
+    at Function.update (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2706:23)
+    at FriendLinkService.editFriendLink (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:153:70)
+name: "SequelizeValidationError"
+errors: [{"message":"Validation isUrl on src failed","type":"Validation error","path":"src","value":"sadasdasdasdas","origin":"FUNCTION","instance":{"id":null,"created_at":"2019-04-02T02:53:59.000Z","updated_at":"2019-04-02T06:44:06.313Z","name":"hehe","src":"sadasdasdasdas"},"validatorKey":"isUrl","validatorName":"isUrl","validatorArgs":[{}],"__raw":{"validatorName":"isUrl","validatorArgs":"~0~validatorArgs"}}]
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 13828
+hostname: 20161212-102137
+
+2019-04-02 14:44:58,499 INFO 13828 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 9;
+2019-04-02 14:44:58,507 INFO 13828 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = '122' LIMIT 1;
+2019-04-02 14:44:58,521 ERROR 13828 [-/127.0.0.1/-/54ms POST /backend/v1/friendlink/edit/] nodejs.SequelizeValidationError: Validation error: Validation isUrl on src failed
+    at Promise.all.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2719:22)
+From previous event:
+    at Function.update (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2706:23)
+    at FriendLinkService.editFriendLink (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:153:70)
+name: "SequelizeValidationError"
+errors: [{"message":"Validation isUrl on src failed","type":"Validation error","path":"src","value":"122","origin":"FUNCTION","instance":{"id":null,"created_at":"2019-04-02T02:53:59.000Z","updated_at":"2019-04-02T06:44:58.512Z","name":"hehe","src":"122"},"validatorKey":"isUrl","validatorName":"isUrl","validatorArgs":[{}],"__raw":{"validatorName":"isUrl","validatorArgs":"~0~validatorArgs"}}]
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 13828
+hostname: 20161212-102137
+
+2019-04-02 14:46:22,540 INFO 9404 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2019-04-02 14:46:34,692 INFO 7464 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-04-02 14:47:14,997 INFO 10024 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2019-04-02 14:47:26,773 INFO 9948 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-04-02 14:47:34,060 INFO 9948 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 8;
+2019-04-02 14:47:34,065 INFO 9948 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'https://github.com' AND NOT (`friendlink`.`id` IN (8)) LIMIT 1;
+2019-04-02 14:47:37,911 INFO 9948 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 8;
+2019-04-02 14:47:37,914 INFO 9948 [egg-sequelize](5ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'https://github.cn' AND NOT (`friendlink`.`id` IN (8)) LIMIT 1;
+2019-04-02 14:47:38,038 INFO 9948 [egg-sequelize](75ms) Executed (default): UPDATE `friendlinks` SET `created_at`='2019-04-02 02:53:36',`updated_at`='2019-04-02 06:47:37',`name`='gihub',`src`='https://github.cn' WHERE `id` = 8
+2019-04-02 14:47:38,045 INFO 9948 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 8;
+2019-04-02 14:47:38,111 INFO 9948 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 14:47:52,987 INFO 9948 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 5;
+2019-04-02 14:47:53,022 INFO 9948 [egg-sequelize](36ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'http://10.20.120.200' AND NOT (`friendlink`.`id` IN (5)) LIMIT 1;
+2019-04-02 14:47:53,123 INFO 9948 [egg-sequelize](79ms) Executed (default): UPDATE `friendlinks` SET `created_at`='2019-03-26 06:55:58',`updated_at`='2019-04-02 06:47:53',`name`='朱见深hehe',`src`='http://10.20.120.200' WHERE `id` = 5
+2019-04-02 14:47:53,132 INFO 9948 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 5;
+2019-04-02 14:47:53,228 INFO 9948 [egg-sequelize](4ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 14:48:13,119 INFO 9948 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 5;
+2019-04-02 14:48:13,122 INFO 9948 [egg-sequelize](4ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'http://10.20.120.200' AND NOT (`friendlink`.`id` IN (5)) LIMIT 1;
+2019-04-02 14:48:13,179 INFO 9948 [egg-sequelize](47ms) Executed (default): UPDATE `friendlinks` SET `created_at`='2019-03-26 06:55:58',`updated_at`='2019-04-02 06:48:13',`name`='朱见深是个弟弟',`src`='http://10.20.120.200' WHERE `id` = 5
+2019-04-02 14:48:13,185 INFO 9948 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 5;
+2019-04-02 14:48:13,238 INFO 9948 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 14:48:42,372 INFO 9948 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 9;
+2019-04-02 14:48:42,383 INFO 9948 [egg-sequelize](12ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'https://github.com' AND NOT (`friendlink`.`id` IN (9)) LIMIT 1;
+2019-04-02 14:48:42,455 INFO 9948 [egg-sequelize](49ms) Executed (default): UPDATE `friendlinks` SET `created_at`='2019-04-02 02:53:59',`updated_at`='2019-04-02 06:48:42',`name`='朱瞻基',`src`='https://github.com' WHERE `id` = 9
+2019-04-02 14:48:42,484 INFO 9948 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 9;
+2019-04-02 14:48:42,530 INFO 9948 [egg-sequelize](4ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 14:48:50,431 INFO 9948 [egg-sequelize](11ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 10;
+2019-04-02 14:48:51,095 INFO 9948 [egg-sequelize](69ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` LIMIT 0, 10;
+2019-04-02 14:48:51,176 INFO 9948 [egg-sequelize](20ms) Executed (default): SELECT `classification_ids`, `label_ids`, `content`, `user_id`, `created_at`, `updated_at`, `title`, `browse_num`, `praise`, `article_id`, `comment_num` FROM `articles` AS `article` LIMIT 0, 10;
+2019-04-02 14:48:51,222 INFO 9948 [egg-sequelize](58ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` LIMIT 0, 10;
+2019-04-02 14:48:51,261 INFO 9948 [egg-sequelize](7ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '1';
+2019-04-02 14:48:51,315 INFO 9948 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '2';
+2019-04-02 14:48:51,380 INFO 9948 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '3';
+2019-04-02 14:48:51,429 INFO 9948 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '4';
+2019-04-02 14:48:51,462 INFO 9948 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '1';
+2019-04-02 14:48:51,482 INFO 9948 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '2';
+2019-04-02 14:48:51,502 INFO 9948 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '3';
+2019-04-02 14:48:51,516 INFO 9948 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '4';
+2019-04-02 14:48:51,532 INFO 9948 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '5';
+2019-04-02 14:48:51,561 INFO 9948 [egg-sequelize](4ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '1';
+2019-04-02 14:48:51,574 INFO 9948 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '2';
+2019-04-02 14:48:51,589 INFO 9948 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '3';
+2019-04-02 14:48:51,609 INFO 9948 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '4';
+2019-04-02 14:48:51,635 INFO 9948 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '5';
+2019-04-02 14:48:51,647 INFO 9948 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '1';
+2019-04-02 14:48:51,681 INFO 9948 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '2';
+2019-04-02 14:48:51,724 INFO 9948 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '3';
+2019-04-02 14:48:51,777 INFO 9948 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '4';
+2019-04-02 14:48:51,792 INFO 9948 [egg-sequelize](4ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '2';
+2019-04-02 14:48:51,809 INFO 9948 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '3';
+2019-04-02 14:48:51,836 INFO 9948 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '1';
+2019-04-02 14:48:51,854 INFO 9948 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '3';
+2019-04-02 14:48:51,864 INFO 9948 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '4';
+2019-04-02 14:48:51,880 INFO 9948 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '5';
+2019-04-02 14:48:51,895 INFO 9948 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '1';
+2019-04-02 14:48:51,911 INFO 9948 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '2';
+2019-04-02 14:48:51,932 INFO 9948 [egg-sequelize](4ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '3';
+2019-04-02 14:48:51,948 INFO 9948 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '6';
+2019-04-02 14:48:51,971 INFO 9948 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '4';
+2019-04-02 14:48:51,996 INFO 9948 [egg-sequelize](4ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '1';
+2019-04-02 14:48:52,017 INFO 9948 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '3';
+2019-04-02 14:48:52,028 INFO 9948 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '1';
+2019-04-02 14:48:52,055 INFO 9948 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '2';
+2019-04-02 14:48:52,065 INFO 9948 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '4';
+2019-04-02 14:48:52,083 INFO 9948 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '2';
+2019-04-02 14:48:52,095 INFO 9948 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '4';
+2019-04-02 14:48:52,114 INFO 9948 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '5';
+2019-04-02 14:48:52,131 INFO 9948 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '10';
+2019-04-02 14:48:52,147 INFO 9948 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '8';
+2019-04-02 14:48:52,169 INFO 9948 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '5';
+2019-04-02 14:48:52,193 INFO 9948 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '1';
+2019-04-02 14:48:52,218 INFO 9948 [egg-sequelize](1ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '1';
+2019-04-02 14:48:52,230 INFO 9948 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '2';
+2019-04-02 14:48:52,249 INFO 9948 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '4';
+2019-04-02 14:48:52,272 INFO 9948 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '1';
+2019-04-02 14:48:52,282 INFO 9948 [egg-sequelize](1ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '4';
+2019-04-02 14:48:52,288 INFO 9948 [egg-sequelize](1ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '5';
+2019-04-02 14:48:52,313 INFO 9948 [egg-sequelize](1ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '1';
+2019-04-02 14:48:52,322 INFO 9948 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '6';
+2019-04-02 14:48:52,336 INFO 9948 [egg-sequelize](1ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '3';
+2019-04-02 14:48:52,357 INFO 9948 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '1';
+2019-04-02 14:48:52,389 INFO 9948 [egg-sequelize](1ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '3';
+2019-04-02 14:48:52,398 INFO 9948 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '4';
+2019-04-02 14:48:52,410 INFO 9948 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '6';
+2019-04-02 14:48:52,420 INFO 9948 [egg-sequelize](1ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '3';
+2019-04-02 14:48:52,442 INFO 9948 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '2';
+2019-04-02 14:48:59,556 INFO 9948 [egg-sequelize](5ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` LIMIT 0, 10;
+2019-04-02 14:49:01,946 INFO 9948 [egg-sequelize](8ms) Executed (default): SELECT `reply_ids`, `content`, `connect_id`, `created_at`, `updated_at`, `type`, `id` FROM `comments` AS `comment` LIMIT 0, 10;
+2019-04-02 14:49:03,361 INFO 9948 [egg-sequelize](6ms) Executed (default): SELECT `content`, `user_id`, `created_at`, `updated_at`, `id` FROM `replies` AS `reply` LIMIT 0, 10;
+2019-04-02 14:49:04,108 INFO 9948 [egg-sequelize](7ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` LIMIT 0, 10;
+2019-04-02 14:49:17,665 INFO 9948 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 14:49:19,018 INFO 9948 [egg-sequelize](30ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` LIMIT 0, 10;
+2019-04-02 14:49:29,678 INFO 9948 [egg-sequelize](6ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 14:49:43,064 INFO 9948 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 9;
+2019-04-02 14:49:43,078 INFO 9948 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = '1111' AND NOT (`friendlink`.`id` IN (9)) LIMIT 1;
+2019-04-02 14:49:43,111 ERROR 9948 [-/127.0.0.1/-/64ms POST /backend/v1/friendlink/edit/] nodejs.SequelizeValidationError: Validation error: Validation isUrl on src failed
+    at Promise.all.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2719:22)
+From previous event:
+    at Function.update (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2706:23)
+    at FriendLinkService.editFriendLink (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:154:70)
+name: "SequelizeValidationError"
+errors: [{"message":"Validation isUrl on src failed","type":"Validation error","path":"src","value":"1111","origin":"FUNCTION","instance":{"id":null,"created_at":"2019-04-02T02:53:59.000Z","updated_at":"2019-04-02T06:49:43.090Z","name":"朱瞻基","src":"1111"},"validatorKey":"isUrl","validatorName":"isUrl","validatorArgs":[{}],"__raw":{"validatorName":"isUrl","validatorArgs":"~0~validatorArgs"}}]
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 9948
+hostname: 20161212-102137
+
+2019-04-02 14:51:29,272 INFO 12812 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-04-02 14:51:31,075 INFO 12812 [egg-sequelize](6ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 9;
+2019-04-02 14:51:31,107 INFO 12812 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = '1' AND NOT (`friendlink`.`id` IN (9)) LIMIT 1;
+2019-04-02 14:51:31,158 ERROR 12812 [-/127.0.0.1/-/139ms POST /backend/v1/friendlink/edit/] nodejs.SequelizeValidationError: Validation error: Validation isUrl on src failed
+    at Promise.all.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2719:22)
+From previous event:
+    at Function.update (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2706:23)
+    at FriendLinkService.editFriendLink (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:150:70)
+name: "SequelizeValidationError"
+errors: [{"message":"Validation isUrl on src failed","type":"Validation error","path":"src","value":"1","origin":"FUNCTION","instance":{"id":null,"created_at":"2019-04-02T02:53:59.000Z","updated_at":"2019-04-02T06:51:31.133Z","name":"朱瞻基","src":"1"},"validatorKey":"isUrl","validatorName":"isUrl","validatorArgs":[{}],"__raw":{"validatorName":"isUrl","validatorArgs":"~0~validatorArgs"}}]
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 12812
+hostname: 20161212-102137
+
+2019-04-02 14:52:57,712 INFO 12584 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2019-04-02 14:53:10,077 INFO 708 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-04-02 14:53:12,163 INFO 708 [egg-sequelize](4ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 9;
+2019-04-02 14:53:12,176 INFO 708 [egg-sequelize](5ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = '1' AND NOT (`friendlink`.`id` IN (9)) LIMIT 1;
+2019-04-02 14:53:12,199 ERROR 708 [-/127.0.0.1/-/84ms POST /backend/v1/friendlink/edit/] nodejs.SequelizeValidationError: Validation error: Validation isUrl on src failed
+    at Promise.all.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2719:22)
+From previous event:
+    at Function.update (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2706:23)
+    at FriendLinkService.editFriendLink (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:150:70)
+name: "SequelizeValidationError"
+errors: [{"message":"Validation isUrl on src failed","type":"Validation error","path":"src","value":"1","origin":"FUNCTION","instance":{"id":null,"created_at":"2019-04-02T02:53:59.000Z","updated_at":"2019-04-02T06:53:12.182Z","name":"朱瞻基","src":"1"},"validatorKey":"isUrl","validatorName":"isUrl","validatorArgs":[{}],"__raw":{"validatorName":"isUrl","validatorArgs":"~0~validatorArgs"}}]
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 708
+hostname: 20161212-102137
+
+2019-04-02 14:53:38,341 INFO 11320 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-04-02 14:53:48,362 INFO 11320 [egg-sequelize](6ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 9;
+2019-04-02 14:53:48,437 INFO 11320 [egg-sequelize](71ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = '1' AND NOT (`friendlink`.`id` IN (9)) LIMIT 1;
+2019-04-02 14:53:48,514 INFO 11320 [egg-sequelize](49ms) Executed (default): UPDATE `friendlinks` SET `created_at`='2019-04-02 02:53:59',`updated_at`='2019-04-02 06:53:48',`name`='朱瞻基',`src`='1' WHERE `id` = 9
+2019-04-02 14:53:48,523 INFO 11320 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 9;
+2019-04-02 14:53:48,606 INFO 11320 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 14:53:56,635 INFO 11320 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 9;
+2019-04-02 14:53:56,660 INFO 11320 [egg-sequelize](27ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'asdsads' AND NOT (`friendlink`.`id` IN (9)) LIMIT 1;
+2019-04-02 14:53:56,719 INFO 11320 [egg-sequelize](48ms) Executed (default): UPDATE `friendlinks` SET `created_at`='2019-04-02 02:53:59',`updated_at`='2019-04-02 06:53:56',`name`='朱瞻基',`src`='asdsads' WHERE `id` = 9
+2019-04-02 14:53:56,735 INFO 11320 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 9;
+2019-04-02 14:53:56,785 INFO 11320 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 14:56:36,033 INFO 1168 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2019-04-02 14:58:28,864 INFO 1168 [egg-sequelize](7ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 9;
+2019-04-02 14:58:28,881 INFO 1168 [egg-sequelize](22ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'https://fanyi.baidu.com/?aldtype=16047#en/zh/Missing%20initializer%20in%20const%20declaration' AND NOT (`friendlink`.`id` IN (9)) LIMIT 1;
+2019-04-02 14:58:28,983 INFO 1168 [egg-sequelize](63ms) Executed (default): UPDATE `friendlinks` SET `created_at`='2019-04-02 02:53:59',`updated_at`='2019-04-02 06:58:28',`name`='朱瞻基',`src`='https://fanyi.baidu.com/?aldtype=16047#en/zh/Missing%20initializer%20in%20const%20declaration' WHERE `id` = 9
+2019-04-02 14:58:28,990 INFO 1168 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 9;
+2019-04-02 14:58:29,047 INFO 1168 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 15:02:07,675 INFO 12812 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2019-04-02 15:03:22,281 INFO 7152 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-04-02 15:03:27,986 INFO 7480 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2019-04-02 15:03:36,323 INFO 7480 [egg-sequelize](12ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 8;
+2019-04-02 15:03:36,338 INFO 7480 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'https://github.cn' AND NOT (`friendlink`.`id` IN (8)) LIMIT 1;
+2019-04-02 15:03:36,509 INFO 7480 [egg-sequelize](88ms) Executed (default): UPDATE `friendlinks` SET `created_at`='2019-04-02 02:53:36',`updated_at`='2019-04-02 07:03:36',`name`='gihub',`src`='https://github.cn' WHERE `id` = 8
+2019-04-02 15:03:36,521 INFO 7480 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 8;
+2019-04-02 15:03:36,600 INFO 7480 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 15:03:45,659 INFO 7480 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'https://github.cn' AND NOT (`friendlink`.`id` IN (8)) LIMIT 1;
+2019-04-02 15:03:45,682 INFO 7480 [egg-sequelize](26ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 8;
+2019-04-02 15:03:45,784 INFO 7480 [egg-sequelize](62ms) Executed (default): UPDATE `friendlinks` SET `created_at`='2019-04-02 02:53:36',`updated_at`='2019-04-02 07:03:45',`name`='gihub',`src`='https://github.cn' WHERE `id` = 8
+2019-04-02 15:03:45,790 INFO 7480 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 8;
+2019-04-02 15:03:45,856 INFO 7480 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 15:04:05,069 INFO 7480 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 8;
+2019-04-02 15:04:05,079 INFO 7480 [egg-sequelize](4ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'https://fanyi.baidu.com/?aldtype=16047#en/zh/Missing%20initializer%20in%20const%20declaration' AND NOT (`friendlink`.`id` IN (8)) LIMIT 1;
+2019-04-02 15:04:18,258 INFO 7480 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 8;
+2019-04-02 15:04:18,266 INFO 7480 [egg-sequelize](4ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`src` = 'https://shimo.im/docs/hRrhmrCtNUY6FGJr' AND NOT (`friendlink`.`id` IN (8)) LIMIT 1;
+2019-04-02 15:04:18,350 INFO 7480 [egg-sequelize](60ms) Executed (default): UPDATE `friendlinks` SET `created_at`='2019-04-02 02:53:36',`updated_at`='2019-04-02 07:04:18',`name`='gihub',`src`='https://shimo.im/docs/hRrhmrCtNUY6FGJr' WHERE `id` = 8
+2019-04-02 15:04:18,362 INFO 7480 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` WHERE `friendlink`.`id` = 8;
+2019-04-02 15:04:18,431 INFO 7480 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 15:05:12,803 INFO 7480 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 15:59:36,001 INFO 7480 [egg-sequelize](7ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` LIMIT 0, 10;
+2019-04-02 15:59:36,901 INFO 7480 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 16:39:07,477 INFO 7480 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 16:39:10,000 INFO 7480 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 17:36:03,583 INFO 7480 [egg-sequelize](10ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 17:39:48,455 INFO 7480 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 17:40:50,690 INFO 7480 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 17:40:56,042 INFO 7480 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 17:40:56,941 INFO 7480 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 17:40:58,756 INFO 7480 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 17:40:59,538 INFO 7480 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 17:42:00,347 INFO 7480 [egg-sequelize](16ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` LIMIT 0, 10;
+2019-04-02 17:49:35,004 INFO 7480 [egg-sequelize](10ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` LIMIT 0, 10;
+2019-04-02 17:49:39,153 INFO 7480 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 17:49:41,006 INFO 7480 [egg-sequelize](11ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` LIMIT 0, 10;
+2019-04-02 17:49:42,131 INFO 7480 [egg-sequelize](56ms) Executed (default): SELECT `content`, `user_id`, `created_at`, `updated_at`, `id` FROM `replies` AS `reply` LIMIT 0, 10;
+2019-04-02 17:49:43,143 INFO 7480 [egg-sequelize](14ms) Executed (default): SELECT `reply_ids`, `content`, `connect_id`, `created_at`, `updated_at`, `type`, `id` FROM `comments` AS `comment` LIMIT 0, 10;
+2019-04-02 17:49:44,571 INFO 7480 [egg-sequelize](9ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` LIMIT 0, 10;
+2019-04-02 17:50:08,302 INFO 7480 [egg-sequelize](61ms) Executed (default): SELECT `reply_ids`, `content`, `connect_id`, `created_at`, `updated_at`, `type`, `id` FROM `comments` AS `comment` LIMIT 0, 10;
+2019-04-02 17:50:09,044 INFO 7480 [egg-sequelize](3ms) Executed (default): SELECT `content`, `user_id`, `created_at`, `updated_at`, `id` FROM `replies` AS `reply` LIMIT 0, 10;
+2019-04-02 17:50:10,469 INFO 7480 [egg-sequelize](4ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` LIMIT 0, 10;
+2019-04-02 17:50:11,406 INFO 7480 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 10;
+2019-04-02 17:50:12,336 INFO 7480 [egg-sequelize](7ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` LIMIT 0, 10;
+2019-04-02 17:53:12,338 INFO 7480 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` LIMIT 0, 10;
+2019-04-02 17:53:33,148 INFO 7480 [egg-sequelize](1ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = 10;
+2019-04-02 17:53:33,169 INFO 7480 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`name` = '朱见深' LIMIT 1;
+2019-04-02 17:55:07,643 INFO 7480 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` LIMIT 0, 10;
+2019-04-02 17:55:14,034 INFO 7480 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = 8;
+2019-04-02 17:55:14,048 INFO 7480 [egg-sequelize](4ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`name` = '朱佑樘' LIMIT 1;
+2019-04-02 17:55:30,704 INFO 7480 [egg-sequelize](4ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`name` = '许三多' LIMIT 1;
+2019-04-02 17:55:30,969 INFO 7480 [egg-sequelize](167ms) Executed (default): INSERT INTO `classifications` (`name`,`id`,`created_at`,`updated_at`,`d_id`,`p_id`) VALUES ('许三多',DEFAULT,'2019-04-02 09:55:30','2019-04-02 09:55:30','1','0');
+2019-04-02 17:55:31,026 INFO 7480 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` LIMIT 0, 10;
+2019-04-02 17:56:44,992 INFO 7480 [egg-sequelize](1ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` LIMIT 0, 10;
+2019-04-02 17:56:51,074 INFO 7480 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`name` = '111' LIMIT 1;
+2019-04-02 17:56:51,194 INFO 7480 [egg-sequelize](76ms) Executed (default): INSERT INTO `classifications` (`name`,`id`,`created_at`,`updated_at`,`d_id`,`p_id`) VALUES ('111',DEFAULT,'2019-04-02 09:56:51','2019-04-02 09:56:51','0','1');
+2019-04-02 17:56:51,245 INFO 7480 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` LIMIT 0, 10;

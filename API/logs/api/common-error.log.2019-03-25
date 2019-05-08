@@ -1,0 +1,1080 @@
+2019-03-20 09:14:51,642 ERROR 8992 nodejs.ClusterClientNoResponseError: client no response in 1966356ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 8992
+hostname: 20161212-102137
+
+2019-03-20 09:45:54,238 ERROR 15284 nodejs.ClusterClientNoResponseError: client no response in 64533ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 15284
+hostname: 20161212-102137
+
+2019-03-20 09:57:40,497 ERROR 14764 [-/127.0.0.1/-/4402ms POST /backend/v1/article/edit] nodejs.SequelizeDatabaseError: Unknown column 'update_at' in 'where clause'
+    at Query.formatError (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (C:\Users\Administrator\Desktop\API\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (C:\Users\Administrator\Desktop\API\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\Administrator\Desktop\API\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (C:\Users\Administrator\Desktop\API\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (C:\Users\Administrator\Desktop\API\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\sequelize.js:555:8)
+    at C:\Users\Administrator\Desktop\API\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (C:\Users\Administrator\Desktop\API\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\sequelize.js:454:28)
+    at QueryInterface.bulkUpdate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\query-interface.js:1040:27)
+    at Promise.try.then.then.then.results (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2822:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.update (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2811:8)
+    at ArticleService.editArticle (C:\Users\Administrator\Desktop\API\app\service\article.js:146:64)
+    at ArticleController.editArticle (C:\Users\Administrator\Desktop\API\app\controller\backend\article.js:42:47)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'update_at' in 'where clause'","sql":"UPDATE `articles` SET `article_id`='4',`updated_at`='2019-03-20 01:57:40' WHERE `classification_ids` = '‘技术/没有生活’' AND `label_ids` = '‘前端/没有Vue’' AND `content` = '我是内容444444' AND `title` = '我是标题123' AND `update_at` = '2019-03-20 01:57:36'"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'update_at' in 'where clause'","sql":"UPDATE `articles` SET `article_id`='4',`updated_at`='2019-03-20 01:57:40' WHERE `classification_ids` = '‘技术/没有生活’' AND `label_ids` = '‘前端/没有Vue’' AND `content` = '我是内容444444' AND `title` = '我是标题123' AND `update_at` = '2019-03-20 01:57:36'"}
+sql: "UPDATE `articles` SET `article_id`='4',`updated_at`='2019-03-20 01:57:40' WHERE `classification_ids` = '‘技术/没有生活’' AND `label_ids` = '‘前端/没有Vue’' AND `content` = '我是内容444444' AND `title` = '我是标题123' AND `update_at` = '2019-03-20 01:57:36'"
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 14764
+hostname: 20161212-102137
+
+2019-03-20 09:59:54,292 ERROR 15284 nodejs.ClusterClientNoResponseError: client no response in 68971ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 15284
+hostname: 20161212-102137
+
+2019-03-20 10:01:54,298 ERROR 15284 nodejs.ClusterClientNoResponseError: client no response in 61371ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 15284
+hostname: 20161212-102137
+
+2019-03-20 10:20:14,576 ERROR 15284 nodejs.ClusterClientNoResponseError: client no response in 67333ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 15284
+hostname: 20161212-102137
+
+2019-03-20 10:22:54,585 ERROR 15284 nodejs.ClusterClientNoResponseError: client no response in 61697ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 15284
+hostname: 20161212-102137
+
+2019-03-20 10:25:14,593 ERROR 15284 nodejs.ClusterClientNoResponseError: client no response in 64612ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 15284
+hostname: 20161212-102137
+
+2019-03-20 10:28:45,279 ERROR 1480 [-/127.0.0.1/-/3242ms POST /backend/v1/article/edit] nodejs.SequelizeDatabaseError: Unknown column 'returning' in 'where clause'
+    at Query.formatError (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (C:\Users\Administrator\Desktop\API\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (C:\Users\Administrator\Desktop\API\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\Administrator\Desktop\API\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (C:\Users\Administrator\Desktop\API\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (C:\Users\Administrator\Desktop\API\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\sequelize.js:555:8)
+    at C:\Users\Administrator\Desktop\API\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (C:\Users\Administrator\Desktop\API\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\sequelize.js:454:28)
+    at QueryInterface.bulkUpdate (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\query-interface.js:1040:27)
+    at Promise.try.then.then.then.results (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2822:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.update (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:2811:8)
+    at ArticleService.editArticle (C:\Users\Administrator\Desktop\API\app\service\article.js:145:64)
+    at ArticleController.editArticle (C:\Users\Administrator\Desktop\API\app\controller\backend\article.js:42:47)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'returning' in 'where clause'","sql":"UPDATE `articles` SET `classification_ids`='‘技术/没有生活’',`label_ids`='‘前端/没有Vue’',`content`='我是内容444444',`title`='我是标题123',`updated_at`='2019-03-20 02:28:45' WHERE `article_id` = '4' AND `returning` = true"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'returning' in 'where clause'","sql":"UPDATE `articles` SET `classification_ids`='‘技术/没有生活’',`label_ids`='‘前端/没有Vue’',`content`='我是内容444444',`title`='我是标题123',`updated_at`='2019-03-20 02:28:45' WHERE `article_id` = '4' AND `returning` = true"}
+sql: "UPDATE `articles` SET `classification_ids`='‘技术/没有生活’',`label_ids`='‘前端/没有Vue’',`content`='我是内容444444',`title`='我是标题123',`updated_at`='2019-03-20 02:28:45' WHERE `article_id` = '4' AND `returning` = true"
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 1480
+hostname: 20161212-102137
+
+2019-03-20 10:47:07,507 ERROR 15100 [-/127.0.0.1/-/71ms POST /backend/v1/article/add] nodejs.ReferenceError: error is not defined
+    at ArticleService.addArticle (C:\Users\Administrator\Desktop\API\app\service\article.js:100:29)
+    at ArticleController.addArticle (C:\Users\Administrator\Desktop\API\app\controller\backend\article.js:30:47)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 15100
+hostname: 20161212-102137
+
+2019-03-20 14:55:05,197 ERROR 13408 [-/127.0.0.1/-/605ms POST /backend/v1/label/add] nodejs.SequelizeDatabaseError: Unknown column 'label.title' in 'where clause'
+    at Query.formatError (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (C:\Users\Administrator\Desktop\API\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (C:\Users\Administrator\Desktop\API\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\Administrator\Desktop\API\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (C:\Users\Administrator\Desktop\API\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (C:\Users\Administrator\Desktop\API\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\sequelize.js:555:8)
+    at C:\Users\Administrator\Desktop\API\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (C:\Users\Administrator\Desktop\API\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\sequelize.js:454:28)
+    at QueryInterface.select (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\query-interface.js:1104:27)
+    at Promise.try.then.then.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:1598:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.findAll (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:1595:8)
+    at Function.findOne (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:1752:17)
+    at LabelService.checkData (C:\Users\Administrator\Desktop\API\app\service\label.js:34:53)
+    at LabelService.checkArtcle (C:\Users\Administrator\Desktop\API\app\service\label.js:44:36)
+    at LabelService.addLabel (C:\Users\Administrator\Desktop\API\app\service\label.js:94:43)
+    at LabelController.addLabel (C:\Users\Administrator\Desktop\API\app\controller\backend\label.js:29:45)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'label.title' in 'where clause'","sql":"SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`title` = NULL LIMIT 1;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'label.title' in 'where clause'","sql":"SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`title` = NULL LIMIT 1;"}
+sql: "SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`title` = NULL LIMIT 1;"
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 13408
+hostname: 20161212-102137
+
+2019-03-20 15:55:21,250 ERROR 12644 [-/127.0.0.1/-/50ms POST /backend/v1/comment/edit] nodejs.TypeError: this.checkData is not a function
+    at CommentService.editComment (C:\Users\Administrator\Desktop\API\app\service\comment.js:144:33)
+    at CommentController.editComment (C:\Users\Administrator\Desktop\API\app\controller\backend\comment.js:42:47)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 12644
+hostname: 20161212-102137
+
+2019-03-20 15:56:26,260 ERROR 8480 nodejs.SequelizeDatabaseError: Unknown column 'comment.Comment_id' in 'where clause'
+    at Query.formatError (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (C:\Users\Administrator\Desktop\API\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (C:\Users\Administrator\Desktop\API\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\Administrator\Desktop\API\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (C:\Users\Administrator\Desktop\API\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (C:\Users\Administrator\Desktop\API\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\sequelize.js:555:8)
+    at C:\Users\Administrator\Desktop\API\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (C:\Users\Administrator\Desktop\API\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\sequelize.js:454:28)
+    at QueryInterface.select (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\query-interface.js:1104:27)
+    at Promise.try.then.then.then (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:1598:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.findAll (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:1595:8)
+    at Function.findOne (C:\Users\Administrator\Desktop\API\node_modules\sequelize\lib\model.js:1752:17)
+    at CommentService.checkData (C:\Users\Administrator\Desktop\API\app\service\comment.js:46:55)
+    at CommentService.editComment (C:\Users\Administrator\Desktop\API\app\service\comment.js:144:33)
+    at CommentController.editComment (C:\Users\Administrator\Desktop\API\app\controller\backend\comment.js:42:47)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'comment.Comment_id' in 'where clause'","sql":"SELECT `reply_ids`, `content`, `connect_id`, `created_at`, `updated_at`, `type`, `id` FROM `comments` AS `comment` WHERE `comment`.`Comment_id` = '1' LIMIT 1;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'comment.Comment_id' in 'where clause'","sql":"SELECT `reply_ids`, `content`, `connect_id`, `created_at`, `updated_at`, `type`, `id` FROM `comments` AS `comment` WHERE `comment`.`Comment_id` = '1' LIMIT 1;"}
+sql: "SELECT `reply_ids`, `content`, `connect_id`, `created_at`, `updated_at`, `type`, `id` FROM `comments` AS `comment` WHERE `comment`.`Comment_id` = '1' LIMIT 1;"
+pid: 8480
+hostname: 20161212-102137
+
+2019-03-20 16:07:21,576 ERROR 15280 nodejs.ClusterClientNoResponseError: client no response in 61489ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 15280
+hostname: 20161212-102137
+
+2019-03-20 16:35:38,543 ERROR 14484 nodejs.ClusterClientNoResponseError: client no response in 74568ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 14484
+hostname: 20161212-102137
+
+2019-03-21 10:36:07,677 ERROR 7808 nodejs.ClusterClientNoResponseError: client no response in 71606ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 7808
+hostname: 20161212-102137
+
+2019-03-21 11:02:13,402 ERROR 8604 nodejs.ClusterClientNoResponseError: client no response in 64791ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 8604
+hostname: 20161212-102137
+
+2019-03-22 11:37:32,062 ERROR 15340 [-/127.0.0.1/-/84ms POST /backend/v1/friendlink/add] nodejs.TypeError: Cannot read property 'addFriendLink' of undefined
+    at FriendLinkController.addFriendLink (C:\Users\Administrator\Desktop\API\app\controller\backend\friendlink.js:29:50)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 15340
+hostname: 20161212-102137
+
+2019-03-22 11:38:46,298 ERROR 13432 [-/127.0.0.1/-/43ms POST /backend/v1/friendlink/add] nodejs.TypeError: Cannot read property 'findOne' of undefined
+    at FriendLinkService.checkData (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:36:58)
+    at FriendLinkService.checkArtcle (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:46:36)
+    at FriendLinkService.addFriendLink (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:97:43)
+    at FriendLinkController.addFriendLink (C:\Users\Administrator\Desktop\API\app\controller\backend\friendlink.js:29:50)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 13432
+hostname: 20161212-102137
+
+2019-03-22 12:45:04,527 ERROR 10980 nodejs.ClusterClientNoResponseError: client no response in 459274ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 10980
+hostname: 20161212-102137
+
+2019-03-22 12:48:24,693 ERROR 10980 nodejs.ClusterClientNoResponseError: client no response in 73525ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 10980
+hostname: 20161212-102137
+
+2019-03-22 12:51:04,768 ERROR 10980 nodejs.ClusterClientNoResponseError: client no response in 77849ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 10980
+hostname: 20161212-102137
+
+2019-03-22 12:51:58,800 ERROR 1660 [-/127.0.0.1/-/3062ms POST /backend/v1/friendlink/add] nodejs.TypeError: Cannot read property 'findOne' of undefined
+    at FriendLinkService.checkData (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:36:58)
+    at FriendLinkService.checkArtcle (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:46:36)
+    at FriendLinkService.addFriendLink (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:97:43)
+    at FriendLinkController.addFriendLink (C:\Users\Administrator\Desktop\API\app\controller\backend\friendlink.js:29:50)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 1660
+hostname: 20161212-102137
+
+2019-03-22 12:57:09,565 ERROR 15524 nodejs.ClusterClientNoResponseError: client no response in 76587ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 15524
+hostname: 20161212-102137
+
+2019-03-22 12:57:50,956 ERROR 7388 [-/127.0.0.1/-/114350ms POST /backend/v1/friendlink/add] nodejs.TypeError: Cannot read property 'findOne' of undefined
+    at FriendLinkService.checkData (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:36:58)
+    at FriendLinkService.checkArtcle (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:46:36)
+    at FriendLinkService.addFriendLink (C:\Users\Administrator\Desktop\API\app\service\friendlink.js:97:43)
+    at FriendLinkController.addFriendLink (C:\Users\Administrator\Desktop\API\app\controller\backend\friendlink.js:29:50)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 7388
+hostname: 20161212-102137
+
+2019-03-22 12:57:53,832 ERROR 7388 [-/127.0.0.1/-/5ms POST /backend/v1/sensitivewords/add] nodejs.TypeError: Cannot read property 'findOne' of undefined
+    at SensitiveWordsService.checkData (C:\Users\Administrator\Desktop\API\app\service\sensitivewords.js:32:62)
+    at SensitiveWordsService.checkArtcle (C:\Users\Administrator\Desktop\API\app\service\sensitivewords.js:42:36)
+    at SensitiveWordsService.addSensitiveWords (C:\Users\Administrator\Desktop\API\app\service\sensitivewords.js:93:43)
+    at SensitiveWordsController.addSensitiveWords (C:\Users\Administrator\Desktop\API\app\controller\backend\sensitivewords.js:29:54)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 7388
+hostname: 20161212-102137
+
+2019-03-22 12:59:37,595 ERROR 7388 [-/127.0.0.1/-/2ms POST /backend/v1/collegemsg/add] nodejs.TypeError: Cannot read property 'findOne' of undefined
+    at CollegeMsgService.checkData (C:\Users\Administrator\Desktop\API\app\service\collegemsg.js:38:58)
+    at CollegeMsgService.checkArtcle (C:\Users\Administrator\Desktop\API\app\service\collegemsg.js:48:36)
+    at CollegeMsgService.addCollegeMsg (C:\Users\Administrator\Desktop\API\app\service\collegemsg.js:98:43)
+    at CollegeMsgController.addCollegeMsg (C:\Users\Administrator\Desktop\API\app\controller\backend\collegemsg.js:29:50)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 7388
+hostname: 20161212-102137
+
+2019-03-22 13:01:38,468 ERROR 8688 [-/127.0.0.1/-/82ms POST /backend/v1/collegemsg/add] nodejs.TypeError: Cannot read property 'findOne' of undefined
+    at CollegeMsgService.checkData (C:\Users\Administrator\Desktop\API\app\service\collegemsg.js:38:58)
+    at CollegeMsgService.checkArtcle (C:\Users\Administrator\Desktop\API\app\service\collegemsg.js:48:36)
+    at CollegeMsgService.addCollegeMsg (C:\Users\Administrator\Desktop\API\app\service\collegemsg.js:98:43)
+    at CollegeMsgController.addCollegeMsg (C:\Users\Administrator\Desktop\API\app\controller\backend\collegemsg.js:29:50)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 8688
+hostname: 20161212-102137
+
+2019-03-22 13:04:06,908 ERROR 2420 nodejs.ClusterClientNoResponseError: client no response in 75294ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 2420
+hostname: 20161212-102137
+
+2019-03-22 13:06:23,886 ERROR 7692 [-/127.0.0.1/-/11281ms POST /backend/v1/collegemsg/add] nodejs.TypeError: Cannot read property 'findOne' of undefined
+    at CollegeMsgService.checkData (C:\Users\Administrator\Desktop\API\app\service\collegemsg.js:38:58)
+    at CollegeMsgService.checkArtcle (C:\Users\Administrator\Desktop\API\app\service\collegemsg.js:48:36)
+    at CollegeMsgService.addCollegeMsg (C:\Users\Administrator\Desktop\API\app\service\collegemsg.js:98:43)
+    at CollegeMsgController.addCollegeMsg (C:\Users\Administrator\Desktop\API\app\controller\backend\collegemsg.js:29:50)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 7692
+hostname: 20161212-102137
+
+2019-03-22 14:20:45,625 ERROR 2420 nodejs.ClusterClientNoResponseError: client no response in 1914218ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 2420
+hostname: 20161212-102137
+
+2019-03-22 14:44:06,695 ERROR 2420 nodejs.ClusterClientNoResponseError: client no response in 79595ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 2420
+hostname: 20161212-102137
+
+2019-03-22 14:45:07,357 ERROR 7692 [-/127.0.0.1/-/138628ms POST /backend/v1/collegemsg/add] nodejs.TypeError: Cannot read property 'findOne' of undefined
+    at CollegeMsgService.checkData (C:\Users\Administrator\Desktop\API\app\service\collegemsg.js:38:58)
+    at CollegeMsgService.checkArtcle (C:\Users\Administrator\Desktop\API\app\service\collegemsg.js:48:36)
+    at CollegeMsgService.addCollegeMsg (C:\Users\Administrator\Desktop\API\app\service\collegemsg.js:98:43)
+    at CollegeMsgController.addCollegeMsg (C:\Users\Administrator\Desktop\API\app\controller\backend\collegemsg.js:29:50)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 7692
+hostname: 20161212-102137
+
+2019-03-22 14:55:02,016 ERROR 7692 [-/127.0.0.1/-/6ms POST /backend/v1/sensitivewords/add] nodejs.TypeError: Cannot read property 'findOne' of undefined
+    at SensitiveWordsService.checkData (C:\Users\Administrator\Desktop\API\app\service\sensitivewords.js:32:62)
+    at SensitiveWordsService.checkArtcle (C:\Users\Administrator\Desktop\API\app\service\sensitivewords.js:42:36)
+    at SensitiveWordsService.addSensitiveWords (C:\Users\Administrator\Desktop\API\app\service\sensitivewords.js:93:43)
+    at SensitiveWordsController.addSensitiveWords (C:\Users\Administrator\Desktop\API\app\controller\backend\sensitivewords.js:29:54)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 7692
+hostname: 20161212-102137
+
+2019-03-22 14:58:46,180 ERROR 14652 [-/127.0.0.1/-/65ms POST /backend/v1/sensitivewords/add] nodejs.TypeError: Cannot read property 'findOne' of undefined
+    at SensitiveWordsService.checkData (C:\Users\Administrator\Desktop\API\app\service\sensitivewords.js:32:62)
+    at SensitiveWordsService.checkArtcle (C:\Users\Administrator\Desktop\API\app\service\sensitivewords.js:42:36)
+    at SensitiveWordsService.addSensitiveWords (C:\Users\Administrator\Desktop\API\app\service\sensitivewords.js:93:43)
+    at SensitiveWordsController.addSensitiveWords (C:\Users\Administrator\Desktop\API\app\controller\backend\sensitivewords.js:29:54)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 14652
+hostname: 20161212-102137
+
+2019-03-22 15:00:02,529 ERROR 7988 nodejs.ClusterClientNoResponseError: client no response in 74593ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 7988
+hostname: 20161212-102137
+
+2019-03-22 15:01:25,433 ERROR 14880 [-/127.0.0.1/-/55ms POST /backend/v1/sensitivewords/add] nodejs.TypeError: Cannot read property 'findOne' of undefined
+    at SensitiveWordsService.checkData (C:\Users\Administrator\Desktop\API\app\service\sensitivewords.js:32:62)
+    at SensitiveWordsService.checkArtcle (C:\Users\Administrator\Desktop\API\app\service\sensitivewords.js:42:36)
+    at SensitiveWordsService.addSensitiveWords (C:\Users\Administrator\Desktop\API\app\service\sensitivewords.js:93:43)
+    at SensitiveWordsController.addSensitiveWords (C:\Users\Administrator\Desktop\API\app\controller\backend\sensitivewords.js:29:54)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 14880
+hostname: 20161212-102137
+
+2019-03-22 15:34:50,353 ERROR 13172 [-/127.0.0.1/-/72ms POST /backend/v1/sensitivewords/add] nodejs.TypeError: Cannot read property 'findOne' of undefined
+    at SensitiveWordsService.checkData (C:\Users\Administrator\Desktop\API\app\service\sensitivewords.js:32:62)
+    at SensitiveWordsService.checkArtcle (C:\Users\Administrator\Desktop\API\app\service\sensitivewords.js:42:36)
+    at SensitiveWordsService.addSensitiveWords (C:\Users\Administrator\Desktop\API\app\service\sensitivewords.js:93:43)
+    at SensitiveWordsController.addSensitiveWords (C:\Users\Administrator\Desktop\API\app\controller\backend\sensitivewords.js:29:54)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 13172
+hostname: 20161212-102137
+
+2019-03-22 15:41:55,360 ERROR 10760 nodejs.ClusterClientNoResponseError: client no response in 74945ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 10760
+hostname: 20161212-102137
+
+2019-03-22 15:52:11,668 ERROR 13560 [-/127.0.0.1/-/8598ms POST /backend/v1/sensitivewords/add] nodejs.TypeError: Cannot read property 'findOne' of undefined
+    at SensitiveWordsService.checkData (C:\Users\Administrator\Desktop\API\app\service\sensitivewords.js:32:62)
+    at SensitiveWordsService.checkArtcle (C:\Users\Administrator\Desktop\API\app\service\sensitivewords.js:42:36)
+    at SensitiveWordsService.addSensitiveWords (C:\Users\Administrator\Desktop\API\app\service\sensitivewords.js:93:43)
+    at SensitiveWordsController.addSensitiveWords (C:\Users\Administrator\Desktop\API\app\controller\backend\sensitivewords.js:29:54)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 13560
+hostname: 20161212-102137
+
+2019-03-22 15:54:55,735 ERROR 13560 [-/127.0.0.1/-/2ms POST /backend/v1/sensitivewords/add] nodejs.TypeError: Cannot read property 'findOne' of undefined
+    at SensitiveWordsService.checkData (C:\Users\Administrator\Desktop\API\app\service\sensitivewords.js:32:62)
+    at SensitiveWordsService.checkArtcle (C:\Users\Administrator\Desktop\API\app\service\sensitivewords.js:42:36)
+    at SensitiveWordsService.addSensitiveWords (C:\Users\Administrator\Desktop\API\app\service\sensitivewords.js:93:43)
+    at SensitiveWordsController.addSensitiveWords (C:\Users\Administrator\Desktop\API\app\controller\backend\sensitivewords.js:29:54)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 13560
+hostname: 20161212-102137
+
+2019-03-22 15:57:09,254 ERROR 8580 nodejs.ClusterClientNoResponseError: client no response in 76116ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 8580
+hostname: 20161212-102137
+
+2019-03-22 16:06:08,569 ERROR 13356 [-/127.0.0.1/-/47ms POST /backend/v1/collegemsg/edit] nodejs.ReferenceError: cheaktitle is not defined
+    at CollegeMsgService.editCollegeMsg (C:\Users\Administrator\Desktop\API\app\service\collegemsg.js:138:13)
+    at CollegeMsgController.editCollegeMsg (C:\Users\Administrator\Desktop\API\app\controller\backend\collegemsg.js:41:50)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 13356
+hostname: 20161212-102137
+
+2019-03-22 16:06:11,692 ERROR 13356 [-/127.0.0.1/-/7ms POST /backend/v1/collegemsg/edit] nodejs.ReferenceError: cheaktitle is not defined
+    at CollegeMsgService.editCollegeMsg (C:\Users\Administrator\Desktop\API\app\service\collegemsg.js:138:13)
+    at CollegeMsgController.editCollegeMsg (C:\Users\Administrator\Desktop\API\app\controller\backend\collegemsg.js:41:50)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 13356
+hostname: 20161212-102137
+
+2019-03-22 16:09:49,289 ERROR 8580 nodejs.ClusterClientNoResponseError: client no response in 74397ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 8580
+hostname: 20161212-102137
+
+2019-03-25 13:53:04,637 ERROR 10168 nodejs.ClusterClientNoResponseError: client no response in 720698ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 10168
+hostname: 20161212-102137
+
+2019-03-25 15:08:46,934 ERROR 8472 [-/127.0.0.1/-/28ms POST /backend/v1/upload/upload] nodejs.TypeError: this.ServerResponse.createBySuccess is not a function
+    at UploadApiController.saveFile (C:\Users\Administrator\Desktop\API\app\controller\backend\uploadapicontroller.js:37:34)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 8472
+hostname: 20161212-102137
+
+2019-03-25 15:08:46,940 ERROR 8472 nodejs.ENOENTError: ENOENT: no such file or directory, open 'C:\Users\Administrator\Desktop\API\app\public\upload\image\微信图片_201901291418351553497726929.png' (uncaughtException throw 1 times on pid:8472)
+ENOENTError: ENOENT: no such file or directory, open 'C:\Users\Administrator\Desktop\API\app\public\upload\image\微信图片_201901291418351553497726929.png' (uncaughtException throw 1 times on pid:8472)
+errno: -4058
+code: "ENOENT"
+syscall: "open"
+path: "C:\\Users\\Administrator\\Desktop\\API\\app\\public\\upload\\image\\微信图片_201901291418351553497726929.png"
+name: "ENOENTError"
+pid: 8472
+hostname: 20161212-102137
+
+2019-03-25 15:37:04,962 ERROR 6184 [-/127.0.0.1/-/124ms POST /backend/v1/upload/savefile] nodejs.TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received type undefined
+    at assertPath (path.js:39:11)
+    at Object.extname (path.js:835:5)
+    at UploadApiController.saveFile (C:\Users\Administrator\Desktop\API\app\controller\backend\uploadapicontroller.js:24:24)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 6184
+hostname: 20161212-102137
+
+2019-03-25 15:37:51,679 ERROR 6184 [-/127.0.0.1/-/7ms POST /backend/v1/upload/savefile] nodejs.TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received type undefined
+    at assertPath (path.js:39:11)
+    at Object.extname (path.js:835:5)
+    at UploadApiController.saveFile (C:\Users\Administrator\Desktop\API\app\controller\backend\uploadapicontroller.js:24:24)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\API\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Desktop\API\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 6184
+hostname: 20161212-102137
+
+2019-03-25 15:41:21,310 ERROR 6184 [-/127.0.0.1/-/61ms POST /backend/v1/upload/upload] nodejs.TypeError: this.ServerResponse.createBySuccess is not a function
+    at UploadApiController.saveFile (C:\Users\Administrator\Desktop\API\app\controller\backend\uploadapicontroller.js:37:34)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 6184
+hostname: 20161212-102137
+
+2019-03-25 15:41:21,321 ERROR 6184 nodejs.ENOENTError: ENOENT: no such file or directory, open 'C:\Users\Administrator\Desktop\API\app\public\upload\image\微信图片_201901291418351553499681300.png' (uncaughtException throw 1 times on pid:6184)
+ENOENTError: ENOENT: no such file or directory, open 'C:\Users\Administrator\Desktop\API\app\public\upload\image\微信图片_201901291418351553499681300.png' (uncaughtException throw 1 times on pid:6184)
+errno: -4058
+code: "ENOENT"
+syscall: "open"
+path: "C:\\Users\\Administrator\\Desktop\\API\\app\\public\\upload\\image\\微信图片_201901291418351553499681300.png"
+name: "ENOENTError"
+pid: 6184
+hostname: 20161212-102137
+
+2019-03-26 09:38:52,536 ERROR 8872 nodejs.ClusterClientNoResponseError: client no response in 52777694ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 8872
+hostname: 20161212-102137
+

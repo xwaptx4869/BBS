@@ -1,0 +1,11 @@
+2019-04-12 07:50:57,290 INFO 13268 [egg-logrotator] agent logger reload: got log-reload message
+2019-04-12 09:26:42,095 ERROR 13268 nodejs.ClusterClientNoResponseError: client no response in 3902014ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 13268
+hostname: 20161212-102137
+

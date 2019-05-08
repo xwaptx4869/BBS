@@ -1,0 +1,116 @@
+2019-03-18 10:44:39,158 INFO 5360 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Documents\\Tencent Files\\1183927842\\FileRecv\\seekmosca_api\\logs\\seekmosca_api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"seekmosca_api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-03-18 10:44:39,257 INFO 5360 [egg-multipart] stream mode enable
+2019-03-18 10:44:40,413 INFO 5360 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\app\public
+2019-03-18 10:44:40,420 INFO 5360 [egg-security] use methodnoallow middleware
+2019-03-18 10:44:40,421 INFO 5360 [egg-security] use noopen middleware
+2019-03-18 10:44:40,423 INFO 5360 [egg-security] use nosniff middleware
+2019-03-18 10:44:40,424 INFO 5360 [egg-security] use xssProtection middleware
+2019-03-18 10:44:40,424 INFO 5360 [egg-security] use xframe middleware
+2019-03-18 10:44:40,425 INFO 5360 [egg-security] use dta middleware
+2019-03-18 10:44:40,425 INFO 5360 [egg-security] compose 6 middlewares into one security middleware
+2019-03-18 10:44:40,448 INFO 5360 [egg:core] dump config after load, 10ms
+2019-03-18 10:44:40,671 INFO 5360 [egg-watcher:application] watcher start success
+2019-03-18 10:44:40,741 INFO 5360 [egg:core] dump config after ready, 12ms
+2019-03-18 10:45:43,140 INFO 10292 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Documents\\Tencent Files\\1183927842\\FileRecv\\seekmosca_api\\logs\\seekmosca_api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"seekmosca_api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-03-18 10:45:43,216 INFO 10292 [egg-multipart] stream mode enable
+2019-03-18 10:45:44,371 INFO 10292 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\app\public
+2019-03-18 10:45:44,376 INFO 10292 [egg-security] use methodnoallow middleware
+2019-03-18 10:45:44,377 INFO 10292 [egg-security] use noopen middleware
+2019-03-18 10:45:44,378 INFO 10292 [egg-security] use nosniff middleware
+2019-03-18 10:45:44,379 INFO 10292 [egg-security] use xssProtection middleware
+2019-03-18 10:45:44,380 INFO 10292 [egg-security] use xframe middleware
+2019-03-18 10:45:44,381 INFO 10292 [egg-security] use dta middleware
+2019-03-18 10:45:44,381 INFO 10292 [egg-security] compose 6 middlewares into one security middleware
+2019-03-18 10:45:44,401 INFO 10292 [egg:core] dump config after load, 9ms
+2019-03-18 10:45:44,464 INFO 10292 [egg-watcher:application] watcher start success
+2019-03-18 10:45:44,509 INFO 10292 [egg:core] dump config after ready, 9ms
+2019-03-18 10:51:42,391 INFO 8708 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Documents\\Tencent Files\\1183927842\\FileRecv\\seekmosca_api\\logs\\seekmosca_api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"seekmosca_api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-03-18 10:51:42,458 INFO 8708 [egg-multipart] stream mode enable
+2019-03-18 10:51:43,060 INFO 8708 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\app\public
+2019-03-18 10:51:43,063 INFO 8708 [egg-security] use methodnoallow middleware
+2019-03-18 10:51:43,064 INFO 8708 [egg-security] use noopen middleware
+2019-03-18 10:51:43,065 INFO 8708 [egg-security] use nosniff middleware
+2019-03-18 10:51:43,066 INFO 8708 [egg-security] use xssProtection middleware
+2019-03-18 10:51:43,067 INFO 8708 [egg-security] use xframe middleware
+2019-03-18 10:51:43,068 INFO 8708 [egg-security] use dta middleware
+2019-03-18 10:51:43,068 INFO 8708 [egg-security] compose 6 middlewares into one security middleware
+2019-03-18 10:51:43,086 INFO 8708 [egg:core] dump config after load, 9ms
+2019-03-18 10:51:43,127 INFO 8708 [egg-watcher:application] watcher start success
+2019-03-18 10:51:43,178 INFO 8708 [egg:core] dump config after ready, 11ms
+2019-03-18 10:55:48,352 INFO 8076 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Documents\\Tencent Files\\1183927842\\FileRecv\\seekmosca_api\\logs\\seekmosca_api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"seekmosca_api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-03-18 10:55:48,453 INFO 8076 [egg-multipart] stream mode enable
+2019-03-18 10:55:49,721 INFO 8076 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\app\public
+2019-03-18 10:55:49,727 INFO 8076 [egg-security] use methodnoallow middleware
+2019-03-18 10:55:49,728 INFO 8076 [egg-security] use noopen middleware
+2019-03-18 10:55:49,731 INFO 8076 [egg-security] use nosniff middleware
+2019-03-18 10:55:49,732 INFO 8076 [egg-security] use xssProtection middleware
+2019-03-18 10:55:49,733 INFO 8076 [egg-security] use xframe middleware
+2019-03-18 10:55:49,734 INFO 8076 [egg-security] use dta middleware
+2019-03-18 10:55:49,734 INFO 8076 [egg-security] compose 6 middlewares into one security middleware
+2019-03-18 10:55:49,762 INFO 8076 [egg:core] dump config after load, 12ms
+2019-03-18 10:55:49,805 INFO 8076 [egg-watcher:application] watcher start success
+2019-03-18 10:55:49,921 INFO 8076 [egg:core] dump config after ready, 11ms
+2019-03-18 11:06:54,296 INFO 10608 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Documents\\Tencent Files\\1183927842\\FileRecv\\seekmosca_api\\logs\\seekmosca_api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"seekmosca_api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-03-18 11:06:54,411 INFO 10608 [egg-multipart] stream mode enable
+2019-03-18 11:06:55,951 INFO 10608 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\app\public
+2019-03-18 11:06:55,957 INFO 10608 [egg-security] use methodnoallow middleware
+2019-03-18 11:06:55,959 INFO 10608 [egg-security] use noopen middleware
+2019-03-18 11:06:55,961 INFO 10608 [egg-security] use nosniff middleware
+2019-03-18 11:06:55,962 INFO 10608 [egg-security] use xssProtection middleware
+2019-03-18 11:06:55,964 INFO 10608 [egg-security] use xframe middleware
+2019-03-18 11:06:55,965 INFO 10608 [egg-security] use dta middleware
+2019-03-18 11:06:55,965 INFO 10608 [egg-security] compose 6 middlewares into one security middleware
+2019-03-18 11:06:56,005 INFO 10608 [egg:core] dump config after load, 18ms
+2019-03-18 11:06:56,069 INFO 10608 [egg-watcher:application] watcher start success
+2019-03-18 11:06:58,636 INFO 10608 [egg:core] dump config after ready, 7ms
+2019-03-18 11:08:01,912 INFO 11432 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Documents\\Tencent Files\\1183927842\\FileRecv\\seekmosca_api\\logs\\seekmosca_api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"seekmosca_api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-03-18 11:08:02,041 INFO 11432 [egg-multipart] stream mode enable
+2019-03-18 11:08:03,224 INFO 11432 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\app\public
+2019-03-18 11:08:03,230 INFO 11432 [egg-security] use methodnoallow middleware
+2019-03-18 11:08:03,232 INFO 11432 [egg-security] use noopen middleware
+2019-03-18 11:08:03,234 INFO 11432 [egg-security] use nosniff middleware
+2019-03-18 11:08:03,236 INFO 11432 [egg-security] use xssProtection middleware
+2019-03-18 11:08:03,237 INFO 11432 [egg-security] use xframe middleware
+2019-03-18 11:08:03,239 INFO 11432 [egg-security] use dta middleware
+2019-03-18 11:08:03,239 INFO 11432 [egg-security] compose 6 middlewares into one security middleware
+2019-03-18 11:08:03,271 INFO 11432 [egg:core] dump config after load, 11ms
+2019-03-18 11:08:03,369 INFO 11432 [egg-watcher:application] watcher start success
+2019-03-18 11:08:05,603 INFO 11432 [egg:core] dump config after ready, 8ms
+2019-03-18 11:18:44,875 INFO 8164 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Documents\\Tencent Files\\1183927842\\FileRecv\\seekmosca_api\\logs\\seekmosca_api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"seekmosca_api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-03-18 11:18:45,021 INFO 8164 [egg-multipart] stream mode enable
+2019-03-18 11:18:46,342 INFO 8164 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\app\public
+2019-03-18 11:18:46,346 INFO 8164 [egg-security] use methodnoallow middleware
+2019-03-18 11:18:46,348 INFO 8164 [egg-security] use noopen middleware
+2019-03-18 11:18:46,350 INFO 8164 [egg-security] use nosniff middleware
+2019-03-18 11:18:46,351 INFO 8164 [egg-security] use xssProtection middleware
+2019-03-18 11:18:46,352 INFO 8164 [egg-security] use xframe middleware
+2019-03-18 11:18:46,353 INFO 8164 [egg-security] use dta middleware
+2019-03-18 11:18:46,353 INFO 8164 [egg-security] compose 6 middlewares into one security middleware
+2019-03-18 11:18:46,380 INFO 8164 [egg:core] dump config after load, 10ms
+2019-03-18 11:18:46,465 INFO 8164 [egg-watcher:application] watcher start success
+2019-03-18 11:23:36,246 INFO 12040 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Documents\\Tencent Files\\1183927842\\FileRecv\\seekmosca_api\\logs\\seekmosca_api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"seekmosca_api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-03-18 11:23:36,331 INFO 12040 [egg-multipart] stream mode enable
+2019-03-18 11:23:37,711 INFO 12040 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\app\public
+2019-03-18 11:23:37,717 INFO 12040 [egg-security] use methodnoallow middleware
+2019-03-18 11:23:37,719 INFO 12040 [egg-security] use noopen middleware
+2019-03-18 11:23:37,721 INFO 12040 [egg-security] use nosniff middleware
+2019-03-18 11:23:37,722 INFO 12040 [egg-security] use xssProtection middleware
+2019-03-18 11:23:37,724 INFO 12040 [egg-security] use xframe middleware
+2019-03-18 11:23:37,725 INFO 12040 [egg-security] use dta middleware
+2019-03-18 11:23:37,725 INFO 12040 [egg-security] compose 6 middlewares into one security middleware
+2019-03-18 11:23:37,759 INFO 12040 [egg:core] dump config after load, 14ms
+2019-03-18 11:23:37,866 INFO 12040 [egg-watcher:application] watcher start success
+2019-03-18 11:23:39,544 INFO 12040 [egg:core] dump config after ready, 10ms
+2019-03-18 11:25:00,107 INFO 7136 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Documents\\Tencent Files\\1183927842\\FileRecv\\seekmosca_api\\logs\\seekmosca_api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"seekmosca_api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-03-18 11:25:00,271 INFO 7136 [egg-multipart] stream mode enable
+2019-03-18 11:25:01,699 INFO 7136 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Documents\Tencent Files\1183927842\FileRecv\seekmosca_api\app\public
+2019-03-18 11:25:01,706 INFO 7136 [egg-security] use methodnoallow middleware
+2019-03-18 11:25:01,708 INFO 7136 [egg-security] use noopen middleware
+2019-03-18 11:25:01,710 INFO 7136 [egg-security] use nosniff middleware
+2019-03-18 11:25:01,711 INFO 7136 [egg-security] use xssProtection middleware
+2019-03-18 11:25:01,712 INFO 7136 [egg-security] use xframe middleware
+2019-03-18 11:25:01,716 INFO 7136 [egg-security] use dta middleware
+2019-03-18 11:25:01,716 INFO 7136 [egg-security] compose 6 middlewares into one security middleware
+2019-03-18 11:25:01,749 INFO 7136 [egg:core] dump config after load, 15ms
+2019-03-18 11:25:01,858 INFO 7136 [egg-watcher:application] watcher start success
+2019-03-18 11:25:04,072 INFO 7136 [egg:core] dump config after ready, 10ms

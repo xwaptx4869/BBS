@@ -1,0 +1,85 @@
+2019-03-26 10:24:58,681 ERROR 13728 nodejs.ENOENTError: ENOENT: no such file or directory, open 'C:\Users\Administrator\Desktop\API\app\public\upload\image\pzhuBBS1553567098525.png' (uncaughtException throw 1 times on pid:13728)
+ENOENTError: ENOENT: no such file or directory, open 'C:\Users\Administrator\Desktop\API\app\public\upload\image\pzhuBBS1553567098525.png' (uncaughtException throw 1 times on pid:13728)
+errno: -4058
+code: "ENOENT"
+syscall: "open"
+path: "C:\\Users\\Administrator\\Desktop\\API\\app\\public\\upload\\image\\pzhuBBS1553567098525.png"
+name: "ENOENTError"
+pid: 13728
+hostname: 20161212-102137
+
+2019-03-26 10:24:59,202 ERROR 13728 [-/127.0.0.1/-/2256ms POST /backend/v1/upload/upload] nodejs.TypeError: this.ServerResponse.createBySuccess is not a function
+    at UploadApiController.saveFile (C:\Users\Administrator\Desktop\API\app\controller\backend\uploadapicontroller.js:37:34)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 13728
+hostname: 20161212-102137
+
+2019-03-26 10:55:24,695 ERROR 13092 nodejs.ClusterClientNoResponseError: client no response in 60547ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 13092
+hostname: 20161212-102137
+
+2019-03-26 12:58:06,559 ERROR 13092 nodejs.ClusterClientNoResponseError: client no response in 2756865ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 13092
+hostname: 20161212-102137
+
+2019-03-26 13:52:23,571 ERROR 13092 nodejs.ClusterClientNoResponseError: client no response in 696809ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 13092
+hostname: 20161212-102137
+
+2019-03-26 13:59:47,575 ERROR 13092 nodejs.ClusterClientNoResponseError: client no response in 343768ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 13092
+hostname: 20161212-102137
+
+2019-03-26 16:10:25,171 ERROR 11412 [-/127.0.0.1/-/56ms GET /backend/v1/article/2] nodejs.ReferenceError: articles is not defined
+    at ArticleService.getOneArticle (C:\Users\Administrator\Desktop\API\app\service\article.js:240:33)
+
+pid: 11412
+hostname: 20161212-102137
+
+2019-03-26 16:13:59,277 ERROR 8668 [-/127.0.0.1/-/37ms GET /backend/v1/article/5] nodejs.ReferenceError: i is not defined
+    at ArticleService.getOneArticle (C:\Users\Administrator\Desktop\API\app\service\article.js:241:43)
+
+pid: 8668
+hostname: 20161212-102137
+
+2019-03-26 16:14:46,543 ERROR 12920 [-/127.0.0.1/-/184ms GET /backend/v1/article/5] nodejs.ReferenceError: i is not defined
+    at ArticleService.getOneArticle (C:\Users\Administrator\Desktop\API\app\service\article.js:256:28)
+
+pid: 12920
+hostname: 20161212-102137
+
+2019-03-27 08:00:18,884 ERROR 13092 nodejs.ClusterClientNoResponseError: client no response in 48719526ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 13092
+hostname: 20161212-102137
+

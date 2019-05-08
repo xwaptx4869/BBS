@@ -1,0 +1,96 @@
+2019-03-27 08:00:18,708 INFO 5844 [egg-logrotator] app logger reload: got log-reload message
+2019-03-27 15:17:53,723 INFO 11520 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-03-27 15:17:53,841 INFO 11520 [egg-multipart] stream mode enable
+2019-03-27 15:17:58,486 INFO 11520 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\API\app\public
+2019-03-27 15:17:58,490 INFO 11520 [egg-security] use methodnoallow middleware
+2019-03-27 15:17:58,492 INFO 11520 [egg-security] use noopen middleware
+2019-03-27 15:17:58,493 INFO 11520 [egg-security] use nosniff middleware
+2019-03-27 15:17:58,494 INFO 11520 [egg-security] use xssProtection middleware
+2019-03-27 15:17:58,495 INFO 11520 [egg-security] use xframe middleware
+2019-03-27 15:17:58,496 INFO 11520 [egg-security] use dta middleware
+2019-03-27 15:17:58,496 INFO 11520 [egg-security] compose 6 middlewares into one security middleware
+2019-03-27 15:17:59,321 INFO 11520 [egg:core] dump config after load, 9ms
+2019-03-27 15:17:59,363 INFO 11520 [egg-watcher:application] watcher start success
+2019-03-27 15:17:59,656 INFO 11520 [egg:core] dump config after ready, 13ms
+2019-03-27 15:19:26,911 INFO 15344 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-03-27 15:19:27,241 INFO 15344 [egg-multipart] stream mode enable
+2019-03-27 15:19:28,474 INFO 15344 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\API\app\public
+2019-03-27 15:19:28,480 INFO 15344 [egg-security] use methodnoallow middleware
+2019-03-27 15:19:28,482 INFO 15344 [egg-security] use noopen middleware
+2019-03-27 15:19:28,485 INFO 15344 [egg-security] use nosniff middleware
+2019-03-27 15:19:28,486 INFO 15344 [egg-security] use xssProtection middleware
+2019-03-27 15:19:28,487 INFO 15344 [egg-security] use xframe middleware
+2019-03-27 15:19:28,489 INFO 15344 [egg-security] use dta middleware
+2019-03-27 15:19:28,489 INFO 15344 [egg-security] compose 6 middlewares into one security middleware
+2019-03-27 15:19:28,576 INFO 15344 [egg:core] dump config after load, 19ms
+2019-03-27 15:19:28,683 INFO 15344 [egg-watcher:application] watcher start success
+2019-03-27 15:19:29,424 INFO 15344 [egg:core] dump config after ready, 14ms
+2019-03-27 16:11:03,615 INFO 9388 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-03-27 16:11:03,748 INFO 9388 [egg-multipart] stream mode enable
+2019-03-27 16:11:08,604 INFO 9388 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\API\app\public
+2019-03-27 16:11:08,609 INFO 9388 [egg-security] use methodnoallow middleware
+2019-03-27 16:11:08,612 INFO 9388 [egg-security] use noopen middleware
+2019-03-27 16:11:08,615 INFO 9388 [egg-security] use nosniff middleware
+2019-03-27 16:11:08,617 INFO 9388 [egg-security] use xssProtection middleware
+2019-03-27 16:11:08,619 INFO 9388 [egg-security] use xframe middleware
+2019-03-27 16:11:08,621 INFO 9388 [egg-security] use dta middleware
+2019-03-27 16:11:08,621 INFO 9388 [egg-security] compose 6 middlewares into one security middleware
+2019-03-27 16:11:08,854 INFO 9388 [egg:core] dump config after load, 31ms
+2019-03-27 16:11:09,201 INFO 9388 [egg-watcher:application] watcher start success
+2019-03-27 16:11:09,484 INFO 9388 [egg:core] dump config after ready, 183ms
+2019-03-27 17:04:45,184 INFO 2276 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-03-27 17:04:45,403 INFO 2276 [egg-multipart] stream mode enable
+2019-03-27 17:04:50,515 INFO 2276 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\API\app\public
+2019-03-27 17:04:50,520 INFO 2276 [egg-security] use methodnoallow middleware
+2019-03-27 17:04:50,521 INFO 2276 [egg-security] use noopen middleware
+2019-03-27 17:04:50,523 INFO 2276 [egg-security] use nosniff middleware
+2019-03-27 17:04:50,524 INFO 2276 [egg-security] use xssProtection middleware
+2019-03-27 17:04:50,526 INFO 2276 [egg-security] use xframe middleware
+2019-03-27 17:04:50,527 INFO 2276 [egg-security] use dta middleware
+2019-03-27 17:04:50,527 INFO 2276 [egg-security] compose 6 middlewares into one security middleware
+2019-03-27 17:04:50,712 INFO 2276 [egg:core] dump config after load, 28ms
+2019-03-27 17:04:51,247 INFO 2276 [egg-watcher:application] watcher start success
+2019-03-27 17:04:51,261 INFO 2276 [egg:core] dump config after ready, 11ms
+2019-03-27 17:06:54,517 INFO 9388 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-03-27 17:06:54,654 INFO 9388 [egg-multipart] stream mode enable
+2019-03-27 17:06:55,839 INFO 9388 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\API\app\public
+2019-03-27 17:06:55,843 INFO 9388 [egg-security] use methodnoallow middleware
+2019-03-27 17:06:55,843 INFO 9388 [egg-security] use noopen middleware
+2019-03-27 17:06:55,845 INFO 9388 [egg-security] use nosniff middleware
+2019-03-27 17:06:55,846 INFO 9388 [egg-security] use xssProtection middleware
+2019-03-27 17:06:55,847 INFO 9388 [egg-security] use xframe middleware
+2019-03-27 17:06:55,847 INFO 9388 [egg-security] use dta middleware
+2019-03-27 17:06:55,848 INFO 9388 [egg-security] compose 6 middlewares into one security middleware
+2019-03-27 17:06:55,896 INFO 9388 [egg:core] dump config after load, 14ms
+2019-03-27 17:06:55,936 INFO 9388 [egg-watcher:application] watcher start success
+2019-03-27 17:06:57,015 INFO 9388 [egg:core] dump config after ready, 18ms
+2019-03-27 17:08:10,881 INFO 13664 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-03-27 17:08:10,968 INFO 13664 [egg-multipart] stream mode enable
+2019-03-27 17:08:12,845 INFO 13664 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\API\app\public
+2019-03-27 17:08:12,851 INFO 13664 [egg-security] use methodnoallow middleware
+2019-03-27 17:08:12,853 INFO 13664 [egg-security] use noopen middleware
+2019-03-27 17:08:12,856 INFO 13664 [egg-security] use nosniff middleware
+2019-03-27 17:08:12,857 INFO 13664 [egg-security] use xssProtection middleware
+2019-03-27 17:08:12,859 INFO 13664 [egg-security] use xframe middleware
+2019-03-27 17:08:12,861 INFO 13664 [egg-security] use dta middleware
+2019-03-27 17:08:12,861 INFO 13664 [egg-security] compose 6 middlewares into one security middleware
+2019-03-27 17:08:12,959 INFO 13664 [egg:core] dump config after load, 26ms
+2019-03-27 17:08:13,105 INFO 13664 [egg-watcher:application] watcher start success
+2019-03-27 17:08:13,234 INFO 13664 [egg:core] dump config after ready, 11ms
+2019-03-27 17:30:58,532 INFO 8600 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-03-27 17:30:58,608 INFO 8600 [egg-multipart] stream mode enable
+2019-03-27 17:30:59,629 INFO 8600 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\API\app\public
+2019-03-27 17:30:59,635 INFO 8600 [egg-security] use methodnoallow middleware
+2019-03-27 17:30:59,637 INFO 8600 [egg-security] use noopen middleware
+2019-03-27 17:30:59,639 INFO 8600 [egg-security] use nosniff middleware
+2019-03-27 17:30:59,640 INFO 8600 [egg-security] use xssProtection middleware
+2019-03-27 17:30:59,642 INFO 8600 [egg-security] use xframe middleware
+2019-03-27 17:30:59,643 INFO 8600 [egg-security] use dta middleware
+2019-03-27 17:30:59,643 INFO 8600 [egg-security] compose 6 middlewares into one security middleware
+2019-03-27 17:30:59,733 INFO 8600 [egg:core] dump config after load, 20ms
+2019-03-27 17:30:59,781 INFO 8600 [egg-watcher:application] watcher start success
+2019-03-27 17:31:00,029 INFO 8600 [egg:core] dump config after ready, 101ms
+2019-03-28 09:38:10,980 WARN 8600 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-03-28 09:38:29,518 INFO 8600 [egg-logrotator] clean all log before 31 days
+2019-03-28 09:38:33,504 INFO 8600 [egg-logrotator] broadcast log-reload
+2019-03-28 09:38:33,504 INFO 8600 [egg-logrotator] rotate files success by DayRotator, files ["C:\\Users\\Administrator\\Desktop\\API\\logs\\api\\common-error.log -> C:\\Users\\Administrator\\Desktop\\API\\logs\\api\\common-error.log.2019-03-27","C:\\Users\\Administrator\\Desktop\\API\\logs\\api\\api-web.log -> C:\\Users\\Administrator\\Desktop\\API\\logs\\api\\api-web.log.2019-03-27","C:\\Users\\Administrator\\Desktop\\API\\logs\\api\\egg-web.log -> C:\\Users\\Administrator\\Desktop\\API\\logs\\api\\egg-web.log.2019-03-27","C:\\Users\\Administrator\\Desktop\\API\\logs\\api\\egg-schedule.log -> C:\\Users\\Administrator\\Desktop\\API\\logs\\api\\egg-schedule.log.2019-03-27","C:\\Users\\Administrator\\Desktop\\API\\logs\\api\\egg-agent.log -> C:\\Users\\Administrator\\Desktop\\API\\logs\\api\\egg-agent.log.2019-03-27"]
