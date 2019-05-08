@@ -1,8 +1,6 @@
 <template>
   <div class="page">
-    <div class="title">
-      <h1>{{user.name}}</h1>
-      <span>{{user.mood}}</span> </div>
+      <page-header :data="articleData.data"></page-header>
     <div class="article-box">
       <div class="article" v-for="item in articles " :key="item.id">
         <div v-if="item.imgSrc" class="img-box" :style="{ backgroundImage:'url('+ item.imgSrc+')' }" >
@@ -10,10 +8,11 @@
         <h2>{{item.title}}</h2>
         <p>{{item.introduction}}</p>
         <div class="article-msg">
+           <i class="el-icon-s-custom"></i>
           <span class="name">{{item.username}}</span>
           <i class="el-icon-time"></i>
           <span class="time">{{item.uptime}}</span>
-          <i class="el-icon-edit-outline"></i>
+          <i class="el-icon-chat-dot-square"></i>
           <span class="comment">{{ item.commentnum ?'评论数:'+item.commentnum : '暂无评论' }}</span>
         </div>
       </div>
@@ -21,12 +20,18 @@
   </div>
 </template>
 <script>
+import pageHeader from "../components/Header";
 export default {
+  components:{
+    pageHeader
+  },
   data() {
     return {
-      user:{
-        name:'许如清',
-        mood:'好梦向来易醒。'
+      articleData:{
+        data:{
+          title:'骚年',
+          mood:'好梦向来易醒'
+        }
       },
       articles: [
         {
@@ -88,20 +93,6 @@ export default {
 .page {
    border-right: 1px solid #dee5e7;
    box-sizing: border-box;
-  .title {
-    width: 100%;
-    border-bottom: 1px solid #dee5e7;
-    background-color: #f9f9f9;
-    padding:30px;
-    box-sizing: border-box;
-    h1{
-      font-size: 24px;
-      font-weight: 300;
-    }
-    span{
-      color: #a0a0a0;
-    }
-  }
   .article-box {
     width: 100%;
     box-sizing: border-box;
