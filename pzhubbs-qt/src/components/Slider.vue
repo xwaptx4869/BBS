@@ -28,7 +28,7 @@
       active-text-color="#fff"
     >
       <div class="nav head">导航</div>
-      <el-menu-item index="1">
+      <el-menu-item index="1" @click="$router.push( { name:'home'})">
         <i class="el-icon-tickets"></i>
         <span slot="title">首页</span>
         

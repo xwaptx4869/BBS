@@ -10,6 +10,9 @@
           <transition name="move" mode="out-in">
             <router-view :key="$route.fullPath"></router-view>
           </transition>
+          <div class="footer-box">
+            <span>Copyright©2019 PzhuBBS. All Rights Reserved</span>
+          </div>
         </div>
         <div class="right-box">
           <side></side>
@@ -36,6 +39,9 @@ export default {
     side,
     slider,
     login
+  },
+  created(){
+  
   },
   methods:{
     getVisible(visible,title){
@@ -75,6 +81,22 @@ export default {
   .content-box {
     width: 960px;
     display: inline-block;
+    padding-bottom: 60px;
+    .footer-box{
+      position: absolute;
+      bottom: 0px;
+      left: 200px;
+      right: 240px;
+      border-top: 1px solid #dee5e7;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      background-color: #dadada;
+      span{
+        color: #1c2b36;
+        font-size: 12px;
+      }
+    }
   }
   .right-box {
     width: 240px;
@@ -82,7 +104,7 @@ export default {
     float: right;
   }
 }
-  @media only screen and (max-width: 1500px) {
+  @media only screen and (max-width: 1400px) {
     .content{
       width: 1170px;
       .content-box {

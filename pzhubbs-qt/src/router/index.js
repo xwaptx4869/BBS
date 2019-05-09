@@ -10,8 +10,14 @@ export default new Router({
       component:resolve => require(['@/components/Page.vue'],resolve),
       children:[
         {
+          name:'home',
           path:'/',
           component:resolve =>require(['@/components/Home.vue'],resolve)
+        },
+        {
+          name:"articleDetails",
+          path:'/articleDetails/:id',
+          component:resolve =>require(['@/views/ArticleManage.vue'],resolve)
         }
       ]
     }

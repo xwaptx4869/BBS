@@ -1,6 +1,6 @@
 <template>
   <div class="aside">
-    <el-card :style="{marginBottom:'10px'}" :body-style="{ padding: '0px' }">
+    <el-card :style="{marginBottom:'1px'}" :body-style="{ padding: '0px' }">
       <div slot="header">
         <span>热门文章</span>
       </div>
@@ -10,16 +10,16 @@
             <i class="el-icon-medal"></i>
             {{item.title}}
           </div>
-         <div class="msg">
-              <i class="el-icon-chat-dot-square"></i>
-          <span class="comment">{{ item.commentnum}}</span>
-          <i class="el-icon-view"></i>
-          <span class="viewnum">{{item.viewnum}}</span>
-         </div>
+          <div class="msg">
+            <i class="el-icon-chat-dot-square"></i>
+            <span class="comment">{{ item.commentnum}}</span>
+            <i class="el-icon-view"></i>
+            <span class="viewnum">{{item.viewnum}}</span>
+          </div>
         </div>
       </div>
     </el-card>
-    <el-card :body-style="{ padding: '10px' }">
+    <el-card class="bgcard" :body-style="{ padding: '10px' }">
       <div slot="header">
         <span>标签云</span>
       </div>
@@ -85,26 +85,37 @@ export default {
   width: 100%;
   .hot-article-box {
     padding: 20px;
-    .hot-article{
-     .title{
+    .hot-article {
+      .title {
         font-size: 14px;
         cursor: pointer;
-    }
-    padding-bottom: 20px;
-    &:nth-last-child(1){
+      }
+      padding-bottom: 20px;
+      &:nth-last-child(1) {
         padding-bottom: 0px;
+      }
     }
+    .msg {
+      padding-left: 15px;
+      font-size: 13px;
+      color: #a0a0a0;
     }
-    .msg{
-        padding-left: 15px;
-        font-size: 13px;
-        color: #a0a0a0;
-    }
-    
   }
   .el-tag {
     margin: 0 10px 10px 10px;
     cursor: pointer;
+  }
+  .bgcard::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 239px;
+    background-color: inherit;
+    border: 0;
+    content: "";
+    -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
   }
 }
 </style>

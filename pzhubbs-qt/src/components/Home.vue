@@ -3,9 +3,9 @@
       <page-header :data="articleData.data"></page-header>
     <div class="article-box">
       <div class="article" v-for="item in articles " :key="item.id">
-        <div v-if="item.imgSrc" class="img-box" :style="{ backgroundImage:'url('+ item.imgSrc+')' }" >
+        <div v-if="item.imgSrc"  @click="$router.push( { name:'articleDetails',params:{ id:item.id } } )" class="img-box" :style="{ backgroundImage:'url('+ item.imgSrc+')' }" >
         </div>
-        <h2>{{item.title}}</h2>
+        <h2 @click="$router.push( { name:'articleDetails',params:{ id:item.id } } )">{{item.title}}</h2>
         <p>{{item.introduction}}</p>
         <div class="article-msg">
            <i class="el-icon-s-custom"></i>
@@ -36,12 +36,13 @@ export default {
       articles: [
         {
           title: "关于web语义化、自定义命名的规范",
-          imgSrc:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556126003099&di=9eb8f28cd5ba53c554611499dcf5ebbb&imgtype=0&src=http%3A%2F%2Fpic.rmb.bdstatic.com%2Fd487c4c496b952e7463a9ac2a041643a.jpeg',
+          imgSrc:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557392705465&di=d8319ad67aae4838a7a541dfbc6212c9&imgtype=0&src=http%3A%2F%2F00.minipic.eastday.com%2F20170818%2F20170818115355_d41d8cd98f00b204e9800998ecf8427e_1.jpeg',
           introduction:
             "语义化是前端开发里面的一个专用术语，其优点在于标签语义化有助于构架良好的html结构，有利于搜索引擎的建立索引、抓取；另外，亦有利于页面在不同的设备上显示尽可能相同；此外，亦有利于构建清晰的机构，有利于团队的开发、维护",
           username: "xuwei",
           uptime: "2019年4月5日",
-          commentnum: 0
+          commentnum: 0,
+          id:233,
         },
         {
           title: "TeamViewer 检测出商业用途的解决办法",
@@ -49,11 +50,21 @@ export default {
             "TeamViewer可免费提供给任何人用于个人非商业用途 – 我们的大多数用户都能遵守规则，如果我们打算将TeamViewer用于商业用途，需要购买许可证。",
           username: "xuwei",
           uptime: "2019年4月6日",
-          commentnum: 5
+          commentnum: 5,
+          id:234,
         },
         {
           title: "关于web语义化、自定义命名的规范",
-          imgSrc:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556127019172&di=057a0c7d53e9d5ad88900adbf27d2738&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201504%2F25%2F20150425H2249_aULWv.jpeg',
+          imgSrc:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557392726161&di=d0b1c139acf9b323b2eac6856e89d006&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20170612%2F35357d9f382a4371884aee4ad6db2821_th.jpg',
+          introduction:
+            "语义化是前端开发里面的一个专用术语，其优点在于标签语义化有助于构架良好的html结构，有利于搜索引擎的建立索引、抓取；另外，亦有利于页面在不同的设备上显示尽可能相同；此外，亦有利于构建清晰的机构，有利于团队的开发、维护",
+          username: "xuwei",
+          uptime: "2019年4月5日",
+          commentnum: 0,
+          id:235,
+        },
+        {
+          title: "关于web语义化、自定义命名的规范",
           introduction:
             "语义化是前端开发里面的一个专用术语，其优点在于标签语义化有助于构架良好的html结构，有利于搜索引擎的建立索引、抓取；另外，亦有利于页面在不同的设备上显示尽可能相同；此外，亦有利于构建清晰的机构，有利于团队的开发、维护",
           username: "xuwei",
@@ -70,14 +81,7 @@ export default {
         },
         {
           title: "关于web语义化、自定义命名的规范",
-          introduction:
-            "语义化是前端开发里面的一个专用术语，其优点在于标签语义化有助于构架良好的html结构，有利于搜索引擎的建立索引、抓取；另外，亦有利于页面在不同的设备上显示尽可能相同；此外，亦有利于构建清晰的机构，有利于团队的开发、维护",
-          username: "xuwei",
-          uptime: "2019年4月5日",
-          commentnum: 0
-        },
-        {
-          title: "关于web语义化、自定义命名的规范",
+          imgSrc:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557987500&di=4715165b2cd8a22379faee6df6792f9e&imgtype=jpg&er=1&src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farchive%2F676ede2f1238ae497d67c4aff1be1733076a66f8.jpg',
           introduction:
             "语义化是前端开发里面的一个专用术语，其优点在于标签语义化有助于构架良好的html结构，有利于搜索引擎的建立索引、抓取；另外，亦有利于页面在不同的设备上显示尽可能相同；此外，亦有利于构建清晰的机构，有利于团队的开发、维护",
           username: "xuwei",
@@ -116,7 +120,7 @@ export default {
         transition: all 0.6s;
         margin-bottom: 30px;
         &:hover{
-          transform: scale(1.08);
+          transform: scale(1.05);
         }
       }
       h2 {

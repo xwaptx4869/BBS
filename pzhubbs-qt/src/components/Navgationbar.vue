@@ -1,7 +1,7 @@
 <template>
 <div class="navbar">
     <div class="navbar-content">
-    <router-link to="/" class="tohome" >
+    <router-link :to="{name:'home'}" class="tohome" >
     <img src="../assets/logo.png"  alt="">
     <h4>Pzhu技术交流社区</h4>
     </router-link>
