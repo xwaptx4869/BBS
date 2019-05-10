@@ -33,18 +33,22 @@
         <span slot="title">首页</span>
         
       </el-menu-item>
-      <el-menu-item index="2">
+      <el-menu-item index="2" @click="$router.push( { name:'photolist',params:{ id: userId}})" >
         <i class="el-icon-menu"></i>
         <span slot="title">相册</span>
         
       </el-menu-item>
-      <el-menu-item index="3">
+      <el-menu-item index="3" @click="$router.push( { name:'msgboard',params:{ id: userId}})">
         <i class="el-icon-document"></i>
         <span slot="title">留言板</span>
       </el-menu-item>
-      <el-menu-item index="4">
-        <i class="el-icon-phone"></i>
-        <span slot="title">反馈</span>
+       <el-menu-item index="4" @click="$router.push( { name:'toolmanage',params:{ id: userId}})">
+        <i class="el-icon-s-tools"></i>
+        <span slot="title">工具箱</span>
+      </el-menu-item>
+      <el-menu-item index="5" @click="$router.push( { name:'usercenter',params:{ id: userId}})">
+        <i class="el-icon-s-custom"></i>
+        <span slot="title">个人中心</span>
       </el-menu-item>
     </el-menu>
     <el-menu
@@ -75,25 +79,11 @@
       </el-submenu>
       <el-submenu index="2">
           <template slot="title">
-        <i class="el-icon-news"></i>
-        <span slot="title">页面</span>
-        </template>
-         <el-menu-item-group>
-          <template slot="title">分组一</template>
-          <el-menu-item index="1-1">选项1</el-menu-item>
-          <el-menu-item index="1-2">选项2</el-menu-item>
-        </el-menu-item-group>
-        <el-menu-item-group title="分组2">
-          <el-menu-item index="1-3">选项3</el-menu-item>
-        </el-menu-item-group>
-      </el-submenu>
-      <el-submenu index="3">
-          <template slot="title">
         <i class="el-icon-share"></i>
-        <span slot="title">友链</span>
+        <span slot="title">其他链接</span>
           </template>
-           <el-menu-item index="1-1">选项1</el-menu-item>
-          <el-menu-item index="1-2">选项2</el-menu-item>
+           <el-menu-item index="2-1">选项1</el-menu-item>
+          <el-menu-item index="2-2">选项2</el-menu-item>
       </el-submenu>
     </el-menu>
   </div>
@@ -109,6 +99,7 @@ export default {
     return {
       searchValue: "",
       isLogin: false,
+      userId:233,
       user: {
         name: "xuwei"
       },

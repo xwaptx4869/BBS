@@ -1,6 +1,7 @@
 <template>
   <div>
     <div v-if="datalist.isArticle" class="article-header box">
+      <a href="#top"></a>
       <h1>{{datalist.title}}</h1>
       <div class="msg">
         <i class="el-icon-s-custom"></i>

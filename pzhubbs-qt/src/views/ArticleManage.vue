@@ -41,12 +41,19 @@
         </div>
         <div class="footer">
           <div class="copyright">
-              <p>版权属于：{{articleData.data.username}}</p>
-              <p>您必须遵守：<a href="https://creativecommons.org/licenses/by-nc-sa/4.0" target="_blank">署名-非商业性使用-相同方式共享 CC BY-NC-SA</a> 使用这篇文章</p>
+            <p>版权属于：{{articleData.data.username}}</p>
+            <p>
+              您必须遵守：
+              <a
+                href="https://creativecommons.org/licenses/by-nc-sa/4.0"
+                target="_blank"
+              >署名-非商业性使用-相同方式共享 CC BY-NC-SA</a> 使用这篇文章
+            </p>
           </div>
           <div class="bootom-msg">
-              <i class="el-icon-time"></i><span>最后修改：{{articleData.data.uptime}}</span>
-              <span class="copyrightfor">©著作权归作者所有</span>
+            <i class="el-icon-time"></i>
+            <span>最后修改：{{articleData.data.uptime}}</span>
+            <span class="copyrightfor">©著作权归作者所有</span>
           </div>
         </div>
       </div>
@@ -76,22 +83,55 @@ export default {
         imgSrc:
           "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557392706246&di=7bb2b9f657c3435d65af2f14f58db546&imgtype=0&src=http%3A%2F%2F00.minipic.eastday.com%2F20170818%2F20170818115355_d41d8cd98f00b204e9800998ecf8427e_1.jpeg"
       },
-      commentdata:[
-          {
-              imgSrc:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557392706246&di=7bb2b9f657c3435d65af2f14f58db546&imgtype=0&src=http%3A%2F%2F00.minipic.eastday.com%2F20170818%2F20170818115355_d41d8cd98f00b204e9800998ecf8427e_1.jpeg',
-              username:'shasha',
-              uptime:'2019-5-8'
-          },
-          {
-              imgSrc:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557392706246&di=7bb2b9f657c3435d65af2f14f58db546&imgtype=0&src=http%3A%2F%2F00.minipic.eastday.com%2F20170818%2F20170818115355_d41d8cd98f00b204e9800998ecf8427e_1.jpeg',
-              username:'shasha',
-              uptime:'2019-5-8'
-          },
-          {
-              imgSrc:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557392706246&di=7bb2b9f657c3435d65af2f14f58db546&imgtype=0&src=http%3A%2F%2F00.minipic.eastday.com%2F20170818%2F20170818115355_d41d8cd98f00b204e9800998ecf8427e_1.jpeg',
-              username:'shasha',
-              uptime:'2019-5-8'
-          }
+      commentdata: [
+        {
+          imgSrc:
+            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557392706246&di=7bb2b9f657c3435d65af2f14f58db546&imgtype=0&src=http%3A%2F%2F00.minipic.eastday.com%2F20170818%2F20170818115355_d41d8cd98f00b204e9800998ecf8427e_1.jpeg",
+          username: "shasha",
+          uptime: "2019-5-8",
+          replylist: [
+            {
+              imgSrc:
+                "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557392706246&di=7bb2b9f657c3435d65af2f14f58db546&imgtype=0&src=http%3A%2F%2F00.minipic.eastday.com%2F20170818%2F20170818115355_d41d8cd98f00b204e9800998ecf8427e_1.jpeg",
+              username: "xuwei",
+              uptime: "2019-5-10"
+            },
+            {
+              imgSrc:
+                "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557987500&di=4715165b2cd8a22379faee6df6792f9e&imgtype=jpg&er=1&src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farchive%2F676ede2f1238ae497d67c4aff1be1733076a66f8.jpg",
+              username: "xuwei",
+              uptime: "2019-5-10"
+            },
+
+          ]
+        },
+        {
+          imgSrc:
+            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557392706246&di=7bb2b9f657c3435d65af2f14f58db546&imgtype=0&src=http%3A%2F%2F00.minipic.eastday.com%2F20170818%2F20170818115355_d41d8cd98f00b204e9800998ecf8427e_1.jpeg",
+          username: "shasha",
+          uptime: "2019-5-8"
+        },
+        {
+          imgSrc:
+            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557392706246&di=7bb2b9f657c3435d65af2f14f58db546&imgtype=0&src=http%3A%2F%2F00.minipic.eastday.com%2F20170818%2F20170818115355_d41d8cd98f00b204e9800998ecf8427e_1.jpeg",
+          username: "shasha",
+          uptime: "2019-5-8",
+           replylist: [
+            {
+              imgSrc:
+                "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557392706246&di=7bb2b9f657c3435d65af2f14f58db546&imgtype=0&src=http%3A%2F%2F00.minipic.eastday.com%2F20170818%2F20170818115355_d41d8cd98f00b204e9800998ecf8427e_1.jpeg",
+              username: "xuwei",
+              uptime: "2019-5-10"
+            },
+            {
+              imgSrc:
+                "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557987500&di=4715165b2cd8a22379faee6df6792f9e&imgtype=jpg&er=1&src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farchive%2F676ede2f1238ae497d67c4aff1be1733076a66f8.jpg",
+              username: "xuwei",
+              uptime: "2019-5-10"
+            },
+
+          ]
+        }
       ]
     };
   },
@@ -100,7 +140,7 @@ export default {
   },
   methods: {
     totop() {
-      document.getElementsByClassName("wrapper")[0].scrollTo(0, 0);
+      //   document.getElementsByClassName("wrapper")[0].scrollTo(0, 0);
     }
   }
 };
@@ -142,22 +182,22 @@ export default {
       height: 80px;
       background-color: #f3f5f7;
       border-left: 3px solid #399c9c !important;
-      p{
-          line-height: 40px;
+      p {
+        line-height: 40px;
+        color: #555;
+        a {
+          text-decoration: underline;
           color: #555;
-          a{
-              text-decoration: underline;
-              color: #555;
-          }
+        }
       }
     }
-    .bootom-msg{
-        padding-top: 20px;
-        font-size: 12px;
-        color: #9b9b9b;
-        .copyrightfor{
-            float: right;
-        }
+    .bootom-msg {
+      padding-top: 20px;
+      font-size: 12px;
+      color: #9b9b9b;
+      .copyrightfor {
+        float: right;
+      }
     }
   }
 }

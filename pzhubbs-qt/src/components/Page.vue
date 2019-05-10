@@ -41,12 +41,17 @@ export default {
     login
   },
   created(){
-  
+  this.$router.afterEach((to, from) => {
+    this.totop();
+  })
   },
   methods:{
     getVisible(visible,title){
       this.visible = visible;
       this.title = title;
+    },
+     totop() {
+        document.getElementsByClassName("wrapper")[0].scrollTo(0, 0);
     }
   }
 };
