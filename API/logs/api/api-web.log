@@ -1,0 +1,619 @@
+2019-05-11 00:00:11,312 INFO 12788 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 00:00:28,141 ERROR 12788 [-/127.0.0.1/-/46ms POST /backend/v1/upload/upload] nodejs.TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be one of type string, Buffer, or URL. Received type object
+    at Object.open (fs.js:408:3)
+    at WriteStream.open (internal/fs/streams.js:267:12)
+    at new WriteStream (internal/fs/streams.js:254:10)
+    at Object.createWriteStream (fs.js:1731:10)
+    at Promise (C:\Users\xuwei\Desktop\BBS\BBS\API\app\controller\backend\uploadapicontroller.js:29:32)
+    at new Promise (<anonymous>)
+    at UploadApiController.index (C:\Users\xuwei\Desktop\BBS\BBS\API\app\controller\backend\uploadapicontroller.js:28:24)
+    at UploadApiController.upload (C:\Users\xuwei\Desktop\BBS\BBS\API\app\controller\backend\uploadapicontroller.js:99:31)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 12788
+hostname: DESKTOP-UHOS0OJ
+
+2019-05-11 00:01:57,504 INFO 8524 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 00:02:06,311 ERROR 8524 [-/127.0.0.1/-/42ms POST /backend/v1/upload/upload] nodejs.TypeError: the multipart request can't be consumed twice
+    at Object.multipart (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\egg-multipart\app\extend\context.js:53:35)
+    at Object.getFileStream (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\egg-multipart\app\extend\context.js:91:24)
+    at UploadApiController.index (C:\Users\xuwei\Desktop\BBS\BBS\API\app\controller\backend\uploadapicontroller.js:24:28)
+    at UploadApiController.upload (C:\Users\xuwei\Desktop\BBS\BBS\API\app\controller\backend\uploadapicontroller.js:99:31)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 8524
+hostname: DESKTOP-UHOS0OJ
+
+2019-05-11 00:02:47,316 INFO 18152 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 00:03:16,634 INFO 14044 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 00:07:29,759 INFO 15480 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 00:07:46,932 INFO 15480 [egg-sequelize](5ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 00:07:55,469 INFO 15480 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 00:14:00,378 INFO 20384 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 00:36:33,783 INFO 20384 [egg-sequelize](5ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`title` = '233' LIMIT 1;
+2019-05-11 00:38:36,697 INFO 12724 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 00:39:10,677 INFO 12724 [egg-sequelize](4ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`title` = '2333' LIMIT 1;
+2019-05-11 00:41:10,542 INFO 1176 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 00:41:24,229 INFO 19788 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 00:41:39,997 INFO 19788 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`title` = '2333' LIMIT 1;
+2019-05-11 00:41:40,995 INFO 19788 [egg-sequelize](957ms) Executed (default): INSERT INTO `albums` (`title`,`poster`,`created_at`,`updated_at`,`id`) VALUES ('2333','http://localhost:7001/public/upload/image/1557489686(1)1557506498734.jpg','2019-05-10 16:41:40','2019-05-10 16:41:40',DEFAULT);
+2019-05-11 00:42:40,177 INFO 19788 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`title` = '233' LIMIT 1;
+2019-05-11 00:42:40,339 INFO 19788 [egg-sequelize](118ms) Executed (default): INSERT INTO `albums` (`title`,`poster`,`created_at`,`updated_at`,`id`) VALUES ('233','http://localhost:7001/public/upload/image/1557489686(1)1557506558934.jpg','2019-05-10 16:42:40','2019-05-10 16:42:40',DEFAULT);
+2019-05-11 00:42:41,133 INFO 19788 [egg-sequelize](3ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 00:46:17,901 INFO 19788 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 00:46:21,315 INFO 19788 [egg-sequelize](3ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 00:46:58,832 INFO 19788 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 00:47:01,750 INFO 19788 [egg-sequelize](17ms) Executed (default): SELECT count(*) AS `count` FROM `articles` AS `article`;
+2019-05-11 00:47:01,894 INFO 19788 [egg-sequelize](17ms) Executed (default): SELECT `classification_ids`, `label_ids`, `content`, `user_id`, `created_at`, `updated_at`, `title`, `browse_num`, `praise`, `article_id`, `comment_num` FROM `articles` AS `article` LIMIT 0, 20;
+2019-05-11 00:47:01,967 INFO 19788 [egg-sequelize](6ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` LIMIT 0, 20;
+2019-05-11 00:47:02,010 INFO 19788 [egg-sequelize](5ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4');
+2019-05-11 00:47:02,023 INFO 19788 [egg-sequelize](6ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '2', '4', '5', '7');
+2019-05-11 00:47:02,034 INFO 19788 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4', '5');
+2019-05-11 00:47:02,043 INFO 19788 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('2', '4', '5');
+2019-05-11 00:47:02,059 INFO 19788 [egg-sequelize](11ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4', '5');
+2019-05-11 00:47:02,063 INFO 19788 [egg-sequelize](6ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` LIMIT 0, 20;
+2019-05-11 00:47:02,073 INFO 19788 [egg-sequelize](4ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('10', '8', '5', '1');
+2019-05-11 00:47:02,081 INFO 19788 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4');
+2019-05-11 00:47:02,089 INFO 19788 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '2', '4');
+2019-05-11 00:47:02,128 INFO 19788 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('2', '3');
+2019-05-11 00:47:02,182 INFO 19788 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '4', '5');
+2019-05-11 00:47:02,190 INFO 19788 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '3', '4', '5');
+2019-05-11 00:47:02,199 INFO 19788 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '6', '3');
+2019-05-11 00:47:02,209 INFO 19788 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3');
+2019-05-11 00:47:02,219 INFO 19788 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '3', '4');
+2019-05-11 00:47:02,228 INFO 19788 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('6', '4', '1', '3');
+2019-05-11 00:47:02,236 INFO 19788 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('6', '3', '2');
+2019-05-11 00:47:02,245 INFO 19788 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('5', '3', '2');
+2019-05-11 00:47:02,254 INFO 19788 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('3', '5');
+2019-05-11 00:47:04,153 INFO 19788 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 00:47:08,439 INFO 19788 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 00:48:56,431 INFO 17148 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 00:49:54,343 INFO 14820 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 00:50:39,714 INFO 11256 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 00:51:06,940 INFO 15432 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 00:51:11,925 INFO 18608 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 00:53:17,576 INFO 18608 [egg-sequelize](7ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 00:53:47,306 INFO 18608 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 00:55:03,259 INFO 18608 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 00:55:21,451 INFO 18608 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 00:57:47,125 INFO 18608 [egg-sequelize](5ms) Executed (default): SELECT count(*) AS `count` FROM `articles` AS `article`;
+2019-05-11 00:57:47,215 INFO 18608 [egg-sequelize](93ms) Executed (default): SELECT `classification_ids`, `label_ids`, `content`, `user_id`, `created_at`, `updated_at`, `title`, `browse_num`, `praise`, `article_id`, `comment_num` FROM `articles` AS `article` LIMIT 0, 20;
+2019-05-11 00:57:47,269 INFO 18608 [egg-sequelize](5ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4');
+2019-05-11 00:57:47,286 INFO 18608 [egg-sequelize](8ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` LIMIT 0, 20;
+2019-05-11 00:57:47,292 INFO 18608 [egg-sequelize](9ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '2', '4', '5', '7');
+2019-05-11 00:57:47,308 INFO 18608 [egg-sequelize](4ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4', '5');
+2019-05-11 00:57:47,319 INFO 18608 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('2', '4', '5');
+2019-05-11 00:57:47,327 INFO 18608 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4', '5');
+2019-05-11 00:57:47,342 INFO 18608 [egg-sequelize](10ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('10', '8', '5', '1');
+2019-05-11 00:57:47,346 INFO 18608 [egg-sequelize](5ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` LIMIT 0, 20;
+2019-05-11 00:57:47,356 INFO 18608 [egg-sequelize](4ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4');
+2019-05-11 00:57:47,367 INFO 18608 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '2', '4');
+2019-05-11 00:57:47,375 INFO 18608 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('2', '3');
+2019-05-11 00:57:47,384 INFO 18608 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '4', '5');
+2019-05-11 00:57:47,504 INFO 18608 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '3', '4', '5');
+2019-05-11 00:57:47,516 INFO 18608 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '6', '3');
+2019-05-11 00:57:47,527 INFO 18608 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3');
+2019-05-11 00:57:47,535 INFO 18608 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '3', '4');
+2019-05-11 00:57:47,547 INFO 18608 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('6', '4', '1', '3');
+2019-05-11 00:57:47,556 INFO 18608 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('6', '3', '2');
+2019-05-11 00:57:47,597 INFO 18608 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('5', '3', '2');
+2019-05-11 00:57:47,604 INFO 18608 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('3', '5');
+2019-05-11 00:57:57,968 INFO 18608 [egg-sequelize](3ms) Executed (default): SELECT count(*) AS `count` FROM `articles` AS `article`;
+2019-05-11 00:57:57,991 INFO 18608 [egg-sequelize](23ms) Executed (default): SELECT `classification_ids`, `label_ids`, `content`, `user_id`, `created_at`, `updated_at`, `title`, `browse_num`, `praise`, `article_id`, `comment_num` FROM `articles` AS `article` LIMIT 0, 20;
+2019-05-11 00:57:58,000 INFO 18608 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4');
+2019-05-11 00:57:58,087 INFO 18608 [egg-sequelize](7ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` LIMIT 0, 20;
+2019-05-11 00:57:58,090 INFO 18608 [egg-sequelize](6ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '2', '4', '5', '7');
+2019-05-11 00:57:58,101 INFO 18608 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4', '5');
+2019-05-11 00:57:58,110 INFO 18608 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('2', '4', '5');
+2019-05-11 00:57:58,119 INFO 18608 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4', '5');
+2019-05-11 00:57:58,128 INFO 18608 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('10', '8', '5', '1');
+2019-05-11 00:57:58,140 INFO 18608 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4');
+2019-05-11 00:57:58,148 INFO 18608 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '2', '4');
+2019-05-11 00:57:58,155 INFO 18608 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('2', '3');
+2019-05-11 00:57:58,166 INFO 18608 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '4', '5');
+2019-05-11 00:57:58,232 INFO 18608 [egg-sequelize](8ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` LIMIT 0, 20;
+2019-05-11 00:57:58,437 INFO 18608 [egg-sequelize](209ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '3', '4', '5');
+2019-05-11 00:57:58,653 INFO 18608 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '6', '3');
+2019-05-11 00:57:58,719 INFO 18608 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3');
+2019-05-11 00:57:58,729 INFO 18608 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '3', '4');
+2019-05-11 00:57:58,741 INFO 18608 [egg-sequelize](4ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('6', '4', '1', '3');
+2019-05-11 00:57:58,750 INFO 18608 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('6', '3', '2');
+2019-05-11 00:57:58,759 INFO 18608 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('5', '3', '2');
+2019-05-11 00:57:58,767 INFO 18608 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('3', '5');
+2019-05-11 00:58:04,677 INFO 18608 [egg-sequelize](3ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 00:58:57,329 INFO 18608 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 01:00:39,274 INFO 18608 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 01:00:49,323 INFO 18608 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 01:01:33,102 INFO 18608 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 01:02:44,688 INFO 18608 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:02:47,360 INFO 18608 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 01:02:50,651 INFO 18608 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:03:02,341 INFO 18608 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:04:01,663 INFO 18608 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:04:04,995 INFO 18608 [egg-sequelize](3ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 01:04:07,675 INFO 18608 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:04:13,464 INFO 18608 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 01:04:15,700 INFO 18608 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:04:53,541 INFO 18608 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:05:41,411 INFO 18608 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:05:57,176 INFO 18608 [egg-sequelize](3ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 01:05:59,270 INFO 18608 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:06:29,318 INFO 18608 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:08:46,944 INFO 18608 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:08:50,363 INFO 18608 [egg-sequelize](3ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 01:08:54,060 INFO 18608 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:09:23,080 INFO 13672 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 01:10:30,812 INFO 13672 [egg-sequelize](6ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:10:36,032 INFO 13672 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 01:10:46,326 INFO 13672 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 01:10:50,521 INFO 13672 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:12:04,909 INFO 13672 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:12:38,001 INFO 13672 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:12:40,910 INFO 13672 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 01:12:43,392 INFO 13672 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '5';
+2019-05-11 01:12:45,357 INFO 13672 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 01:12:47,813 INFO 13672 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:20:07,559 INFO 13672 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:20:29,801 INFO 13672 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:22:22,665 INFO 13672 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:22:49,706 INFO 19340 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 01:23:35,343 INFO 19340 [egg-sequelize](5ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:44:27,023 INFO 19340 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:44:29,385 INFO 19340 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = 6;
+2019-05-11 01:44:29,401 INFO 19340 [egg-sequelize](4ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`title` = '233' LIMIT 1;
+2019-05-11 01:44:50,748 INFO 19340 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:44:51,271 INFO 19648 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 01:44:54,733 INFO 19648 [egg-sequelize](5ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = 6;
+2019-05-11 01:44:54,824 INFO 19648 [egg-sequelize](7ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`title` = '233' LIMIT 1;
+2019-05-11 01:45:23,899 INFO 19648 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:45:57,322 INFO 19648 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:45:58,827 INFO 19648 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = 6;
+2019-05-11 01:45:58,847 INFO 19648 [egg-sequelize](3ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`title` = '233' LIMIT 1;
+2019-05-11 01:46:22,277 INFO 19648 [egg-sequelize](51ms) Executed (default): SELECT count(*) AS `count` FROM `articles` AS `article`;
+2019-05-11 01:46:22,333 INFO 19648 [egg-sequelize](100ms) Executed (default): SELECT `classification_ids`, `label_ids`, `content`, `user_id`, `created_at`, `updated_at`, `title`, `browse_num`, `praise`, `article_id`, `comment_num` FROM `articles` AS `article` LIMIT 0, 20;
+2019-05-11 01:46:22,371 INFO 19648 [egg-sequelize](48ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` LIMIT 0, 20;
+2019-05-11 01:46:22,422 INFO 19648 [egg-sequelize](91ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` LIMIT 0, 20;
+2019-05-11 01:46:22,492 INFO 19648 [egg-sequelize](18ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4');
+2019-05-11 01:46:22,621 INFO 19648 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '2', '4', '5', '7');
+2019-05-11 01:46:22,644 INFO 19648 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4', '5');
+2019-05-11 01:46:22,652 INFO 19648 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('2', '4', '5');
+2019-05-11 01:46:22,662 INFO 19648 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4', '5');
+2019-05-11 01:46:22,670 INFO 19648 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('10', '8', '5', '1');
+2019-05-11 01:46:22,679 INFO 19648 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4');
+2019-05-11 01:46:22,688 INFO 19648 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '2', '4');
+2019-05-11 01:46:22,722 INFO 19648 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('2', '3');
+2019-05-11 01:46:22,783 INFO 19648 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '4', '5');
+2019-05-11 01:46:22,857 INFO 19648 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '3', '4', '5');
+2019-05-11 01:46:22,901 INFO 19648 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '6', '3');
+2019-05-11 01:46:22,908 INFO 19648 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3');
+2019-05-11 01:46:22,917 INFO 19648 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '3', '4');
+2019-05-11 01:46:22,925 INFO 19648 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('6', '4', '1', '3');
+2019-05-11 01:46:22,933 INFO 19648 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('6', '3', '2');
+2019-05-11 01:46:22,941 INFO 19648 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('5', '3', '2');
+2019-05-11 01:46:22,949 INFO 19648 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('3', '5');
+2019-05-11 01:46:24,881 INFO 19648 [egg-sequelize](3ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 01:46:27,067 INFO 19648 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:48:38,397 INFO 19648 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:48:46,955 INFO 19648 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:49:01,852 INFO 19648 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:49:08,704 INFO 19648 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`title` = '233' LIMIT 1;
+2019-05-11 01:49:08,754 INFO 19648 [egg-sequelize](61ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = NULL LIMIT 1;
+2019-05-11 01:52:02,755 INFO 19648 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:52:04,304 INFO 19648 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = NULL LIMIT 1;
+2019-05-11 01:52:04,415 INFO 19648 [egg-sequelize](4ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`title` = '233' LIMIT 1;
+2019-05-11 01:52:49,887 INFO 13480 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 01:55:14,185 INFO 13480 [egg-sequelize](7ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:55:34,914 INFO 13480 [egg-sequelize](10ms) Executed (default): SELECT count(*) AS `count` FROM `articles` AS `article`;
+2019-05-11 01:55:34,977 INFO 13480 [egg-sequelize](71ms) Executed (default): SELECT `classification_ids`, `label_ids`, `content`, `user_id`, `created_at`, `updated_at`, `title`, `browse_num`, `praise`, `article_id`, `comment_num` FROM `articles` AS `article` LIMIT 0, 20;
+2019-05-11 01:55:35,045 INFO 13480 [egg-sequelize](76ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` LIMIT 0, 20;
+2019-05-11 01:55:35,114 INFO 13480 [egg-sequelize](78ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` LIMIT 0, 20;
+2019-05-11 01:55:35,157 INFO 13480 [egg-sequelize](18ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4');
+2019-05-11 01:55:35,223 INFO 13480 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '2', '4', '5', '7');
+2019-05-11 01:55:35,236 INFO 13480 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4', '5');
+2019-05-11 01:55:35,245 INFO 13480 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('2', '4', '5');
+2019-05-11 01:55:35,253 INFO 13480 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4', '5');
+2019-05-11 01:55:35,263 INFO 13480 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('10', '8', '5', '1');
+2019-05-11 01:55:35,272 INFO 13480 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4');
+2019-05-11 01:55:35,280 INFO 13480 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '2', '4');
+2019-05-11 01:55:35,287 INFO 13480 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('2', '3');
+2019-05-11 01:55:35,297 INFO 13480 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '4', '5');
+2019-05-11 01:55:35,304 INFO 13480 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '3', '4', '5');
+2019-05-11 01:55:35,314 INFO 13480 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '6', '3');
+2019-05-11 01:55:35,322 INFO 13480 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3');
+2019-05-11 01:55:35,345 INFO 13480 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '3', '4');
+2019-05-11 01:55:35,352 INFO 13480 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('6', '4', '1', '3');
+2019-05-11 01:55:35,361 INFO 13480 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('6', '3', '2');
+2019-05-11 01:55:35,369 INFO 13480 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('5', '3', '2');
+2019-05-11 01:55:35,378 INFO 13480 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('3', '5');
+2019-05-11 01:55:36,795 INFO 13480 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 01:55:38,586 INFO 13480 [egg-sequelize](3ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:56:16,972 INFO 13480 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:56:33,433 INFO 20300 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 01:56:45,327 INFO 20300 [egg-sequelize](5ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 01:56:47,463 INFO 20300 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 01:57:13,864 INFO 20300 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 01:57:17,588 INFO 19796 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 01:57:27,496 INFO 19796 [egg-sequelize](12ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`title` = '2333' LIMIT 1;
+2019-05-11 01:59:45,301 INFO 476 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 02:00:18,835 INFO 476 [egg-sequelize](7ms) Executed (default): SELECT `content`, `user_id`, `created_at`, `updated_at`, `id` FROM `replies` AS `reply` LIMIT 0, 20;
+2019-05-11 02:00:19,689 INFO 476 [egg-sequelize](8ms) Executed (default): SELECT `reply_ids`, `content`, `connect_id`, `created_at`, `updated_at`, `type`, `id` FROM `comments` AS `comment` LIMIT 0, 20;
+2019-05-11 02:00:27,873 INFO 476 [egg-sequelize](81ms) Executed (default): SELECT `username`, `password`, `avatar`, `id`, `created_at`, `updated_at`, `nickname`, `like_count`, `college_ids`, `mood`, `like_ids`, `role` FROM `users` AS `user` WHERE `user`.`id` = '2';
+2019-05-11 02:00:27,982 INFO 476 [egg-sequelize](35ms) Executed (default): INSERT INTO `comments` (`content`,`connect_id`,`created_at`,`updated_at`,`type`,`id`) VALUES ('<p>2333</p>','2','2019-05-10 18:00:27','2019-05-10 18:00:27','2',DEFAULT);
+2019-05-11 02:00:28,453 INFO 476 [egg-sequelize](2ms) Executed (default): SELECT `reply_ids`, `content`, `connect_id`, `created_at`, `updated_at`, `type`, `id` FROM `comments` AS `comment` LIMIT 0, 20;
+2019-05-11 02:01:12,649 INFO 14212 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 02:01:59,495 INFO 14212 [egg-sequelize](7ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 02:02:01,729 INFO 14212 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 02:02:51,194 INFO 14212 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 02:02:58,729 INFO 14212 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = NULL LIMIT 1;
+2019-05-11 02:02:58,742 INFO 14212 [egg-sequelize](4ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`title` = '233' LIMIT 1;
+2019-05-11 02:03:20,482 INFO 14212 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 02:03:30,165 INFO 14212 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = NULL LIMIT 1;
+2019-05-11 02:03:30,209 INFO 14212 [egg-sequelize](4ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`title` = '233' LIMIT 1;
+2019-05-11 02:03:59,420 INFO 18468 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 02:05:26,008 INFO 19372 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 02:05:52,598 INFO 6240 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 02:06:27,737 INFO 6240 [egg-sequelize](6ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 02:06:29,565 INFO 6240 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = NULL LIMIT 1;
+2019-05-11 02:06:29,588 INFO 6240 [egg-sequelize](4ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`title` = '233' LIMIT 1;
+2019-05-11 02:06:29,610 ERROR 6240 [-/127.0.0.1/-/94ms POST /backend/v1/album/edit] nodejs.ReferenceError: code is not defined
+    at AlbumService.checkArtcle (C:\Users\xuwei\Desktop\BBS\BBS\API\app\service\album.js:56:26)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 6240
+hostname: DESKTOP-UHOS0OJ
+
+2019-05-11 02:07:34,029 INFO 18076 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 02:07:49,812 INFO 18076 [egg-sequelize](6ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 02:07:51,395 INFO 18076 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = NULL LIMIT 1;
+2019-05-11 02:07:51,571 INFO 18076 [egg-sequelize](16ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`title` = '233' LIMIT 1;
+2019-05-11 02:07:52,339 INFO 18076 [egg-sequelize](3ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 02:07:58,572 INFO 18076 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 02:09:08,152 INFO 19032 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 02:09:16,570 INFO 19032 [egg-sequelize](5ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 02:09:20,202 INFO 19032 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 02:09:21,555 INFO 19032 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = NULL LIMIT 1;
+2019-05-11 02:09:21,563 INFO 19032 [egg-sequelize](3ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`title` = '233' LIMIT 1;
+2019-05-11 02:09:21,635 INFO 19032 [egg-sequelize](5ms) Executed (default): UPDATE `albums` SET `title`='233',`poster`='http://localhost:7001/public/upload/image/1557489686(1)1557506558934.jpg',`updated_at`='2019-05-10 18:09:21' WHERE `id` = NULL
+2019-05-11 02:09:21,672 INFO 19032 [egg-sequelize](4ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = NULL LIMIT 1;
+2019-05-11 02:10:07,021 INFO 20240 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 02:10:18,105 INFO 20240 [egg-sequelize](10ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` LIMIT 0, 20;
+2019-05-11 02:10:18,295 INFO 20240 [egg-sequelize](14ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 02:10:23,464 INFO 20240 [egg-sequelize](10ms) Executed (default): SELECT count(*) AS `count` FROM `articles` AS `article`;
+2019-05-11 02:10:23,484 INFO 20240 [egg-sequelize](8ms) Executed (default): SELECT `classification_ids`, `label_ids`, `content`, `user_id`, `created_at`, `updated_at`, `title`, `browse_num`, `praise`, `article_id`, `comment_num` FROM `articles` AS `article` LIMIT 0, 20;
+2019-05-11 02:10:23,492 INFO 20240 [egg-sequelize](4ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` LIMIT 0, 20;
+2019-05-11 02:10:23,509 INFO 20240 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4');
+2019-05-11 02:10:23,574 INFO 20240 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '2', '4', '5', '7');
+2019-05-11 02:10:23,602 INFO 20240 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4', '5');
+2019-05-11 02:10:23,609 INFO 20240 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('2', '4', '5');
+2019-05-11 02:10:23,616 INFO 20240 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4', '5');
+2019-05-11 02:10:23,623 INFO 20240 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('10', '8', '5', '1');
+2019-05-11 02:10:23,631 INFO 20240 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4');
+2019-05-11 02:10:23,640 INFO 20240 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '2', '4');
+2019-05-11 02:10:23,647 INFO 20240 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('2', '3');
+2019-05-11 02:10:23,656 INFO 20240 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '4', '5');
+2019-05-11 02:10:23,663 INFO 20240 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '3', '4', '5');
+2019-05-11 02:10:23,674 INFO 20240 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '6', '3');
+2019-05-11 02:10:23,684 INFO 20240 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3');
+2019-05-11 02:10:23,691 INFO 20240 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '3', '4');
+2019-05-11 02:10:23,700 INFO 20240 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('6', '4', '1', '3');
+2019-05-11 02:10:23,709 INFO 20240 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('6', '3', '2');
+2019-05-11 02:10:23,749 INFO 20240 [egg-sequelize](4ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('5', '3', '2');
+2019-05-11 02:10:23,784 INFO 20240 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('3', '5');
+2019-05-11 02:10:25,823 INFO 20240 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 02:10:32,355 INFO 20240 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = NULL LIMIT 1;
+2019-05-11 02:10:32,363 INFO 20240 [egg-sequelize](9ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`title` = '233' LIMIT 1;
+2019-05-11 02:11:14,518 INFO 20240 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 02:11:18,334 INFO 20240 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = NULL LIMIT 1;
+2019-05-11 02:11:18,344 INFO 20240 [egg-sequelize](4ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`title` = '233' LIMIT 1;
+2019-05-11 02:12:11,112 INFO 20240 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 02:12:31,226 INFO 20240 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '6';
+2019-05-11 02:12:44,110 INFO 20240 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = NULL LIMIT 1;
+2019-05-11 02:12:44,124 INFO 20240 [egg-sequelize](4ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`title` = '233' LIMIT 1;
+2019-05-11 02:12:47,472 INFO 20240 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = NULL LIMIT 1;
+2019-05-11 02:12:47,494 INFO 20240 [egg-sequelize](23ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`title` = '233' LIMIT 1;
+2019-05-11 02:12:54,235 INFO 20240 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 02:14:30,082 INFO 19472 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 02:14:37,381 INFO 19472 [egg-sequelize](4ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 02:16:05,787 INFO 19472 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`title` = '2333' LIMIT 1;
+2019-05-11 02:16:15,792 INFO 19472 [egg-sequelize](3ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 02:16:24,705 INFO 19472 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`title` = '3555' LIMIT 1;
+2019-05-11 02:16:24,834 INFO 19472 [egg-sequelize](100ms) Executed (default): INSERT INTO `albums` (`title`,`poster`,`created_at`,`updated_at`,`id`) VALUES ('3555','http://localhost:7001/public/upload/image/1557489686(1)1557512182982.jpg','2019-05-10 18:16:24','2019-05-10 18:16:24',DEFAULT);
+2019-05-11 02:16:25,211 INFO 19472 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 02:16:28,432 INFO 19472 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '7';
+2019-05-11 02:16:34,605 INFO 19472 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = NULL LIMIT 1;
+2019-05-11 02:16:34,616 INFO 19472 [egg-sequelize](4ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`title` = '3555' LIMIT 1;
+2019-05-11 02:17:08,581 INFO 19472 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = NULL LIMIT 1;
+2019-05-11 02:17:08,591 INFO 19472 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`title` = '3555' LIMIT 1;
+2019-05-11 02:17:24,429 INFO 19472 [egg-sequelize](15ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = NULL LIMIT 1;
+2019-05-11 02:17:24,457 INFO 19472 [egg-sequelize](44ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`title` = '35553' LIMIT 1;
+2019-05-11 02:17:24,493 INFO 19472 [egg-sequelize](2ms) Executed (default): UPDATE `albums` SET `title`='35553',`poster`='http://localhost:7001/public/upload/image/1557489675(1)1557512193424.jpg',`updated_at`='2019-05-10 18:17:24' WHERE `id` = NULL
+2019-05-11 02:17:24,516 INFO 19472 [egg-sequelize](4ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = NULL LIMIT 1;
+2019-05-11 02:17:24,845 INFO 19472 [egg-sequelize](6ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 02:17:49,840 INFO 19472 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '7';
+2019-05-11 02:17:51,975 INFO 19472 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = NULL LIMIT 1;
+2019-05-11 02:17:52,002 INFO 19472 [egg-sequelize](5ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`title` = '3555' LIMIT 1;
+2019-05-11 02:17:54,434 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 02:18:00,137 INFO 8796 [egg-sequelize](56ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = NULL LIMIT 1;
+2019-05-11 02:18:00,272 INFO 8796 [egg-sequelize](4ms) Executed (default): UPDATE `albums` SET `title`='3555',`poster`='http://localhost:7001/public/upload/image/1557489686(1)1557512182982.jpg',`updated_at`='2019-05-10 18:18:00' WHERE `id` = NULL
+2019-05-11 02:18:00,348 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = NULL LIMIT 1;
+2019-05-11 02:18:00,883 INFO 8796 [egg-sequelize](4ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 02:18:04,268 INFO 8796 [egg-sequelize](18ms) Executed (default): SELECT count(*) AS `count` FROM `articles` AS `article`;
+2019-05-11 02:18:04,320 INFO 8796 [egg-sequelize](67ms) Executed (default): SELECT `classification_ids`, `label_ids`, `content`, `user_id`, `created_at`, `updated_at`, `title`, `browse_num`, `praise`, `article_id`, `comment_num` FROM `articles` AS `article` LIMIT 0, 20;
+2019-05-11 02:18:04,431 INFO 8796 [egg-sequelize](15ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` LIMIT 0, 20;
+2019-05-11 02:18:04,596 INFO 8796 [egg-sequelize](74ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` LIMIT 0, 20;
+2019-05-11 02:18:04,659 INFO 8796 [egg-sequelize](131ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4');
+2019-05-11 02:18:04,753 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '2', '4', '5', '7');
+2019-05-11 02:18:04,855 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4', '5');
+2019-05-11 02:18:04,864 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('2', '4', '5');
+2019-05-11 02:18:04,872 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4', '5');
+2019-05-11 02:18:04,881 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('10', '8', '5', '1');
+2019-05-11 02:18:04,888 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4');
+2019-05-11 02:18:04,898 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '2', '4');
+2019-05-11 02:18:04,906 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('2', '3');
+2019-05-11 02:18:04,917 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '4', '5');
+2019-05-11 02:18:04,926 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '3', '4', '5');
+2019-05-11 02:18:04,933 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '6', '3');
+2019-05-11 02:18:04,954 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3');
+2019-05-11 02:18:04,984 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '3', '4');
+2019-05-11 02:18:04,993 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('6', '4', '1', '3');
+2019-05-11 02:18:05,001 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('6', '3', '2');
+2019-05-11 02:18:05,010 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('5', '3', '2');
+2019-05-11 02:18:05,018 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('3', '5');
+2019-05-11 02:18:09,150 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 02:18:10,889 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT count(*) AS `count` FROM `articles` AS `article`;
+2019-05-11 02:18:11,020 INFO 8796 [egg-sequelize](132ms) Executed (default): SELECT `classification_ids`, `label_ids`, `content`, `user_id`, `created_at`, `updated_at`, `title`, `browse_num`, `praise`, `article_id`, `comment_num` FROM `articles` AS `article` LIMIT 0, 20;
+2019-05-11 02:18:11,213 INFO 8796 [egg-sequelize](7ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` LIMIT 0, 20;
+2019-05-11 02:18:11,279 INFO 8796 [egg-sequelize](68ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4');
+2019-05-11 02:18:11,332 INFO 8796 [egg-sequelize](15ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` LIMIT 0, 20;
+2019-05-11 02:18:11,377 INFO 8796 [egg-sequelize](54ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '2', '4', '5', '7');
+2019-05-11 02:18:11,441 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4', '5');
+2019-05-11 02:18:11,532 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('2', '4', '5');
+2019-05-11 02:18:11,551 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4', '5');
+2019-05-11 02:18:11,564 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('10', '8', '5', '1');
+2019-05-11 02:18:11,572 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4');
+2019-05-11 02:18:11,580 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '2', '4');
+2019-05-11 02:18:11,588 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('2', '3');
+2019-05-11 02:18:11,597 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '4', '5');
+2019-05-11 02:18:11,604 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '3', '4', '5');
+2019-05-11 02:18:11,611 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '6', '3');
+2019-05-11 02:18:11,620 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3');
+2019-05-11 02:18:11,628 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '3', '4');
+2019-05-11 02:18:11,636 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('6', '4', '1', '3');
+2019-05-11 02:18:11,645 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('6', '3', '2');
+2019-05-11 02:18:11,659 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('5', '3', '2');
+2019-05-11 02:18:11,692 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('3', '5');
+2019-05-11 02:18:12,623 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` LIMIT 0, 20;
+2019-05-11 02:18:12,748 INFO 8796 [egg-sequelize](7ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` LIMIT 0, 20;
+2019-05-11 02:19:03,269 INFO 8796 [egg-sequelize](42ms) Executed (default): INSERT INTO `articles` (`classification_ids`,`label_ids`,`content`,`created_at`,`updated_at`,`title`,`browse_num`,`praise`,`article_id`,`comment_num`) VALUES ('4/6','2/4','<table border=\"0\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\"><tbody><tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr><tr><td>&nbsp;dd</td><td>&nbsp;d</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table><p><br></p>','2019-05-10 18:19:03','2019-05-10 18:19:03','24555',0,0,DEFAULT,0);
+2019-05-11 02:19:03,738 INFO 8796 [egg-sequelize](4ms) Executed (default): SELECT count(*) AS `count` FROM `articles` AS `article`;
+2019-05-11 02:19:03,754 INFO 8796 [egg-sequelize](4ms) Executed (default): SELECT `classification_ids`, `label_ids`, `content`, `user_id`, `created_at`, `updated_at`, `title`, `browse_num`, `praise`, `article_id`, `comment_num` FROM `articles` AS `article` LIMIT 0, 20;
+2019-05-11 02:19:03,770 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4');
+2019-05-11 02:19:03,781 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '2', '4', '5', '7');
+2019-05-11 02:19:03,790 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4', '5');
+2019-05-11 02:19:03,806 INFO 8796 [egg-sequelize](6ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` LIMIT 0, 20;
+2019-05-11 02:19:03,809 INFO 8796 [egg-sequelize](5ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('2', '4', '5');
+2019-05-11 02:19:03,837 INFO 8796 [egg-sequelize](12ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` LIMIT 0, 20;
+2019-05-11 02:19:03,843 INFO 8796 [egg-sequelize](12ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4', '5');
+2019-05-11 02:19:03,877 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('10', '8', '5', '1');
+2019-05-11 02:19:03,887 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4');
+2019-05-11 02:19:03,897 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '2', '4');
+2019-05-11 02:19:03,904 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('2', '3');
+2019-05-11 02:19:03,917 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '4', '5');
+2019-05-11 02:19:03,925 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '3', '4', '5');
+2019-05-11 02:19:03,934 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '6', '3');
+2019-05-11 02:19:03,942 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3');
+2019-05-11 02:19:03,951 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '3', '4');
+2019-05-11 02:19:04,054 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('6', '4', '1', '3');
+2019-05-11 02:19:04,079 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('6', '3', '2');
+2019-05-11 02:19:04,122 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('5', '3', '2');
+2019-05-11 02:19:04,144 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('3', '5');
+2019-05-11 02:19:04,153 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('2', '4');
+2019-05-11 02:19:04,182 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('4', '6');
+2019-05-11 02:19:15,657 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` LIMIT 0, 20;
+2019-05-11 02:19:15,818 INFO 8796 [egg-sequelize](11ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` LIMIT 0, 20;
+2019-05-11 02:19:15,975 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `classification_ids`, `label_ids`, `content`, `user_id`, `created_at`, `updated_at`, `title`, `browse_num`, `praise`, `article_id`, `comment_num` FROM `articles` AS `article` WHERE `article`.`article_id` = '16';
+2019-05-11 02:19:16,144 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '2';
+2019-05-11 02:19:16,173 INFO 8796 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '4';
+2019-05-11 02:19:16,181 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '4';
+2019-05-11 02:19:16,189 INFO 8796 [egg-sequelize](1ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '6';
+2019-05-11 02:22:14,845 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` LIMIT 0, 20;
+2019-05-11 02:22:14,941 INFO 8796 [egg-sequelize](6ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` LIMIT 0, 20;
+2019-05-11 02:22:15,052 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `classification_ids`, `label_ids`, `content`, `user_id`, `created_at`, `updated_at`, `title`, `browse_num`, `praise`, `article_id`, `comment_num` FROM `articles` AS `article` WHERE `article`.`article_id` = '16';
+2019-05-11 02:22:15,429 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '2';
+2019-05-11 02:22:15,567 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '4';
+2019-05-11 02:22:15,690 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '4';
+2019-05-11 02:22:15,824 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '6';
+2019-05-11 02:23:27,418 INFO 8796 [egg-sequelize](4ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` LIMIT 0, 20;
+2019-05-11 02:23:27,526 INFO 8796 [egg-sequelize](5ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` LIMIT 0, 20;
+2019-05-11 02:23:27,558 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `classification_ids`, `label_ids`, `content`, `user_id`, `created_at`, `updated_at`, `title`, `browse_num`, `praise`, `article_id`, `comment_num` FROM `articles` AS `article` WHERE `article`.`article_id` = '16';
+2019-05-11 02:23:27,725 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '2';
+2019-05-11 02:23:27,831 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '4';
+2019-05-11 02:23:27,840 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '4';
+2019-05-11 02:23:27,848 INFO 8796 [egg-sequelize](1ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '6';
+2019-05-11 02:24:26,745 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` LIMIT 0, 20;
+2019-05-11 02:24:26,821 INFO 8796 [egg-sequelize](5ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` LIMIT 0, 20;
+2019-05-11 02:24:26,936 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `classification_ids`, `label_ids`, `content`, `user_id`, `created_at`, `updated_at`, `title`, `browse_num`, `praise`, `article_id`, `comment_num` FROM `articles` AS `article` WHERE `article`.`article_id` = '16';
+2019-05-11 02:24:27,102 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '2';
+2019-05-11 02:24:27,202 INFO 8796 [egg-sequelize](1ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '4';
+2019-05-11 02:24:27,325 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '4';
+2019-05-11 02:24:27,377 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '6';
+2019-05-11 02:24:44,929 INFO 8796 [egg-sequelize](8ms) Executed (default): SELECT `classification_ids`, `label_ids`, `content`, `user_id`, `created_at`, `updated_at`, `title`, `browse_num`, `praise`, `article_id`, `comment_num` FROM `articles` AS `article` WHERE `article`.`article_id` = '16';
+2019-05-11 02:24:45,076 INFO 8796 [egg-sequelize](113ms) Executed (default): UPDATE `articles` SET `classification_ids`='4/6',`label_ids`='2/4',`content`='<table border=\"0\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\"><tbody><tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr><tr><td>&nbsp;dd</td><td>&nbsp;d</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table><p><img src=\"http://localhost:7001/public/upload/image/1557489686(1)1557512677659.jpg\" style=\"max-width:100%;\"><br></p>',`user_id`=NULL,`created_at`='2019-05-10 18:19:03',`updated_at`='2019-05-10 18:24:44',`title`='24555',`browse_num`=0,`praise`=0,`comment_num`=0 WHERE `article_id` = '16'
+2019-05-11 02:24:45,147 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `classification_ids`, `label_ids`, `content`, `user_id`, `created_at`, `updated_at`, `title`, `browse_num`, `praise`, `article_id`, `comment_num` FROM `articles` AS `article` WHERE `article`.`article_id` = '16';
+2019-05-11 02:24:45,900 INFO 8796 [egg-sequelize](4ms) Executed (default): SELECT count(*) AS `count` FROM `articles` AS `article`;
+2019-05-11 02:24:45,992 INFO 8796 [egg-sequelize](93ms) Executed (default): SELECT `classification_ids`, `label_ids`, `content`, `user_id`, `created_at`, `updated_at`, `title`, `browse_num`, `praise`, `article_id`, `comment_num` FROM `articles` AS `article` LIMIT 0, 20;
+2019-05-11 02:24:46,127 INFO 8796 [egg-sequelize](10ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` LIMIT 0, 20;
+2019-05-11 02:24:46,211 INFO 8796 [egg-sequelize](86ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4');
+2019-05-11 02:24:46,336 INFO 8796 [egg-sequelize](11ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` LIMIT 0, 20;
+2019-05-11 02:24:46,437 INFO 8796 [egg-sequelize](103ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '2', '4', '5', '7');
+2019-05-11 02:24:46,551 INFO 8796 [egg-sequelize](4ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4', '5');
+2019-05-11 02:24:46,855 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('2', '4', '5');
+2019-05-11 02:24:46,900 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4', '5');
+2019-05-11 02:24:46,909 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('10', '8', '5', '1');
+2019-05-11 02:24:46,918 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4');
+2019-05-11 02:24:46,927 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '2', '4');
+2019-05-11 02:24:46,938 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('2', '3');
+2019-05-11 02:24:46,947 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '4', '5');
+2019-05-11 02:24:46,955 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '3', '4', '5');
+2019-05-11 02:24:46,966 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '6', '3');
+2019-05-11 02:24:46,977 INFO 8796 [egg-sequelize](4ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3');
+2019-05-11 02:24:46,985 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '3', '4');
+2019-05-11 02:24:46,995 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('6', '4', '1', '3');
+2019-05-11 02:24:47,049 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('6', '3', '2');
+2019-05-11 02:24:47,157 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('5', '3', '2');
+2019-05-11 02:24:47,189 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('3', '5');
+2019-05-11 02:24:47,197 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('2', '4');
+2019-05-11 02:24:47,207 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('4', '6');
+2019-05-11 02:24:51,774 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` LIMIT 0, 20;
+2019-05-11 02:24:51,835 INFO 8796 [egg-sequelize](5ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` LIMIT 0, 20;
+2019-05-11 02:24:51,880 INFO 8796 [egg-sequelize](4ms) Executed (default): SELECT `classification_ids`, `label_ids`, `content`, `user_id`, `created_at`, `updated_at`, `title`, `browse_num`, `praise`, `article_id`, `comment_num` FROM `articles` AS `article` WHERE `article`.`article_id` = '16';
+2019-05-11 02:24:51,892 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '2';
+2019-05-11 02:24:51,901 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` = '4';
+2019-05-11 02:24:51,911 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '4';
+2019-05-11 02:24:51,920 INFO 8796 [egg-sequelize](1ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` = '6';
+2019-05-11 02:25:25,660 INFO 8796 [egg-sequelize](6ms) Executed (default): SELECT `classification_ids`, `label_ids`, `content`, `user_id`, `created_at`, `updated_at`, `title`, `browse_num`, `praise`, `article_id`, `comment_num` FROM `articles` AS `article` WHERE `article`.`article_id` = '16';
+2019-05-11 02:25:25,703 INFO 8796 [egg-sequelize](45ms) Executed (default): UPDATE `articles` SET `classification_ids`='4/6',`label_ids`='2/4',`content`='<table border=\"0\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\"><tbody><tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr><tr><td>&nbsp;dd</td><td>&nbsp;d</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table><p><img src=\"http://localhost:7001/public/upload/image/1557489686(1)1557512677659.jpg\" style=\"max-width:100%;\"><img src=\"http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/50/pcmoren_huaixiao_org.png\" alt=\"[坏笑]\" data-w-e=\"1\"><br></p><p><img src=\"http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/3c/pcmoren_wu_org.png\" alt=\"[污]\" data-w-e=\"1\"><img src=\"http://img.t.sinajs.cn/t35/style/images/common/face/ext/normal/60/horse2_thumb.gif\" alt=\"[神马]\" data-w-e=\"1\">🙃<br></p>',`user_id`=NULL,`created_at`='2019-05-10 18:19:03',`updated_at`='2019-05-10 18:25:25',`title`='24555',`browse_num`=0,`praise`=0,`comment_num`=0 WHERE `article_id` = '16'
+2019-05-11 02:25:25,733 ERROR 8796 [-/127.0.0.1/-/134ms POST /backend/v1/article/edit] nodejs.SequelizeDatabaseError: Incorrect string value: '\xF0\x9F\x99\x83<b...' for column 'content' at row 1
+    at Query.formatError (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\sequelize\lib\sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\sequelize\lib\sequelize.js:555:8)
+    at C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\sequelize\lib\sequelize.js:454:28)
+    at QueryInterface.bulkUpdate (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\sequelize\lib\query-interface.js:1040:27)
+    at Promise.try.then.then.then.results (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\sequelize\lib\model.js:2822:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.update (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\sequelize\lib\model.js:2811:8)
+    at ArticleService.editArticle (C:\Users\xuwei\Desktop\BBS\BBS\API\app\service\article.js:187:64)
+    at ArticleController.editArticle (C:\Users\xuwei\Desktop\BBS\BBS\API\app\controller\backend\article.js:41:47)
+    at Object.callFn (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect string value: '\\xF0\\x9F\\x99\\x83<b...' for column 'content' at row 1","sql":"UPDATE `articles` SET `classification_ids`='4/6',`label_ids`='2/4',`content`='<table border=\\\"0\\\" width=\\\"100%\\\" cellpadding=\\\"0\\\" cellspacing=\\\"0\\\"><tbody><tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr><tr><td>&nbsp;dd</td><td>&nbsp;d</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table><p><img src=\\\"http://localhost:7001/public/upload/image/1557489686(1)1557512677659.jpg\\\" style=\\\"max-width:100%;\\\"><img src=\\\"http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/50/pcmoren_huaixiao_org.png\\\" alt=\\\"[坏笑]\\\" data-w-e=\\\"1\\\"><br></p><p><img src=\\\"http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/3c/pcmoren_wu_org.png\\\" alt=\\\"[污]\\\" data-w-e=\\\"1\\\"><img src=\\\"http://img.t.sinajs.cn/t35/style/images/common/face/ext/normal/60/horse2_thumb.gif\\\" alt=\\\"[神马]\\\" data-w-e=\\\"1\\\">🙃<br></p>',`user_id`=NULL,`created_at`='2019-05-10 18:19:03',`updated_at`='2019-05-10 18:25:25',`title`='24555',`browse_num`=0,`praise`=0,`comment_num`=0 WHERE `article_id` = '16'"}
+original: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect string value: '\\xF0\\x9F\\x99\\x83<b...' for column 'content' at row 1","sql":"UPDATE `articles` SET `classification_ids`='4/6',`label_ids`='2/4',`content`='<table border=\\\"0\\\" width=\\\"100%\\\" cellpadding=\\\"0\\\" cellspacing=\\\"0\\\"><tbody><tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr><tr><td>&nbsp;dd</td><td>&nbsp;d</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table><p><img src=\\\"http://localhost:7001/public/upload/image/1557489686(1)1557512677659.jpg\\\" style=\\\"max-width:100%;\\\"><img src=\\\"http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/50/pcmoren_huaixiao_org.png\\\" alt=\\\"[坏笑]\\\" data-w-e=\\\"1\\\"><br></p><p><img src=\\\"http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/3c/pcmoren_wu_org.png\\\" alt=\\\"[污]\\\" data-w-e=\\\"1\\\"><img src=\\\"http://img.t.sinajs.cn/t35/style/images/common/face/ext/normal/60/horse2_thumb.gif\\\" alt=\\\"[神马]\\\" data-w-e=\\\"1\\\">🙃<br></p>',`user_id`=NULL,`created_at`='2019-05-10 18:19:03',`updated_at`='2019-05-10 18:25:25',`title`='24555',`browse_num`=0,`praise`=0,`comment_num`=0 WHERE `article_id` = '16'"}
+sql: "UPDATE `articles` SET `classification_ids`='4/6',`label_ids`='2/4',`content`='<table border=\\\"0\\\" width=\\\"100%\\\" cellpadding=\\\"0\\\" cellspacing=\\\"0\\\"><tbody><tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr><tr><td>&nbsp;dd</td><td>&nbsp;d</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table><p><img src=\\\"http://localhost:7001/public/upload/image/1557489686(1)1557512677659.jpg\\\" style=\\\"max-width:100%;\\\"><img src=\\\"http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/50/pcmoren_huaixiao_org.png\\\" alt=\\\"[坏笑]\\\" data-w-e=\\\"1\\\"><br></p><p><img src=\\\"http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/3c/pcmoren_wu_org.png\\\" alt=\\\"[污]\\\" data-w-e=\\\"1\\\"><img src=\\\"http://img.t.sinajs.cn/t35/style/images/common/face/ext/normal/60/horse2_thumb.gif\\\" alt=\\\"[神马]\\\" data-w-e=\\\"1\\\">🙃<br></p>',`user_id`=NULL,`created_at`='2019-05-10 18:19:03',`updated_at`='2019-05-10 18:25:25',`title`='24555',`browse_num`=0,`praise`=0,`comment_num`=0 WHERE `article_id` = '16'"
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 8796
+hostname: DESKTOP-UHOS0OJ
+
+2019-05-11 02:25:47,931 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `classification_ids`, `label_ids`, `content`, `user_id`, `created_at`, `updated_at`, `title`, `browse_num`, `praise`, `article_id`, `comment_num` FROM `articles` AS `article` WHERE `article`.`article_id` = '16';
+2019-05-11 02:25:47,995 INFO 8796 [egg-sequelize](31ms) Executed (default): UPDATE `articles` SET `classification_ids`='4/6',`label_ids`='2/4',`content`='<table border=\"0\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\"><tbody><tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr><tr><td>&nbsp;dd</td><td>&nbsp;d</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table><p><img src=\"http://localhost:7001/public/upload/image/1557489686(1)1557512677659.jpg\" style=\"max-width:100%;\"><br></p>',`user_id`=NULL,`created_at`='2019-05-10 18:19:03',`updated_at`='2019-05-10 18:25:47',`title`='24555',`browse_num`=0,`praise`=0,`comment_num`=0 WHERE `article_id` = '16'
+2019-05-11 02:25:48,027 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `classification_ids`, `label_ids`, `content`, `user_id`, `created_at`, `updated_at`, `title`, `browse_num`, `praise`, `article_id`, `comment_num` FROM `articles` AS `article` WHERE `article`.`article_id` = '16';
+2019-05-11 02:25:48,645 INFO 8796 [egg-sequelize](4ms) Executed (default): SELECT count(*) AS `count` FROM `articles` AS `article`;
+2019-05-11 02:25:48,663 INFO 8796 [egg-sequelize](20ms) Executed (default): SELECT `classification_ids`, `label_ids`, `content`, `user_id`, `created_at`, `updated_at`, `title`, `browse_num`, `praise`, `article_id`, `comment_num` FROM `articles` AS `article` LIMIT 0, 20;
+2019-05-11 02:25:48,673 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4');
+2019-05-11 02:25:48,682 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '2', '4', '5', '7');
+2019-05-11 02:25:48,690 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4', '5');
+2019-05-11 02:25:48,705 INFO 8796 [egg-sequelize](7ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('2', '4', '5');
+2019-05-11 02:25:48,707 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` LIMIT 0, 20;
+2019-05-11 02:25:48,740 INFO 8796 [egg-sequelize](10ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4', '5');
+2019-05-11 02:25:48,765 INFO 8796 [egg-sequelize](27ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` LIMIT 0, 20;
+2019-05-11 02:25:48,778 INFO 8796 [egg-sequelize](4ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('10', '8', '5', '1');
+2019-05-11 02:25:48,791 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3', '4');
+2019-05-11 02:25:48,801 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '2', '4');
+2019-05-11 02:25:48,811 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('2', '3');
+2019-05-11 02:25:48,820 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '4', '5');
+2019-05-11 02:25:48,829 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '3', '4', '5');
+2019-05-11 02:25:48,838 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '6', '3');
+2019-05-11 02:25:48,890 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('1', '2', '3');
+2019-05-11 02:25:48,914 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('1', '3', '4');
+2019-05-11 02:25:48,925 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('6', '4', '1', '3');
+2019-05-11 02:25:48,934 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('6', '3', '2');
+2019-05-11 02:25:48,944 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('5', '3', '2');
+2019-05-11 02:25:48,955 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('3', '5');
+2019-05-11 02:25:48,964 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` WHERE `label`.`id` IN ('2', '4');
+2019-05-11 02:25:48,972 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` WHERE `classifications`.`id` IN ('4', '6');
+2019-05-11 02:26:01,068 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `id` FROM `labels` AS `label` LIMIT 0, 20;
+2019-05-11 02:26:03,648 INFO 8796 [egg-sequelize](7ms) Executed (default): SELECT `reply_ids`, `content`, `connect_id`, `created_at`, `updated_at`, `type`, `id` FROM `comments` AS `comment` LIMIT 0, 20;
+2019-05-11 02:26:06,862 INFO 8796 [egg-sequelize](5ms) Executed (default): SELECT `content`, `user_id`, `created_at`, `updated_at`, `id` FROM `replies` AS `reply` LIMIT 0, 20;
+2019-05-11 02:26:09,856 INFO 8796 [egg-sequelize](6ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` LIMIT 0, 20;
+2019-05-11 02:26:11,386 INFO 8796 [egg-sequelize](19ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 20;
+2019-05-11 02:26:13,813 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `name`, `id`, `created_at`, `updated_at`, `d_id`, `p_id` FROM `classifications` AS `classifications` LIMIT 0, 20;
+2019-05-11 02:26:21,090 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` LIMIT 0, 20;
+2019-05-11 02:28:57,308 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` LIMIT 0, 20;
+2019-05-11 02:28:58,624 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` WHERE `file`.`id` = '1';
+2019-05-11 02:29:03,131 INFO 8796 [egg-sequelize](1ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` LIMIT 0, 20;
+2019-05-11 02:35:12,873 INFO 8796 [egg-sequelize](1ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` LIMIT 0, 20;
+2019-05-11 02:40:30,828 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 02:44:52,054 INFO 8796 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`title` = '256' LIMIT 1;
+2019-05-11 02:44:52,168 INFO 8796 [egg-sequelize](94ms) Executed (default): INSERT INTO `albums` (`title`,`poster`,`created_at`,`updated_at`,`id`) VALUES ('256','http://localhost:7001/public/upload/image/1557489686(1)1557513887410.jpg','2019-05-10 18:44:52','2019-05-10 18:44:52',DEFAULT);
+2019-05-11 02:44:52,786 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` LIMIT 0, 20;
+2019-05-11 02:44:55,666 INFO 8796 [egg-sequelize](1ms) Executed (default): SELECT `title`, `poster`, `file_ids`, `created_at`, `updated_at`, `id` FROM `albums` AS `album` WHERE `album`.`id` = '8';
+2019-05-11 02:45:03,747 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` LIMIT 0, 20;
+2019-05-11 02:45:14,820 INFO 8796 [egg-sequelize](1ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` WHERE `file`.`file_src` = 'http://localhost:7001/public/upload/image/1557489686(1)1557513913407.jpg' LIMIT 1;
+2019-05-11 02:45:14,902 INFO 8796 [egg-sequelize](62ms) Executed (default): INSERT INTO `files` (`type`,`file_src`,`created_at`,`updated_at`,`id`) VALUES ('1','http://localhost:7001/public/upload/image/1557489686(1)1557513913407.jpg','2019-05-10 18:45:14','2019-05-10 18:45:14',DEFAULT);
+2019-05-11 02:45:15,240 INFO 8796 [egg-sequelize](1ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` LIMIT 0, 20;
+2019-05-11 02:45:17,970 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` WHERE `file`.`id` = '7';
+2019-05-11 02:45:54,473 INFO 8796 [egg-sequelize](1ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` WHERE `file`.`file_src` = 'http://localhost:7001/public/upload/image/1557489686(1)1557513913407.jpg' LIMIT 1;
+2019-05-11 02:46:00,374 INFO 8796 [egg-sequelize](1ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` WHERE `file`.`id` = '7';
+2019-05-11 02:48:41,104 INFO 8796 [egg-sequelize](1ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` WHERE `file`.`id` = '7';
+2019-05-11 02:48:43,613 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` LIMIT 0, 20;
+2019-05-11 02:48:47,343 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` LIMIT 0, 20;
+2019-05-11 02:48:48,690 INFO 8796 [egg-sequelize](1ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` WHERE `file`.`id` = '5';
+2019-05-11 02:48:54,373 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` LIMIT 0, 20;
+2019-05-11 02:48:57,281 INFO 8796 [egg-sequelize](1ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` WHERE `file`.`id` = '7';
+2019-05-11 02:49:00,790 INFO 8796 [egg-sequelize](1ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` WHERE `file`.`id` = 7;
+2019-05-11 02:49:00,810 INFO 8796 [egg-sequelize](3ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` WHERE `file`.`file_src` = 'http://localhost:7001/public/upload/image/1557489686(1)1557513913407.jpg' LIMIT 1;
+2019-05-11 02:50:27,574 INFO 8796 [egg-sequelize](25ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` WHERE `file`.`id` = 7;
+2019-05-11 02:50:27,618 INFO 8796 [egg-sequelize](4ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` WHERE `file`.`file_src` = 'http://localhost:7001/public/upload/image/1557489675(1)1557514225948.jpg' LIMIT 1;
+2019-05-11 02:50:27,762 INFO 8796 [egg-sequelize](104ms) Executed (default): UPDATE `files` SET `type`='0',`file_src`='http://localhost:7001/public/upload/image/1557489675(1)1557514225948.jpg',`created_at`='2019-05-10 18:45:14',`updated_at`='2019-05-10 18:50:27' WHERE `id` = 7
+2019-05-11 02:50:27,774 INFO 8796 [egg-sequelize](2ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` WHERE `file`.`id` = 7;
+2019-05-11 02:50:28,055 INFO 8796 [egg-sequelize](5ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` LIMIT 0, 20;
+2019-05-11 02:50:52,948 INFO 15192 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 02:51:23,125 INFO 15192 [egg-sequelize](6ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` WHERE `file`.`id` = '7';
+2019-05-11 02:51:23,211 INFO 15192 [egg-sequelize](1ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` WHERE `file`.`id` = '7';
+2019-05-11 02:51:24,432 INFO 15192 [egg-sequelize](2ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` WHERE `file`.`id` = 7;
+2019-05-11 02:51:24,506 INFO 15192 [egg-sequelize](6ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` WHERE `file`.`file_src` = 'http://localhost:7001/public/upload/image/1557489675(1)1557514225948.jpg' LIMIT 1;
+2019-05-11 02:51:31,757 INFO 15192 [egg-sequelize](2ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` WHERE `file`.`id` = 7;
+2019-05-11 02:51:31,904 INFO 15192 [egg-sequelize](149ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` WHERE `file`.`file_src` = 'http://localhost:7001/public/upload/image/1557489686(1)1557514290387.jpg' LIMIT 1;
+2019-05-11 02:51:32,045 INFO 15192 [egg-sequelize](60ms) Executed (default): UPDATE `files` SET `type`='0',`file_src`='http://localhost:7001/public/upload/image/1557489686(1)1557514290387.jpg',`created_at`='2019-05-10 18:45:14',`updated_at`='2019-05-10 18:51:31' WHERE `id` = 7
+2019-05-11 02:51:32,095 INFO 15192 [egg-sequelize](1ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` WHERE `file`.`id` = 7;
+2019-05-11 02:51:32,511 INFO 15192 [egg-sequelize](1ms) Executed (default): SELECT `type`, `file_src`, `created_at`, `updated_at`, `id` FROM `files` AS `file` LIMIT 0, 20;
+2019-05-11 02:51:35,778 INFO 15192 [egg-sequelize](6ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 20;
+2019-05-11 03:02:38,417 INFO 20256 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 03:03:39,120 INFO 7232 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 03:04:14,451 INFO 15332 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 03:04:32,742 INFO 16508 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 03:04:51,700 INFO 9924 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 03:05:06,920 INFO 10732 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 03:05:44,860 INFO 17540 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 03:08:27,582 INFO 20280 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 03:11:56,221 INFO 6816 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2019-05-11 03:16:23,135 INFO 6816 [egg-sequelize](7ms) Executed (default): SELECT `created_at`, `updated_at`, `name`, `src`, `id` FROM `friendlinks` AS `friendlink` LIMIT 0, 20;
+2019-05-11 03:16:27,805 INFO 6816 [egg-sequelize](9ms) Executed (default): SELECT `reply_ids`, `content`, `connect_id`, `created_at`, `updated_at`, `type`, `id` FROM `comments` AS `comment` LIMIT 0, 20;

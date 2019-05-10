@@ -19,9 +19,13 @@ const { SIZE, PAGE } = require('../common/row')
             type:'string',
             required:false
         },
+        user_id:{
+          type:'string',
+          require:true  
+        },
         file_ids:{
             type:'string',
-            required:false
+            required:false,
         }
     }
 
@@ -49,6 +53,7 @@ module.exports = app =>{
             if( key.trim() ){
                 return (await this.checkData(key,value)) 
                 ? this.ServerResponse.error(
+                     1,
                     '相册验证失败'
                 )
                 :this.ServerResponse.success(
@@ -136,10 +141,10 @@ module.exports = app =>{
             }
             const result = this.checkData('id',id)
             if( !result ) return result
-             const cheaktitle = await this.checkArtcle('title',data.title); 
-            if( !cheaktitle.isSuccess()){
-                return cheaktitle
-            }
+            //  const cheaktitle = await this.checkArtcle('title',data.title); 
+            // if( !cheaktitle.isSuccess()){
+            //     return cheaktitle
+            // }
             const updateAlbum = await this.ctx.model.Album.update(
                 data,
                 {where:{
@@ -175,7 +180,17 @@ module.exports = app =>{
             }
             return this.ServerResponse.success({}, '删除相册成功')
         }
-        
+        async getOneAlbum(id){
+            const comment = await this.ctx.model.Album.findOne({
+                where:{
+                    id:id
+                }
+            })
+            if (!comment) {
+                return this.ServerResponse.error(10211, '获取相册失败')
+            }
+            return this.ServerResponse.success(comment, '获取相册成功')
+        }
 
 
         

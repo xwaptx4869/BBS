@@ -5,6 +5,7 @@ const path = require('path')
 const fs = require('fs')
 const sendToWormhole = require('stream-wormhole')
 const { PATH, SETPATH } = require('../../common/image')
+const awaitWriteStream = require('await-stream-ready').write;
 
 class UploadApiController extends Controller {
 	constructor (ctx) {
@@ -27,7 +28,7 @@ class UploadApiController extends Controller {
 		try {
 			// 本地上传
 			const ws = fs.createWriteStream(path.resolve(SETPATH + filename))
-			stream.pipe(ws)
+			await awaitWriteStream(stream.pipe(ws))
 		} catch (e) {
 			await sendToWormhole(stream)
 			response = this.ServerResponse.error(20601, '上传图片失败')

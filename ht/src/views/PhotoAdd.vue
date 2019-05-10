@@ -15,15 +15,14 @@
 						<el-form-item label="标题" prop="title">
 							<el-input v-model="photo.title" placeholder="请填写标题"></el-input>
 						</el-form-item>
-						<el-form-item label="封面" prop="picUrl">
+						<el-form-item label="封面" prop="poster">
 							<el-upload
-                                class="avatar-uploader"
                                 action="/"
-								:limit="1"
 								:show-file-list="false"
 								:http-request="onFileUpload"
                                 :before-upload="xcommon.beforeAvatarUpload">
-                                <i  class="el-icon-plus avatar-uploader-icon"></i>
+                                 <el-button size="small" type="primary">点击上传</el-button>
+								<span v-if="photo.poster" class="avatar"><img  :src="photo.poster"> </span>
                             </el-upload>
 						</el-form-item>
 						<el-form-item>
@@ -45,12 +44,8 @@ export default {
 			photoType,
 			photo: {
 				title: '',
-				desc: '',
-				topicIds: '',
-				isHome: 0,
-				type: '',
-				is_update: 1,
-				picUrl:''
+				user_id: '1',
+				poster:''
 
 			},
 			topics: [],
@@ -58,10 +53,7 @@ export default {
 			photoRules: {
 				title: [
 					{required: true, message: '请输入相册标题', trigger: 'blur'},
-				],
-				poster: [
-					{required: true, message: '请选择相册封面', trigger: 'blur'},
-				],
+				]
 			},
 			loading: false
 		};
@@ -71,10 +63,9 @@ export default {
 		addPhoto () {
 			this.loading = true
 			const { photo, topics, schedulings } = this
-			photo.topicIds =  this.xutils.toStringTag(topics)
-			this.$axios.post('/media/group/add', photo).then(response => {
-				const {code, data, message} = response.data
-				if(code !== 0) return this.$message.error(message);
+			this.$axios.post('/album/add', photo).then(response => {
+				const {status, data, message} = response.data
+				if(status !== 0) return this.$message.error(message);
 				this.$message.success('创建相册成功');
 				this.$router.go(-1)
 				this.loading = false
@@ -83,12 +74,15 @@ export default {
 		// 图片
 		picSuccess (res, file) {
 			if(res.code) return this.$message.success(res.message);
-			this.photo.picUrl = res.data;
-			console.log(this.photo.picUrl)
+			console.log(res.data);
+			this.photo.poster = res.data.data;
+			console.log(this.photo.poster)
 		},
 		// 文件上传
 		onFileUpload (elFrom) {
+			console.log(elFrom)
 			this.xcommon.fileUpload(elFrom.file).then(res => {
+				console.log(res);
 				this.picSuccess(res)
 			})
 		},
@@ -102,4 +96,23 @@ export default {
 }
 </script>
 <style lang="scss">
+.avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .avatar-uploader .el-upload:hover {
+    border-color: #409EFF;
+  }
+  .avatar {
+   width: 200px;
+   height:200px;
+   display: block;
+   img{
+	   width: 100%;
+	   height: 100%;
+   }
+  }
 </style>

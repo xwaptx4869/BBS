@@ -100,6 +100,7 @@ export default new Router({
 						require(['@/views/PhotoAdd.vue'], resolve)
 				},
 				{
+					name:'photoedit',
 					path: '/content/photos/edit/:id',
 					component: resolve =>
 						require(['@/views/PhotoEdit.vue'], resolve)

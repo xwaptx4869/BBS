@@ -1,6 +1,8 @@
 <template>
     <div class="page">
          <page-header :data="toolData.data"></page-header>
+
+        
     </div>
 </template>
 <script>

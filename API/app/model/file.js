@@ -13,9 +13,6 @@ module.exports = app => {
 			},
 			file_src: { 
                 type: STRING(255),
-				validate: {
-					isUrl: true,
-				},
             },
 			created_at: DATE,
 			updated_at: DATE,

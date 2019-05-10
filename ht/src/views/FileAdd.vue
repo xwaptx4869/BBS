@@ -11,9 +11,9 @@
 			<div class="smart-widget-header">新建文件</div>
 			<div class="smart-widget-inner">
 				<div class="smart-widget-body">
-					<el-form ref="FileForm" :model="File" :rules="FileRules" label-width="180px">
+					<el-form ref="FileForm" :model="FileList" :rules="FileRules" label-width="180px">
 						 <el-form-item prop="type" label="分类">
-							<el-select v-model="File.type" placeholder="请选择" >
+							<el-select v-model="FileList.type" placeholder="请选择" >
 								<el-option
 								v-for="(item, index) in fileclassSource"
 								:key="index"
@@ -22,13 +22,14 @@
 								</el-option>
 							</el-select>
 						</el-form-item>
-						<el-form-item label="文件" prop="small_url">
+						<el-form-item label="文件" prop="poster">
 							<el-upload
-                                class="avatar-uploader"
                                 action="/"
-                                :show-file-list="false"
+								:show-file-list="false"
+								:http-request="onFileUpload"
                                 :before-upload="xcommon.beforeAvatarUpload">
-                                <i  class="el-icon-plus avatar-uploader-icon"></i>
+                                 <el-button size="small" type="primary">点击上传</el-button>
+								<img v-if="FileList.file_src" :src="FileList.file_src" class="avatar">
                             </el-upload>
 						</el-form-item>
 						<el-form-item>
@@ -49,14 +50,10 @@ export default {
 			fileclassSource,
 			addTopicString: '',
 			FileType,
-			File: {
-				title: '',
-				desc: '',
-				topicIds: '',
-				isHome: 0,
+			type:'',
+			FileList: {
 				type: '',
-				is_update: 1,
-
+				file_src:''
 			},
 			topics: [],
 			inputVisible: false,
@@ -84,25 +81,49 @@ export default {
 				const {status, data, message} = response.data
 				if(status !== 0) return this.$message.error(status);
 				data.type = data.type + ''
-				this.File = data
+				this.FileList = data
 			})
 		},
 		// 添加文件
 		addFile () {
 			this.loading = true
-			const { File, topics, schedulings } = this
-			File.topicIds =  this.xutils.toStringTag(topics)
-			this.$axios.post('/media/group/add', File).then(response => {
-				const {code, data, message} = response.data
-				if(code !== 0) return this.$message.error(message);
-				this.$message.success('创建文件成功');
+			this.$axios.post('/file/add', this.FileList).then(response => {
+				const {status, data, message} = response.data
+				if(status !== 0) return this.$message.error(message);
+				this.$message.success('文件创建成功');
 				this.$router.go(-1)
 				this.loading = false
 			})
 		},
+		// 更新文件
+		updateFile () {
+			this.loading = true
+			this.$axios.post('/file/edit', this.FileList).then(response => {
+				const {status, data, documentation_url} = response.data
+				if(status !== 0){this.loading = false; return this.$message.error(status);}
+				this.$message.success('文件更新成功');
+				this.$router.go(-1)
+				this.loading = false
+			})
+		},
+		// 图片
+		picSuccess (res, file) {
+			if(res.code) return this.$message.success(res.message);
+			this.FileList.file_src = res.data.data;
+		},
+		// 文件上传
+		onFileUpload (elFrom) {
+			console.log(elFrom)
+			this.xcommon.fileUpload(elFrom.file).then(res => {
+				this.picSuccess(res)
+			})
+		},
 		onSubmit () {
 			this.$refs['FileForm'].validate((valid) => {
-				if (valid) this.addFile()
+				if (valid) 
+				{
+					this.type == 'add' ? this.addFile() :this.updateFile() ;
+				}
 				return false
 			})
 		}

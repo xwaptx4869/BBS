@@ -57,7 +57,7 @@
           </div>
         </div>
       </div>
-      <comment :commentdata="commentdata"></comment>
+      <comment :commentdata="commentdata" :type="'1'"></comment>
     </div>
   </div>
 </template>

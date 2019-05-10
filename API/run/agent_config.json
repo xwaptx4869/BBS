@@ -75,7 +75,7 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg-onerror\\lib\\onerror_page.mustache"
+      "templatePath": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg-onerror\\lib\\onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
@@ -87,14 +87,14 @@
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg-watcher\\lib\\event-sources\\default",
-        "development": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg-watcher\\lib\\event-sources\\development"
+        "default": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg-watcher\\lib\\event-sources\\default",
+        "development": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg-watcher\\lib\\event-sources\\development"
       }
     },
     "customLogger": {
       "scheduleLogger": {
         "consoleLevel": "NONE",
-        "file": "C:\\Users\\Administrator\\Desktop\\API\\logs\\api\\egg-schedule.log"
+        "file": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api\\egg-schedule.log"
       }
     },
     "schedule": {
@@ -111,7 +111,7 @@
       "files": 10,
       "fileExtensions": [],
       "whitelist": null,
-      "tmpdir": "C:\\Users\\ADMINI\\x7e1\\AppData\\Local\\Temp\\egg-multipart-tmp\\api",
+      "tmpdir": "C:\\Users\\xuwei\\AppData\\Local\\Temp\\egg-multipart-tmp\\api",
       "cleanSchedule": {
         "cron": "0 30 4 * * *"
       }
@@ -134,14 +134,14 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "C:\\Users\\Administrator\\Desktop\\API\\app\\public",
+      "dir": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\app\\public",
       "dynamic": true,
       "preload": false,
       "buffer": false,
       "maxFiles": 1000
     },
     "view": {
-      "root": "C:\\Users\\Administrator\\Desktop\\API\\app\\view",
+      "root": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\app\\view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "",
@@ -221,9 +221,9 @@
       "author": "xuwei",
       "license": "MIT"
     },
-    "baseDir": "C:\\Users\\Administrator\\Desktop\\API",
-    "HOME": "C:\\Users\\Administrator",
-    "rundir": "C:\\Users\\Administrator\\Desktop\\API\\run",
+    "baseDir": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API",
+    "HOME": "C:\\Users\\xuwei",
+    "rundir": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -253,7 +253,7 @@
       }
     },
     "logger": {
-      "dir": "C:\\Users\\Administrator\\Desktop\\API\\logs\\api",
+      "dir": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -329,8 +329,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg-session",
+      "from": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg\\config\\plugin.js",
+      "path": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg-session",
       "version": "3.1.0"
     },
     "security": {
@@ -342,8 +342,8 @@
         "session"
       ],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg-security",
+      "from": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg\\config\\plugin.js",
+      "path": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg-security",
       "version": "2.5.0"
     },
     "jsonp": {
@@ -355,8 +355,8 @@
         "security"
       ],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg-jsonp",
+      "from": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg\\config\\plugin.js",
+      "path": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg-jsonp",
       "version": "2.0.0"
     },
     "onerror": {
@@ -368,8 +368,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg-onerror",
+      "from": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg\\config\\plugin.js",
+      "path": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg-onerror",
       "version": "2.1.0"
     },
     "i18n": {
@@ -379,8 +379,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg-i18n",
+      "from": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg\\config\\plugin.js",
+      "path": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg-i18n",
       "version": "2.0.0"
     },
     "watcher": {
@@ -390,8 +390,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg-watcher",
+      "from": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg\\config\\plugin.js",
+      "path": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg-watcher",
       "version": "3.1.0"
     },
     "schedule": {
@@ -401,8 +401,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg-schedule",
+      "from": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg\\config\\plugin.js",
+      "path": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg-schedule",
       "version": "3.6.0"
     },
     "multipart": {
@@ -414,8 +414,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg-multipart",
+      "from": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg\\config\\plugin.js",
+      "path": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg-multipart",
       "version": "2.4.0"
     },
     "development": {
@@ -429,8 +429,8 @@
       "env": [
         "local"
       ],
-      "from": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg-development",
+      "from": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg\\config\\plugin.js",
+      "path": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg-development",
       "version": "2.4.2"
     },
     "logrotator": {
@@ -442,8 +442,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg-logrotator",
+      "from": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg\\config\\plugin.js",
+      "path": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg-logrotator",
       "version": "3.0.7"
     },
     "static": {
@@ -453,8 +453,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg-static",
+      "from": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg\\config\\plugin.js",
+      "path": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg-static",
       "version": "2.2.0"
     },
     "view": {
@@ -464,8 +464,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg-view",
+      "from": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg\\config\\plugin.js",
+      "path": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg-view",
       "version": "2.1.2"
     },
     "cors": {
@@ -475,8 +475,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\API\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg-cors",
+      "from": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\config\\plugin.js",
+      "path": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg-cors",
       "version": "2.2.0"
     },
     "validate": {
@@ -486,8 +486,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\API\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg-validate",
+      "from": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\config\\plugin.js",
+      "path": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg-validate",
       "version": "1.1.1"
     },
     "sequelize": {
@@ -497,8 +497,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\API\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\API\\node_modules\\egg-sequelize",
+      "from": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\config\\plugin.js",
+      "path": "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\node_modules\\egg-sequelize",
       "version": "4.3.1"
     }
   }

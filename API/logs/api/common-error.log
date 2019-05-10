@@ -1,10 +1,162 @@
-2019-04-12 09:26:42,095 ERROR 13268 nodejs.ClusterClientNoResponseError: client no response in 3902014ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
-    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\Administrator\Desktop\API\node_modules\cluster-client\lib\leader.js:77:23)
-    at ontimeout (timers.js:436:11)
-    at tryOnTimeout (timers.js:300:5)
-    at listOnTimeout (timers.js:263:5)
-    at Timer.processTimers (timers.js:223:10)
-name: "ClusterClientNoResponseError"
-pid: 13268
-hostname: 20161212-102137
+2019-05-11 00:00:28,141 ERROR 12788 [-/127.0.0.1/-/46ms POST /backend/v1/upload/upload] nodejs.TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be one of type string, Buffer, or URL. Received type object
+    at Object.open (fs.js:408:3)
+    at WriteStream.open (internal/fs/streams.js:267:12)
+    at new WriteStream (internal/fs/streams.js:254:10)
+    at Object.createWriteStream (fs.js:1731:10)
+    at Promise (C:\Users\xuwei\Desktop\BBS\BBS\API\app\controller\backend\uploadapicontroller.js:29:32)
+    at new Promise (<anonymous>)
+    at UploadApiController.index (C:\Users\xuwei\Desktop\BBS\BBS\API\app\controller\backend\uploadapicontroller.js:28:24)
+    at UploadApiController.upload (C:\Users\xuwei\Desktop\BBS\BBS\API\app\controller\backend\uploadapicontroller.js:99:31)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 12788
+hostname: DESKTOP-UHOS0OJ
+
+2019-05-11 00:02:06,311 ERROR 8524 [-/127.0.0.1/-/42ms POST /backend/v1/upload/upload] nodejs.TypeError: the multipart request can't be consumed twice
+    at Object.multipart (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\egg-multipart\app\extend\context.js:53:35)
+    at Object.getFileStream (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\egg-multipart\app\extend\context.js:91:24)
+    at UploadApiController.index (C:\Users\xuwei\Desktop\BBS\BBS\API\app\controller\backend\uploadapicontroller.js:24:28)
+    at UploadApiController.upload (C:\Users\xuwei\Desktop\BBS\BBS\API\app\controller\backend\uploadapicontroller.js:99:31)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 8524
+hostname: DESKTOP-UHOS0OJ
+
+2019-05-11 00:50:56,747 ERROR 15680 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 15680
+hostname: DESKTOP-UHOS0OJ
+
+2019-05-11 02:06:29,610 ERROR 6240 [-/127.0.0.1/-/94ms POST /backend/v1/album/edit] nodejs.ReferenceError: code is not defined
+    at AlbumService.checkArtcle (C:\Users\xuwei\Desktop\BBS\BBS\API\app\service\album.js:56:26)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 6240
+hostname: DESKTOP-UHOS0OJ
+
+2019-05-11 02:25:25,732 ERROR 8796 [-/127.0.0.1/-/134ms POST /backend/v1/article/edit] nodejs.SequelizeDatabaseError: Incorrect string value: '\xF0\x9F\x99\x83<b...' for column 'content' at row 1
+    at Query.formatError (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\sequelize\lib\sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\sequelize\lib\sequelize.js:555:8)
+    at C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\sequelize\lib\sequelize.js:454:28)
+    at QueryInterface.bulkUpdate (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\sequelize\lib\query-interface.js:1040:27)
+    at Promise.try.then.then.then.results (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\sequelize\lib\model.js:2822:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.update (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\sequelize\lib\model.js:2811:8)
+    at ArticleService.editArticle (C:\Users\xuwei\Desktop\BBS\BBS\API\app\service\article.js:187:64)
+    at ArticleController.editArticle (C:\Users\xuwei\Desktop\BBS\BBS\API\app\controller\backend\article.js:41:47)
+    at Object.callFn (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect string value: '\\xF0\\x9F\\x99\\x83<b...' for column 'content' at row 1","sql":"UPDATE `articles` SET `classification_ids`='4/6',`label_ids`='2/4',`content`='<table border=\\\"0\\\" width=\\\"100%\\\" cellpadding=\\\"0\\\" cellspacing=\\\"0\\\"><tbody><tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr><tr><td>&nbsp;dd</td><td>&nbsp;d</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table><p><img src=\\\"http://localhost:7001/public/upload/image/1557489686(1)1557512677659.jpg\\\" style=\\\"max-width:100%;\\\"><img src=\\\"http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/50/pcmoren_huaixiao_org.png\\\" alt=\\\"[坏笑]\\\" data-w-e=\\\"1\\\"><br></p><p><img src=\\\"http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/3c/pcmoren_wu_org.png\\\" alt=\\\"[污]\\\" data-w-e=\\\"1\\\"><img src=\\\"http://img.t.sinajs.cn/t35/style/images/common/face/ext/normal/60/horse2_thumb.gif\\\" alt=\\\"[神马]\\\" data-w-e=\\\"1\\\">🙃<br></p>',`user_id`=NULL,`created_at`='2019-05-10 18:19:03',`updated_at`='2019-05-10 18:25:25',`title`='24555',`browse_num`=0,`praise`=0,`comment_num`=0 WHERE `article_id` = '16'"}
+original: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect string value: '\\xF0\\x9F\\x99\\x83<b...' for column 'content' at row 1","sql":"UPDATE `articles` SET `classification_ids`='4/6',`label_ids`='2/4',`content`='<table border=\\\"0\\\" width=\\\"100%\\\" cellpadding=\\\"0\\\" cellspacing=\\\"0\\\"><tbody><tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr><tr><td>&nbsp;dd</td><td>&nbsp;d</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table><p><img src=\\\"http://localhost:7001/public/upload/image/1557489686(1)1557512677659.jpg\\\" style=\\\"max-width:100%;\\\"><img src=\\\"http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/50/pcmoren_huaixiao_org.png\\\" alt=\\\"[坏笑]\\\" data-w-e=\\\"1\\\"><br></p><p><img src=\\\"http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/3c/pcmoren_wu_org.png\\\" alt=\\\"[污]\\\" data-w-e=\\\"1\\\"><img src=\\\"http://img.t.sinajs.cn/t35/style/images/common/face/ext/normal/60/horse2_thumb.gif\\\" alt=\\\"[神马]\\\" data-w-e=\\\"1\\\">🙃<br></p>',`user_id`=NULL,`created_at`='2019-05-10 18:19:03',`updated_at`='2019-05-10 18:25:25',`title`='24555',`browse_num`=0,`praise`=0,`comment_num`=0 WHERE `article_id` = '16'"}
+sql: "UPDATE `articles` SET `classification_ids`='4/6',`label_ids`='2/4',`content`='<table border=\\\"0\\\" width=\\\"100%\\\" cellpadding=\\\"0\\\" cellspacing=\\\"0\\\"><tbody><tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr><tr><td>&nbsp;dd</td><td>&nbsp;d</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table><p><img src=\\\"http://localhost:7001/public/upload/image/1557489686(1)1557512677659.jpg\\\" style=\\\"max-width:100%;\\\"><img src=\\\"http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/50/pcmoren_huaixiao_org.png\\\" alt=\\\"[坏笑]\\\" data-w-e=\\\"1\\\"><br></p><p><img src=\\\"http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/3c/pcmoren_wu_org.png\\\" alt=\\\"[污]\\\" data-w-e=\\\"1\\\"><img src=\\\"http://img.t.sinajs.cn/t35/style/images/common/face/ext/normal/60/horse2_thumb.gif\\\" alt=\\\"[神马]\\\" data-w-e=\\\"1\\\">🙃<br></p>',`user_id`=NULL,`created_at`='2019-05-10 18:19:03',`updated_at`='2019-05-10 18:25:25',`title`='24555',`browse_num`=0,`praise`=0,`comment_num`=0 WHERE `article_id` = '16'"
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 8796
+hostname: DESKTOP-UHOS0OJ
+
+2019-05-11 03:04:01,803 ERROR 19880 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 19880
+hostname: DESKTOP-UHOS0OJ
+
+2019-05-11 03:04:22,302 ERROR 19880 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 19880
+hostname: DESKTOP-UHOS0OJ
+
+2019-05-11 03:04:44,510 ERROR 19880 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 19880
+hostname: DESKTOP-UHOS0OJ
+
+2019-05-11 03:04:56,622 ERROR 19880 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 19880
+hostname: DESKTOP-UHOS0OJ
+
+2019-05-11 03:05:10,848 ERROR 19880 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 19880
+hostname: DESKTOP-UHOS0OJ
+
+2019-05-11 03:05:28,178 ERROR 19880 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 19880
+hostname: DESKTOP-UHOS0OJ
+
+2019-05-11 03:05:32,126 ERROR 19880 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 19880
+hostname: DESKTOP-UHOS0OJ
 

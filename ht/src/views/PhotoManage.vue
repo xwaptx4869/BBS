@@ -50,7 +50,7 @@
 									<template slot-scope="scope">
 										<el-button
 											type="text"
-											@click="$router.push({path: `/content/photos/edit/${scope.row.id}?type=detail`})"
+											@click="$router.push({name: 'photoedit',params:{id : scope.row.id}})"
 											size="small"
 										>编辑</el-button>
 										<el-button

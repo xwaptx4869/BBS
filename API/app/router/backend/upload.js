@@ -2,7 +2,7 @@
 
 module.exports = app => {
 	app.router.post(
-		'/backend/v1/upload/savefile',
+		'/backend/v1/upload/index',
 		app.controller.backend.uploadapicontroller.saveFile
 	)
 	app.router.post(

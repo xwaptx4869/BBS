@@ -19,6 +19,17 @@ module.exports = app => {
 	require('./router/backend/collegemsg')(app)
 	require('./router/backend/upload')(app)
 	require('./router/frontend/user')(app)
+	require('./router/frontend/article')(app)
+	require('./router/frontend/label')(app)
+	require('./router/frontend/comment')(app)
+	require('./router/frontend/reply')(app)
+	require('./router/frontend/album')(app)
+	require('./router/frontend/file')(app)
+	require('./router/frontend/classifications')(app)
+	require('./router/frontend/sensitivewords')(app)
+	require('./router/frontend/friendlink')(app)
+	require('./router/frontend/collegemsg')(app)
+	require('./router/frontend/upload')(app)
 
 
 }

@@ -1,247 +1,138 @@
 <template>
-	<div class="photo-editor">
+	<div class="photo-add">
 		<div class="crumbs">
 			<el-breadcrumb separator="/">
 				<el-breadcrumb-item :to="{ path: '/home' }">首页</el-breadcrumb-item>
 				<el-breadcrumb-item :to="{ path: '/content/photos/' }">相册管理</el-breadcrumb-item>
-				<el-breadcrumb-item>相册编辑</el-breadcrumb-item>
+                <el-breadcrumb-item>相册编辑</el-breadcrumb-item>
 			</el-breadcrumb>
 		</div>
 		<div class="smart-widget">
+			<div class="smart-widget-header">相册编辑</div>
 			<div class="smart-widget-inner">
-				<el-tabs class="tabs-list" v-model="activeName">
-					<el-tab-pane label="相册资料" name="detail">
-						<div class="smart-widget-body">
-							<el-form ref="photoForm" :model="photo" :rules="photoRules" label-width="180px">
-								<el-form-item label="标题" prop="title">
-									<el-input v-model="photo.title" placeholder="请填写标题"></el-input>
-								</el-form-item>
-								<el-form-item label="相册类型" >
-									<el-select v-model="photo.type" :disabled="!photo.is_update" placeholder="请选择">
-										<el-option
-										v-for="item in photoType"
-										:key="item.value"
-										:label="item.label"
-										:value="item.value">
-										</el-option>
-									</el-select>
-								</el-form-item>
-							</el-form>
-						</div>
-					</el-tab-pane>
-				</el-tabs>
+				<div class="smart-widget-body">
+					<el-form ref="photoForm" :model="photo" :rules="photoRules" label-width="180px">
+						<el-form-item label="标题" prop="title">
+							<el-input v-model="photo.title" placeholder="请填写标题"></el-input>
+						</el-form-item>
+						<el-form-item label="封面" prop="poster">
+							<el-upload
+                                action="/"
+								:show-file-list="false"
+								:http-request="onFileUpload"
+                                :before-upload="xcommon.beforeAvatarUpload">
+                                 <el-button size="small" type="primary">点击上传</el-button>
+								<img v-if="photo.poster" :src="photo.poster" class="avatar">
+                            </el-upload>
+						</el-form-item>
+						<el-form-item>
+                            <el-button type="primary" :loading="loading" @click="onSubmit" >提交</el-button>
+						</el-form-item>
+					</el-form>
+				</div>
 			</div>
 		</div>
-		<m-image-big
-			:type="currentShowImage.type"
-			:url="currentShowImage.url"
-			:visible.sync="showImageBig" >
-		</m-image-big>
-		<!-- 编辑图册 -->
-		<el-dialog
-			title="编辑"
-			:visible.sync="fileDialogVisible"
-			width="450px">
-			<div class="dialog-content">
-				<el-form ref="currentForm" :model="currentFile" :rules="fileRules" label-width="100px">
-					<el-form-item prop="name" label="标题">
-						<el-input v-model="currentFile.name"></el-input>
-					</el-form-item>
-					<el-form-item label="设置为封面">
-						<el-switch :active-value="1" @change="onPoster" :inactive-value="0" v-model="currentFile.isPoster"></el-switch>
-					</el-form-item>
-				</el-form>
-			</div>
-			<div slot="footer" class="dialog-footer">
-				<el-button type="primary" @click="updateFile">保存</el-button>
-			</div>
-		</el-dialog>
 	</div>
 </template>
 <script>
 import { photoType } from '@/utils/search'
-import MImageBig from '@/components/ImageBig'
 export default {
-	name: 'PhotoEditor',
-	components: {
-		MImageBig
-	},
+	name: 'PhotoAdd',
 	data () {
 		return {
 			addTopicString: '',
-			showImageBig: false,
-			currentShowImage: {},
-			currentFile: {},
 			photoType,
 			photo: {
 				title: '',
-				desc: '',
-				topicIds: '',
-				type: '',
-				is_update: 1,
-				// schedulingIds: '',
-				// schedulings: [],
-				topics: [],
+				user_id: '1',
+				poster:'',
+
 			},
-			activeName: 'detail',
-			// inputSchedulingVisible: false,
+			topics: [],
 			inputVisible: false,
-			fileDialogVisible: false,
 			photoRules: {
 				title: [
-					{
-						required: true,
-						message: '请输入相册标题',
-						trigger: 'blur'
-					}
+					{required: true, message: '请输入相册标题', trigger: 'blur'},
 				]
 			},
-			fileRules: {
-				name: [
-					{
-						required: true,
-						message: '请输入图册标题',
-						trigger: 'blur'
-					}
-				]
-			},
-			photoLoading: false,
-			loading: false,
-			total: 0,
-			pageSize: 20,
-			page: 1,
-			files: [],
-			photoId: ''
+			loading: false
 		};
 	},
-	created () {
-		this.activeName = this.$route.query.type;
-		this.photoId = this.$route.params.id
-		this.getPhoto()
-		this.getFiles()
+	created(){
+		this.photo.user_id = this.$route.params.id+'';
+		this.getphoto();
 	},
 	methods: {
-		// 确认是否设置封面
-		onPoster () {
-			if(this.currentFile.isPoster === 0) return false
-			this.$axios.get(`/media/getPoster/${this.photoId}`).then(response => {
-				const {code, data, message, state} = response.data
-				if(code !== 0) return this.$message.error(message);
-				if(!data.id) return false
-				this.$confirm('将此设为封面，并且取消原封面?', '重设封面', {
-					type: 'warning',
-					center: true
-				}).then(() => {}).catch(() => {
-					this.currentFile.isPoster = 0
-				})
-			})
-		},
-		// 获取相册
-		getPhoto () {
-			this.$axios.get(`/media/group/${this.photoId}`).then(response => {
-				const {code, data, message} = response.data
-				if(code !== 0) return this.$message.error(message);
-				data.schedulings = data.schedulings ? data.schedulings : []
-				data.topics = data.topics ? data.topics : []
-				this.photo = data
-			})
-		},
-		// 删除文件
-		deleteFile (id) {
-			this.$axios.post(`/media/delete/${id}`).then(response => {
-				const {code, data, message} = response.data
-				if(code !== 0) return this.$message.error(message);
-				this.getFiles()
-				this.$message.success('删除成功');
-			})
-		},
-		rowDelete (id) {
-			this.$confirm('此操作将删除该图册信息, 是否继续?', '删除图册', {
-				type: 'warning',
-				center: true
-			}).then(() => {
-				this.deleteFile(id)
-			}).catch(() => {
-				this.$message('已取消删除');
-			})
-		},
-		// 更新相册详情
-		updatePhoto () {
-			this.photoLoading = true
-			const { photo } = this
-			photo.topicIds =  this.xutils.toStringTag(photo.topics)
-			photo.schedulingIds =  this.xutils.toStringTag(photo.schedulings)
-			this.$axios.post(`/media/group/update/${this.photoId}`, photo).then(response => {
-				const {code, data, message} = response.data
-				if(code !== 0) return this.$message.error(message);
-				this.$message.success('更新相册成功');
-				this.$router.go(-1)
-				this.photoLoading = false
-			})
-		},
-		// 获取图册列表
-		getFiles () {
+		// 获取内容
+		getphoto () {
 			this.loading = true
-			this.$axios.post('/media', {groupId: this.photoId, page: this.page, pageSize: this.pageSize}).then(response => {
-				const {code, data, message, total} = response.data
-				if(code !== 0) return this.$message.error(message);
-				this.files = data
-				this.total = total
+			console.log(0)
+			this.$axios.post(`/album/getonealbum/${this.photo.user_id}`).then(response => {
+				const {status, data, message} = response.data
+				if(status !== 0) return this.$message.error(message);
+				console.log(response.data)
+				this.photo.poster = response.data.data.poster;
+				this.photo.title = response.data.data.title;
 				this.loading = false
 			})
 		},
+		// 更新相册
+		addPhoto () {
+			this.loading = true
+			this.$axios.post('/album/edit', this.photo).then(response => {
+				const {status, data, documentation_url} = response.data
+				if(status !== 0){this.loading = false; return this.$message.error(documentation_url);}
+				this.$message.success('相册更新成功');
+				this.$router.go(-1)
+				this.loading = false
+			})
+		},
+		// 图片
+		picSuccess (res, file) {
+			if(res.code) return this.$message.success(res.message);
+			console.log(res.data);
+			this.photo.poster = res.data.data;
+			console.log(this.photo.poster)
+		},
+		// 文件上传
+		onFileUpload (elFrom) {
+			console.log(elFrom)
+			this.xcommon.fileUpload(elFrom.file).then(res => {
+				console.log(res);
+				this.picSuccess(res)
+			})
+		},
 		onSubmit () {
-			this.$refs['photoForm'].validate(valid => {
-				if (valid) this.updatePhoto()
-				return false;
-			});
-		},
-		// 显示tag输入框
-		showInput () {
-			if(this.photo.topics.length >= 2) return this.$message.error('最多关联2个话题');
-			this.inputVisible = true;
-			this.$nextTick(_ => {
-				this.$refs.saveTagInput.$refs.input.focus();
-			});
-		},
-		// 查询行程数据
-		querySchedulingSearchAsync (queryString, cb) {
-			if (!queryString) return [];
-			this.xcommon.querySchedulings(queryString).then(data => {
-				cb(data);
-			});
-		},
-		// 查询话题数据
-		querySearchAsync (queryString, cb) {
-			if (!queryString) return [];
-			this.xcommon.queryTopics(queryString).then(data => {
-				cb(data);
-			});
-		},
-		// 设置tag数据
-		handleSelect (key, visible, item) {
-			// 验证tag添加是否重复
-			if (!this.xutils.isTagRepeat(this.photo[key], item)) return this.$message.success('已关联该话题');
-			this.photo[key].push(item);
-			this[visible] = false;
-		},
-		// 更新图册属性
-		updateFile () {
-			this.$refs['currentForm'].validate(valid => {
-				if (valid) {
-					this.$axios.post(`/media/update/${this.currentFile.id}`, this.currentFile).then(response => {
-						const {code, data, message} = response.data
-						if(code !== 0) return this.$message.error(message);
-						this.$message.success('更新图册成功');
-						this.fileDialogVisible = false
-						this.getFiles()
-					})
-				}
-				return false;
-			});
+			this.$refs['photoForm'].validate((valid) => {
+				if (valid) this.addPhoto()
+				return false
+			})
 		}
 	}
-};
+}
 </script>
 <style lang="scss">
+.avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .avatar-uploader .el-upload:hover {
+    border-color: #409EFF;
+  }
+  .avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 178px;
+    height: 178px;
+    line-height: 178px;
+    text-align: center;
+  }
+  .avatar {
+    width: 178px;
+    height: 178px;
+    display: block;
+  }
 </style>

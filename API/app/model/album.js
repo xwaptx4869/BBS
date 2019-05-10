@@ -12,10 +12,7 @@ module.exports = app => {
 				type: STRING
 			},
 			poster: { 
-                type: STRING(255),
-				validate: {
-					isUrl: true,
-				},
+                type: STRING(255)
             },
             file_ids:{
                 //图片列表

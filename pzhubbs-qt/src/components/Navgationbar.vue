@@ -9,7 +9,7 @@
           <el-input v-model="searchValue" suffix-icon="el-icon-search" placeholder="搜索想看的文章"></el-input>
     </div>
     <div class="rightbox">
-        <span class="write" @click=" isLogin ? $router.push({ path:'/article/write' }): setVisible('登录')  "><i class="el-icon-tickets" ></i> 写文章</span>
+        <span class="write" @click=" isLogin ? $router.push({ name:'writearticle' }): setVisible('登录')  "><i class="el-icon-tickets" ></i> 写文章</span>
          <span v-if="!isLogin"  >
                <a @click="setVisible('登录')" href="javascript:;">登录</a>
                ·
@@ -43,7 +43,7 @@ export default {
     data(){
         return{
             searchValue:'',
-            isLogin:false,
+            isLogin:true,
             user:{
                 name:'xuwei'
             },
@@ -94,7 +94,7 @@ export default {
       position: fixed;
       top: 0px;
       box-shadow: 0 2px 2px rgba(0,0,0,.05), 0 1px 0 rgba(0,0,0,.05);
-      z-index: 999;
+      z-index: 99;
     .navbar-content{
       position: absolute;
       left: 50%;

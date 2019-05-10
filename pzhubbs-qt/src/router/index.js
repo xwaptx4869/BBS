@@ -23,6 +23,11 @@ export default new Router({
         component: resolve => require(['@/views/PhotoList.vue'], resolve)
       },
       {
+        name: "photodetails",
+        path: '/photodetails/:id',
+        component: resolve => require(['@/views/PhotoDetails.vue'], resolve)
+      },
+      {
         name: "msgboard",
         path: '/msgboard/:id',
         component: resolve => require(['@/views/MessageBoard.vue'], resolve)
@@ -36,6 +41,11 @@ export default new Router({
         name: "usercenter",
         path: '/usercenter/:id',
         component: resolve => require(['@/views/UserCenter.vue'], resolve)
+      },
+      {
+        name: "writearticle",
+        path: '/writearticle',
+        component: resolve => require(['@/views/WriteArticle.vue'], resolve)
       }
     ]
   }]
