@@ -15,6 +15,9 @@ module.exports = app => {
 			created_at: DATE,
 			updated_at: DATE,
 			id:{ type: INTEGER, primaryKey: true, autoIncrement: true },
+			connect_id:{
+				type:INTEGER
+			}
 		}
     )
 

@@ -21,6 +21,9 @@ module.exports = app => {
 			created_at: DATE,
 			updated_at: DATE,
 			id:{ type: INTEGER, primaryKey: true, autoIncrement: true },
+			user_id:{
+				type: INTEGER,
+			}
 		}
     )
 

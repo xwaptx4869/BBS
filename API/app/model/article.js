@@ -43,6 +43,12 @@ module.exports = app => {
 				type: INTEGER,
 				defaultValue: 0,
 			},
+			poster:{
+				type: STRING(255),
+			},
+			introduction:{
+				type: STRING(255),
+			}
 		}
 	)
 	// Article.belongsTo(Label,{foreignKey:'label_ids',targetKey:'id' })

@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <div class="wrapper">
-      <navgationbar @transferGetVisible="getVisible" ></navgationbar>
+      <navgationbar @transferGetVisible="getVisible" :userData="userdata" ></navgationbar>
       <div class="content">
         <div class="slider">
           <slider></slider>
@@ -18,7 +18,7 @@
           <side></side>
         </div>
       </div>
-      <login :isvisible.sync="visible" :title.sync="title" @transferGetStatus ="getVisible" ></login>
+      <login :isvisible.sync="visible" :title.sync="title" @transferGetStatus ="getVisible"  @transferuserData ="getuserData" ></login>
     </div>
   </div>
 </template>
@@ -31,7 +31,8 @@ export default {
   data(){
     return {
       visible:false,
-      title:''
+      title:'',
+      userdata:''
     }
   },
   components: {
@@ -49,6 +50,9 @@ export default {
     getVisible(visible,title){
       this.visible = visible;
       this.title = title;
+    },
+    getuserData(val){
+      this.userdata = val;
     },
      totop() {
         document.getElementsByClassName("wrapper")[0].scrollTo(0, 0);

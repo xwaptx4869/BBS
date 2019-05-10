@@ -8,6 +8,20 @@
             <el-form-item label="标题" prop="title">
               <el-input v-model="news.title" placeholder="请填写标题"></el-input>
             </el-form-item>
+            <el-form-item label="简介" prop="introduction">
+              <el-input v-model="news.introduction" placeholder="请填写简介"></el-input>
+            </el-form-item>
+            <el-form-item label="封面" prop="poster">
+              <el-upload
+                action="/"
+                :show-file-list="false"
+                :http-request="onImgeUpload"
+                :before-upload="xcommon.beforeAvatarUpload"
+              >
+                <el-button size="small" type="primary">点击上传</el-button>
+                <img v-if="news.poster" :src="news.poster" class="avatar">
+              </el-upload>
+            </el-form-item>
             <el-form-item prop="labels" label="标签">
               <el-select
                 v-model="news.labels"
@@ -64,7 +78,10 @@ export default {
         }
       },
       addTopicString: "",
-      news: {},
+      news: {
+        poster:'',
+        introduction:''
+      },
       newssearch: {},
       labels: [],
       classifications: [],
@@ -72,6 +89,7 @@ export default {
       newsRules: {
         title: [{ required: true, message: "请输入文章标题", trigger: "blur" }],
         labels: [{ required: true, message: "请输入标签", trigger: "blur" }],
+         introduction: [{ required: true, message: "请填写简介", trigger: "blur" }],
         classifications: [
           { required: true, message: "请输入分类", trigger: "blur" }
         ],
@@ -93,7 +111,7 @@ export default {
   created() {
     this.getLabels();
     this.getClassifis();
-    if ( this.type !== 'add' ) {
+    if (this.type !== "add") {
       this.type = "edit";
       this.news_id = this.$route.params.id;
       this.getItemNews();
@@ -110,8 +128,8 @@ export default {
   },
   methods: {
     getItemNews() {
-      console.log(this.$axios)
-      this.$axios.get(`/article/${this.news_id}`).then(response => {
+      console.log(this.$axios);
+      this.$axios.get(`http://127.0.0.1:7001/frontend/v1/article/${this.news_id}`).then(response => {
         const { status, data, message } = response.data;
         if (status !== 0) return this.$message.error(message);
 
@@ -129,7 +147,7 @@ export default {
         this.news.classifications
       );
       console.log(this.news);
-      this.$axios.post("/article/add", this.news).then(response => {
+      this.$axios.post("http://127.0.0.1:7001/frontend/v1/article/add", this.news).then(response => {
         const { status, data, message } = response.data;
         if (status !== 0) return this.$message.error("创建失败，请检查参数");
         this.$message.success("创建文章成功");
@@ -146,7 +164,7 @@ export default {
       );
       this.newssearch.article_id = this.news_id;
       console.log(this.news);
-      this.$axios.post("/article/edit", this.newssearch).then(response => {
+      this.$axios.post("http://127.0.0.1:7001/frontend/v1/article/edit", this.newssearch).then(response => {
         const { status, data, message } = response.data;
         if (status !== 0) return this.$message.error(status);
         this.$message.success("更新文章成功");
@@ -165,6 +183,16 @@ export default {
         this.handleAvatarSuccess(res);
       });
     },
+     onImgeUpload(elFrom) {
+      this.xcommon.fileUpload(elFrom.file).then(res => {
+        this.picSuccess(res);
+      });
+    },
+    // 图片上传
+    picSuccess (res, file) {
+			if(res.code) return this.$message.success(res.message);
+			this.news.poster = res.data.data;
+		},
     handleAvatarSuccess(res) {
       if (res.status) return this.$message.error(res.message);
       this.news.poster = res.data;
@@ -175,14 +203,14 @@ export default {
       });
     },
     getLabels() {
-      this.$axios.get("/label").then(response => {
+      this.$axios.get("http://127.0.0.1:7001/frontend/v1/label").then(response => {
         const { status, data, message, total } = response.data;
         if (status !== 0) return this.$message.error(message);
         this.labels = data;
       });
     },
     getClassifis() {
-      this.$axios.post("/classifications").then(response => {
+      this.$axios.post("http://127.0.0.1:7001/frontend/v1/classifications").then(response => {
         const { status, data, message, total } = response.data;
         if (status !== 0) return this.$message.error(message);
         this.classifications = data;
@@ -195,7 +223,26 @@ export default {
 };
 </script>
 <style lang="scss">
-.smart-widget{
-    padding: 30px;
+.smart-widget {
+  padding: 30px;
+  .avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .avatar-uploader .el-upload:hover {
+    border-color: #409EFF;
+  }
+  .avatar {
+   width: 200px;
+   height:200px;
+   display: block;
+   img{
+	   width: 100%;
+	   height: 100%;
+   }
+  }
 }
 </style>

@@ -7,14 +7,14 @@
       <div class="comments-list">
         <div class="comment" v-for=" (item,index) in data" :key="index">
           <div class="avatar">
-            <img :src="item.imgSrc" alt>
+            <img :src="item.poster" alt>
             <div class="commentuser-msg">
               <b>{{item.username}}</b>
-              <p>{{item.uptime}}</p>
+              <p>{{xutils.formatTime(item.created_at)}}</p>
             </div>
           </div>
           <div class="comment-content">
-            <p>和鹅鹅鹅鹅鹅鹅嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯</p>
+            <p v-html="item.content"></p>
             <el-button
               size="mini"
               type="primary"
@@ -27,15 +27,15 @@
                 <img :src="ite.imgSrc" alt>
                 <div class="replyuser-msg">
                   <b>{{ite.username}}</b>
-                  <p>{{ite.uptime}}</p>
+                  <p>{{xutils.formatTime(ite.created_at)}}</p>
                 </div>
               </div>
               <div class="reply-content">
-                <p>叫我夏洛克，谢谢。叫我夏洛克，谢谢。叫我夏洛克，谢谢。</p>
+                <p v-html="ite.content"></p>
                 <el-button
                   size="mini"
                   type="primary"
-                  @click="ifreply = false;;secondifreply = true; secondclick = inde;"
+                  @click="ifreply = false;;secondifreply = true; secondclick = inde;form.connect_id = ite.id"
                 >回复</el-button>
               </div>
               <div v-if="secondifreply&& secondclick == inde " class="reply-box">
@@ -59,10 +59,10 @@
               <el-form :model="form" ref="form">
                 <el-form-item>
                   <span>回复：@{{item.username}}</span>
-                  <el-input type="textarea" placeholder="说点什么吧" v-model="form.content" rows="3"></el-input>
+                  <el-input type="textarea" placeholder="说点什么吧" v-model="replyform.content" rows="3"></el-input>
                 </el-form-item>
                 <el-form-item>
-                  <el-button size="small" type="primary">发表回复</el-button>
+                  <el-button size="small" type="primary" @click="addNews">发表回复</el-button>
                   <el-button size="small" @click="ifreply = false;">取消回复</el-button>
                 </el-form-item>
               </el-form>
@@ -78,7 +78,7 @@
             <el-input type="textarea" placeholder="说点什么吧" v-model="form.content" rows="4"></el-input>
           </el-form-item>
           <el-form-item>
-            <el-button size="small" type="primary">{{commenttype == '1' ? '发表评论' : '发表留言'}}</el-button>
+            <el-button size="small" type="primary" @click="addComments">{{commenttype == '1' ? '发表评论' : '发表留言'}}</el-button>
           </el-form-item>
         </el-form>
       </div>
@@ -99,7 +99,14 @@ export default {
     return {
       commenttype: this.type,
       form: {
-        content: ""
+        type: '',
+				connect_id: '',
+				content: ''
+      },
+      replyform:{
+				user_id: '',
+        content: '',
+				connect_id: ''
       },
       ifreply: false,
       secondifreply: false,
@@ -116,6 +123,29 @@ export default {
     type(val) {
       this.commenttype = val;
     }
+  },
+  methods:{
+      addComments () {
+      this.form.type = '1';
+      this.form.connect_id = this.$route.params.id+'';
+			this.$axios.post('http://127.0.0.1:7001/frontend/v1/comment/add', this.form).then(response => {
+				const {status, data, message} = response.data
+        if(status !== 0) return this.$message.error(status);
+        this.form.content = '';
+        this.$message.success('创建评论成功');
+        this.$emit("transfercomment");
+			})
+    },
+    addNews () {
+      this.replyform.user_id = this.$route.params.id+'';
+			this.$axios.post('http://127.0.0.1:7001/frontend/v1/reply/add', this.replyform).then(response => {
+				const {status, data, message} = response.data
+				if(status !== 0) return this.$message.error(status);
+        this.$message.success('创建回复成功');
+        this.$emit("transfercomment");
+        
+			})
+		}
   }
 };
 </script>

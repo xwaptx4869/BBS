@@ -88,7 +88,7 @@ export default {
 		editor.customConfig.customUploadImg = (files, insert) => {
 			_this.fileUpload(files[0]).then(res => {
 				if (res.code) return this.$message.error(res.message)
-				insert(ls.get('appImagePath') + res.data)
+				insert(res.data.data)
 			})
 		}
 		editor.create()
@@ -339,43 +339,43 @@ export default {
 			fileMode: fileMode || FILEMODE[file.type.split('/')[1]], // 文件格式 1:音频 2:视频 3:图片 4:动图 5:其他文档
 			movImgCount: 1, //
 			fileExt: file.type.split('/')[1], // 文件后缀
-			safe: 1, // 二次验证 1、开启验证  2、关闭验证
-			cache: 1, // 文件重复验证 1、开启  2、关闭
+			// safe: 1, // 二次验证 1、开启验证  2、关闭验证
+			// cache: 1, // 文件重复验证 1、开启  2、关闭
 			mode: 'upload', // 上传方式
-			secureKey: '' // MD5校验码
+			// secureKey: '' // MD5校验码
 		}
 
 		// 获取图片宽高
-		if (config.fileMode === 3) {
-			this.imageWH(file).then(image => {
-				fileWH = `?_width=${image.w}&_height=${image.h}`
-			})
-		}
+		// if (config.fileMode === 3) {
+		// 	this.imageWH(file).then(image => {
+		// 		fileWH = `?_width=${image.w}&_height=${image.h}`
+		// 	})
+		// }
 		return new Promise((resolve, reject) => {
 			const bmf = new BMF()
 			bmf.md5(file, (err, fileMd5) => {
 				if (!fileMd5) reject('获取文件MD5失败')
-				formData.append('fileMode', config.fileMode)
+				// formData.append('fileMode', config.fileMode)
 				formData.append('movImgCount', config.movImgCount)
 				formData.append('fileExt', config.fileExt)
-				formData.append('safe', config.safe)
-				formData.append('cache', config.cache)
+				// formData.append('safe', config.safe)
+				// formData.append('cache', config.cache)
 				formData.append('mode', config.mode)
 				formData.append('file', file, file.name)
-				formData.append(
-					'secureKey',
-					Utils.md5Replace(
-						md5.hex(
-							config.fileMode +
-								config.fileExt +
-								config.safe +
-								fileMd5 +
-								DOMAINKEY
-						)
-					)
-				)
+				// formData.append(
+				// 	'secureKey',
+				// 	Utils.md5Replace(
+				// 		md5.hex(
+				// 			config.fileMode +
+				// 				config.fileExt +
+				// 				config.safe +
+				// 				fileMd5 +
+				// 				DOMAINKEY
+				// 		)
+				// 	)
+				// )
 				axios({
-					url: fileUploadUrl,
+					url: 'http://127.0.0.1:7001/frontend/v1'+fileUploadUrl,
 					method: 'post',
 					headers: {
 						'Content-Type': 'multipart/form-data'
@@ -383,22 +383,25 @@ export default {
 					data: formData,
 					responseType: 'json'
 				}).then(response => {
-					if (config.fileMode === 3) {
-						response.data.data = response.data.data.path + fileWH
-					} else if (
-						config.fileMode === 2 &&
-						response.data.data.videoInfo
-					) {
-						const strWH = response.data.data.videoInfo.video_clear.split(
-							'x'
-						)
-						response.data.data =
-							response.data.data.path +
-							`?_width=${strWH[0]}&_height=${strWH[1]}`
-					} else {
-						response.data.data = response.data.data.path
-					}
-					resolve(response.data)
+					console.log(response.data);
+					// if (config.fileMode === 3) {
+					// 	response.data.data = response.data.path 
+					// } 
+					// else if (
+					// 	config.fileMode === 2 &&
+					// 	response.data.data.videoInfo
+					// ) {
+					// 	const strWH = response.data.data.videoInfo.video_clear.split(
+					// 		'x'
+					// 	)
+					// 	response.data.data =
+					// 		response.data.data.path +
+					// 		`?_width=${strWH[0]}&_height=${strWH[1]}`
+					// }
+					//  else {
+					// 	response.data.data = response.data.data.path
+					// }
+					resolve(response)
 				})
 			})
 		})
@@ -410,7 +413,7 @@ export default {
 		 array.forEach( ele =>{
 			 return newarr.push(ele.name)
 		 } )
-		 return newarr.join('，')
+		 return newarr.join('/')
 		}
 		else{
 		return '暂无'

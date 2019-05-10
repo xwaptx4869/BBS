@@ -33,9 +33,14 @@ Vue.prototype.xcommon = Common
 
 
 /* eslint-disable no-new */
+// new Vue({
+//   el: '#app',
+//   router,
+//   components: { App },
+//   template: '<App/>'
+// })
 new Vue({
-  el: '#app',
-  router,
-  components: { App },
-  template: '<App/>'
-})
+	router,
+	store,
+	render: h => h(App)
+}).$mount('#app')

@@ -20,12 +20,12 @@ const _axios = axios.create(config)
 
 _axios.interceptors.request.use(
 	function (config) {
-		if (!(config.url.indexOf('upload') > -1))
-			{config.url = `api${config.url}`}
-		else{
-			config.url = `upload${config.url}`
-			console.log(config.url)
-		}
+		// if (!(config.url.indexOf('upload') > -1))
+		// 	{config.url = `api${config.url}`}
+		// else{
+		// 	config.url = `upload${config.url}`
+		// 	console.log(config.url)
+		// }
 		const _token = ls.get('token')
 		if (_token) {
 			config.headers.token = _token
