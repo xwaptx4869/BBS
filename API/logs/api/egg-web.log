@@ -1,630 +1,79 @@
-2019-05-11 00:00:01,053 INFO 11292 [egg-logrotator] app logger reload: got log-reload message
-2019-05-11 00:00:09,669 INFO 12788 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 00:00:09,787 INFO 12788 [egg-multipart] stream mode enable
-2019-05-11 00:00:11,079 INFO 12788 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 00:00:11,084 INFO 12788 [egg-security] use methodnoallow middleware
-2019-05-11 00:00:11,086 INFO 12788 [egg-security] use noopen middleware
-2019-05-11 00:00:11,089 INFO 12788 [egg-security] use nosniff middleware
-2019-05-11 00:00:11,090 INFO 12788 [egg-security] use xssProtection middleware
-2019-05-11 00:00:11,091 INFO 12788 [egg-security] use xframe middleware
-2019-05-11 00:00:11,092 INFO 12788 [egg-security] use dta middleware
-2019-05-11 00:00:11,092 INFO 12788 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 00:00:11,174 INFO 12788 [egg:core] dump config after load, 22ms
-2019-05-11 00:00:11,259 INFO 12788 [egg-watcher:application] watcher start success
-2019-05-11 00:00:11,334 INFO 12788 [egg:core] dump config after ready, 11ms
-2019-05-11 00:01:54,850 INFO 8524 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 00:01:55,289 INFO 8524 [egg-multipart] stream mode enable
-2019-05-11 00:01:57,172 INFO 8524 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 00:01:57,178 INFO 8524 [egg-security] use methodnoallow middleware
-2019-05-11 00:01:57,180 INFO 8524 [egg-security] use noopen middleware
-2019-05-11 00:01:57,182 INFO 8524 [egg-security] use nosniff middleware
-2019-05-11 00:01:57,221 INFO 8524 [egg-security] use xssProtection middleware
-2019-05-11 00:01:57,222 INFO 8524 [egg-security] use xframe middleware
-2019-05-11 00:01:57,224 INFO 8524 [egg-security] use dta middleware
-2019-05-11 00:01:57,224 INFO 8524 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 00:01:57,312 INFO 8524 [egg:core] dump config after load, 16ms
-2019-05-11 00:01:57,423 INFO 8524 [egg-watcher:application] watcher start success
-2019-05-11 00:01:57,613 INFO 8524 [egg:core] dump config after ready, 89ms
-2019-05-11 00:02:45,433 INFO 18152 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 00:02:45,617 INFO 18152 [egg-multipart] stream mode enable
-2019-05-11 00:02:47,070 INFO 18152 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 00:02:47,077 INFO 18152 [egg-security] use methodnoallow middleware
-2019-05-11 00:02:47,079 INFO 18152 [egg-security] use noopen middleware
-2019-05-11 00:02:47,096 INFO 18152 [egg-security] use nosniff middleware
-2019-05-11 00:02:47,097 INFO 18152 [egg-security] use xssProtection middleware
-2019-05-11 00:02:47,098 INFO 18152 [egg-security] use xframe middleware
-2019-05-11 00:02:47,100 INFO 18152 [egg-security] use dta middleware
-2019-05-11 00:02:47,100 INFO 18152 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 00:02:47,198 INFO 18152 [egg:core] dump config after load, 15ms
-2019-05-11 00:02:47,259 INFO 18152 [egg-watcher:application] watcher start success
-2019-05-11 00:02:47,336 INFO 18152 [egg:core] dump config after ready, 12ms
-2019-05-11 00:03:14,071 INFO 14044 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 00:03:14,257 INFO 14044 [egg-multipart] stream mode enable
-2019-05-11 00:03:16,248 INFO 14044 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 00:03:16,257 INFO 14044 [egg-security] use methodnoallow middleware
-2019-05-11 00:03:16,259 INFO 14044 [egg-security] use noopen middleware
-2019-05-11 00:03:16,261 INFO 14044 [egg-security] use nosniff middleware
-2019-05-11 00:03:16,263 INFO 14044 [egg-security] use xssProtection middleware
-2019-05-11 00:03:16,265 INFO 14044 [egg-security] use xframe middleware
-2019-05-11 00:03:16,266 INFO 14044 [egg-security] use dta middleware
-2019-05-11 00:03:16,266 INFO 14044 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 00:03:16,399 INFO 14044 [egg:core] dump config after load, 17ms
-2019-05-11 00:03:16,539 INFO 14044 [egg-watcher:application] watcher start success
-2019-05-11 00:03:16,675 INFO 14044 [egg:core] dump config after ready, 13ms
-2019-05-11 00:07:28,188 INFO 15480 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 00:07:28,301 INFO 15480 [egg-multipart] stream mode enable
-2019-05-11 00:07:29,486 INFO 15480 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 00:07:29,493 INFO 15480 [egg-security] use methodnoallow middleware
-2019-05-11 00:07:29,494 INFO 15480 [egg-security] use noopen middleware
-2019-05-11 00:07:29,497 INFO 15480 [egg-security] use nosniff middleware
-2019-05-11 00:07:29,498 INFO 15480 [egg-security] use xssProtection middleware
-2019-05-11 00:07:29,499 INFO 15480 [egg-security] use xframe middleware
-2019-05-11 00:07:29,500 INFO 15480 [egg-security] use dta middleware
-2019-05-11 00:07:29,500 INFO 15480 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 00:07:29,601 INFO 15480 [egg:core] dump config after load, 22ms
-2019-05-11 00:07:29,697 INFO 15480 [egg-watcher:application] watcher start success
-2019-05-11 00:07:29,779 INFO 15480 [egg:core] dump config after ready, 12ms
-2019-05-11 00:13:57,673 INFO 20384 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 00:13:57,989 INFO 20384 [egg-multipart] stream mode enable
-2019-05-11 00:14:00,023 INFO 20384 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 00:14:00,029 INFO 20384 [egg-security] use methodnoallow middleware
-2019-05-11 00:14:00,031 INFO 20384 [egg-security] use noopen middleware
-2019-05-11 00:14:00,034 INFO 20384 [egg-security] use nosniff middleware
-2019-05-11 00:14:00,036 INFO 20384 [egg-security] use xssProtection middleware
-2019-05-11 00:14:00,037 INFO 20384 [egg-security] use xframe middleware
-2019-05-11 00:14:00,038 INFO 20384 [egg-security] use dta middleware
-2019-05-11 00:14:00,038 INFO 20384 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 00:14:00,155 INFO 20384 [egg:core] dump config after load, 16ms
-2019-05-11 00:14:00,293 INFO 20384 [egg-watcher:application] watcher start success
-2019-05-11 00:14:00,434 INFO 20384 [egg:core] dump config after ready, 13ms
-2019-05-11 00:38:33,556 INFO 12724 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 00:38:33,802 INFO 12724 [egg-multipart] stream mode enable
-2019-05-11 00:38:36,228 INFO 12724 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 00:38:36,238 INFO 12724 [egg-security] use methodnoallow middleware
-2019-05-11 00:38:36,252 INFO 12724 [egg-security] use noopen middleware
-2019-05-11 00:38:36,258 INFO 12724 [egg-security] use nosniff middleware
-2019-05-11 00:38:36,260 INFO 12724 [egg-security] use xssProtection middleware
-2019-05-11 00:38:36,261 INFO 12724 [egg-security] use xframe middleware
-2019-05-11 00:38:36,262 INFO 12724 [egg-security] use dta middleware
-2019-05-11 00:38:36,262 INFO 12724 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 00:38:36,493 INFO 12724 [egg:core] dump config after load, 120ms
-2019-05-11 00:38:36,591 INFO 12724 [egg-watcher:application] watcher start success
-2019-05-11 00:38:36,717 INFO 12724 [egg:core] dump config after ready, 11ms
-2019-05-11 00:41:07,124 INFO 1176 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 00:41:07,495 INFO 1176 [egg-multipart] stream mode enable
-2019-05-11 00:41:10,114 INFO 1176 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 00:41:10,123 INFO 1176 [egg-security] use methodnoallow middleware
-2019-05-11 00:41:10,126 INFO 1176 [egg-security] use noopen middleware
-2019-05-11 00:41:10,130 INFO 1176 [egg-security] use nosniff middleware
-2019-05-11 00:41:10,131 INFO 1176 [egg-security] use xssProtection middleware
-2019-05-11 00:41:10,132 INFO 1176 [egg-security] use xframe middleware
-2019-05-11 00:41:10,133 INFO 1176 [egg-security] use dta middleware
-2019-05-11 00:41:10,133 INFO 1176 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 00:41:10,299 INFO 1176 [egg:core] dump config after load, 74ms
-2019-05-11 00:41:10,401 INFO 1176 [egg-watcher:application] watcher start success
-2019-05-11 00:41:10,647 INFO 1176 [egg:core] dump config after ready, 33ms
-2019-05-11 00:41:20,813 INFO 19788 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 00:41:21,285 INFO 19788 [egg-multipart] stream mode enable
-2019-05-11 00:41:23,738 INFO 19788 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 00:41:23,745 INFO 19788 [egg-security] use methodnoallow middleware
-2019-05-11 00:41:23,747 INFO 19788 [egg-security] use noopen middleware
-2019-05-11 00:41:23,749 INFO 19788 [egg-security] use nosniff middleware
-2019-05-11 00:41:23,751 INFO 19788 [egg-security] use xssProtection middleware
-2019-05-11 00:41:23,752 INFO 19788 [egg-security] use xframe middleware
-2019-05-11 00:41:23,753 INFO 19788 [egg-security] use dta middleware
-2019-05-11 00:41:23,753 INFO 19788 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 00:41:23,895 INFO 19788 [egg:core] dump config after load, 15ms
-2019-05-11 00:41:24,105 INFO 19788 [egg-watcher:application] watcher start success
-2019-05-11 00:41:24,308 INFO 19788 [egg:core] dump config after ready, 12ms
-2019-05-11 00:48:54,338 INFO 17148 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 00:48:54,471 INFO 17148 [egg-multipart] stream mode enable
-2019-05-11 00:48:55,976 INFO 17148 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 00:48:55,981 INFO 17148 [egg-security] use methodnoallow middleware
-2019-05-11 00:48:56,027 INFO 17148 [egg-security] use noopen middleware
-2019-05-11 00:48:56,031 INFO 17148 [egg-security] use nosniff middleware
-2019-05-11 00:48:56,032 INFO 17148 [egg-security] use xssProtection middleware
-2019-05-11 00:48:56,033 INFO 17148 [egg-security] use xframe middleware
-2019-05-11 00:48:56,035 INFO 17148 [egg-security] use dta middleware
-2019-05-11 00:48:56,035 INFO 17148 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 00:48:56,221 INFO 17148 [egg:core] dump config after load, 112ms
-2019-05-11 00:48:56,320 INFO 17148 [egg-watcher:application] watcher start success
-2019-05-11 00:48:56,492 INFO 17148 [egg:core] dump config after ready, 13ms
-2019-05-11 00:49:51,169 INFO 14820 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 00:49:51,380 INFO 14820 [egg-multipart] stream mode enable
-2019-05-11 00:49:54,010 INFO 14820 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 00:49:54,016 INFO 14820 [egg-security] use methodnoallow middleware
-2019-05-11 00:49:54,018 INFO 14820 [egg-security] use noopen middleware
-2019-05-11 00:49:54,020 INFO 14820 [egg-security] use nosniff middleware
-2019-05-11 00:49:54,021 INFO 14820 [egg-security] use xssProtection middleware
-2019-05-11 00:49:54,034 INFO 14820 [egg-security] use xframe middleware
-2019-05-11 00:49:54,038 INFO 14820 [egg-security] use dta middleware
-2019-05-11 00:49:54,039 INFO 14820 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 00:49:54,154 INFO 14820 [egg:core] dump config after load, 27ms
-2019-05-11 00:49:54,229 INFO 14820 [egg-watcher:application] watcher start success
-2019-05-11 00:49:54,384 INFO 14820 [egg:core] dump config after ready, 12ms
-2019-05-11 00:50:36,625 INFO 11256 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 00:50:36,923 INFO 11256 [egg-multipart] stream mode enable
-2019-05-11 00:50:38,804 INFO 11256 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 00:50:38,829 INFO 11256 [egg-security] use methodnoallow middleware
-2019-05-11 00:50:38,830 INFO 11256 [egg-security] use noopen middleware
-2019-05-11 00:50:38,833 INFO 11256 [egg-security] use nosniff middleware
-2019-05-11 00:50:38,835 INFO 11256 [egg-security] use xssProtection middleware
-2019-05-11 00:50:38,840 INFO 11256 [egg-security] use xframe middleware
-2019-05-11 00:50:38,846 INFO 11256 [egg-security] use dta middleware
-2019-05-11 00:50:38,846 INFO 11256 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 00:50:39,023 INFO 11256 [egg:core] dump config after load, 93ms
-2019-05-11 00:50:39,655 INFO 11256 [egg-watcher:application] watcher start success
-2019-05-11 00:50:39,791 INFO 11256 [egg:core] dump config after ready, 55ms
-2019-05-11 00:51:02,661 INFO 15432 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 00:51:03,131 INFO 15432 [egg-multipart] stream mode enable
-2019-05-11 00:51:06,391 INFO 15432 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 00:51:06,410 INFO 15432 [egg-security] use methodnoallow middleware
-2019-05-11 00:51:06,412 INFO 15432 [egg-security] use noopen middleware
-2019-05-11 00:51:06,414 INFO 15432 [egg-security] use nosniff middleware
-2019-05-11 00:51:06,416 INFO 15432 [egg-security] use xssProtection middleware
-2019-05-11 00:51:06,417 INFO 15432 [egg-security] use xframe middleware
-2019-05-11 00:51:06,418 INFO 15432 [egg-security] use dta middleware
-2019-05-11 00:51:06,419 INFO 15432 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 00:51:06,563 INFO 15432 [egg:core] dump config after load, 15ms
-2019-05-11 00:51:06,834 INFO 15432 [egg-watcher:application] watcher start success
-2019-05-11 00:51:07,104 INFO 15432 [egg:core] dump config after ready, 87ms
-2019-05-11 00:51:09,322 INFO 18608 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 00:51:09,518 INFO 18608 [egg-multipart] stream mode enable
-2019-05-11 00:51:11,216 INFO 18608 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 00:51:11,222 INFO 18608 [egg-security] use methodnoallow middleware
-2019-05-11 00:51:11,223 INFO 18608 [egg-security] use noopen middleware
-2019-05-11 00:51:11,228 INFO 18608 [egg-security] use nosniff middleware
-2019-05-11 00:51:11,229 INFO 18608 [egg-security] use xssProtection middleware
-2019-05-11 00:51:11,230 INFO 18608 [egg-security] use xframe middleware
-2019-05-11 00:51:11,231 INFO 18608 [egg-security] use dta middleware
-2019-05-11 00:51:11,231 INFO 18608 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 00:51:11,326 INFO 18608 [egg:core] dump config after load, 15ms
-2019-05-11 00:51:11,872 INFO 18608 [egg-watcher:application] watcher start success
-2019-05-11 00:51:11,980 INFO 18608 [egg:core] dump config after ready, 38ms
-2019-05-11 01:09:19,391 INFO 13672 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 01:09:19,574 INFO 13672 [egg-multipart] stream mode enable
-2019-05-11 01:09:21,687 INFO 13672 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 01:09:21,695 INFO 13672 [egg-security] use methodnoallow middleware
-2019-05-11 01:09:21,697 INFO 13672 [egg-security] use noopen middleware
-2019-05-11 01:09:21,701 INFO 13672 [egg-security] use nosniff middleware
-2019-05-11 01:09:21,702 INFO 13672 [egg-security] use xssProtection middleware
-2019-05-11 01:09:21,704 INFO 13672 [egg-security] use xframe middleware
-2019-05-11 01:09:21,705 INFO 13672 [egg-security] use dta middleware
-2019-05-11 01:09:21,705 INFO 13672 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 01:09:22,830 INFO 13672 [egg:core] dump config after load, 131ms
-2019-05-11 01:09:22,947 INFO 13672 [egg-watcher:application] watcher start success
-2019-05-11 01:09:23,155 INFO 13672 [egg:core] dump config after ready, 12ms
-2019-05-11 01:22:45,813 INFO 19340 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 01:22:46,066 INFO 19340 [egg-multipart] stream mode enable
-2019-05-11 01:22:49,105 INFO 19340 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 01:22:49,111 INFO 19340 [egg-security] use methodnoallow middleware
-2019-05-11 01:22:49,115 INFO 19340 [egg-security] use noopen middleware
-2019-05-11 01:22:49,118 INFO 19340 [egg-security] use nosniff middleware
-2019-05-11 01:22:49,119 INFO 19340 [egg-security] use xssProtection middleware
-2019-05-11 01:22:49,120 INFO 19340 [egg-security] use xframe middleware
-2019-05-11 01:22:49,121 INFO 19340 [egg-security] use dta middleware
-2019-05-11 01:22:49,122 INFO 19340 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 01:22:49,337 INFO 19340 [egg:core] dump config after load, 18ms
-2019-05-11 01:22:49,483 INFO 19340 [egg-watcher:application] watcher start success
-2019-05-11 01:22:49,766 INFO 19340 [egg:core] dump config after ready, 51ms
-2019-05-11 01:44:46,752 INFO 19648 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 01:44:47,165 INFO 19648 [egg-multipart] stream mode enable
-2019-05-11 01:44:50,497 INFO 19648 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 01:44:50,503 INFO 19648 [egg-security] use methodnoallow middleware
-2019-05-11 01:44:50,505 INFO 19648 [egg-security] use noopen middleware
-2019-05-11 01:44:50,507 INFO 19648 [egg-security] use nosniff middleware
-2019-05-11 01:44:50,508 INFO 19648 [egg-security] use xssProtection middleware
-2019-05-11 01:44:50,509 INFO 19648 [egg-security] use xframe middleware
-2019-05-11 01:44:50,511 INFO 19648 [egg-security] use dta middleware
-2019-05-11 01:44:50,511 INFO 19648 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 01:44:50,886 INFO 19648 [egg:core] dump config after load, 176ms
-2019-05-11 01:44:51,144 INFO 19648 [egg-watcher:application] watcher start success
-2019-05-11 01:44:51,328 INFO 19648 [egg:core] dump config after ready, 13ms
-2019-05-11 01:52:46,186 INFO 13480 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 01:52:46,541 INFO 13480 [egg-multipart] stream mode enable
-2019-05-11 01:52:49,262 INFO 13480 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 01:52:49,299 INFO 13480 [egg-security] use methodnoallow middleware
-2019-05-11 01:52:49,303 INFO 13480 [egg-security] use noopen middleware
-2019-05-11 01:52:49,310 INFO 13480 [egg-security] use nosniff middleware
-2019-05-11 01:52:49,311 INFO 13480 [egg-security] use xssProtection middleware
-2019-05-11 01:52:49,314 INFO 13480 [egg-security] use xframe middleware
-2019-05-11 01:52:49,316 INFO 13480 [egg-security] use dta middleware
-2019-05-11 01:52:49,316 INFO 13480 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 01:52:49,618 INFO 13480 [egg:core] dump config after load, 109ms
-2019-05-11 01:52:49,829 INFO 13480 [egg-watcher:application] watcher start success
-2019-05-11 01:52:49,916 INFO 13480 [egg:core] dump config after ready, 13ms
-2019-05-11 01:56:31,091 INFO 20300 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 01:56:31,397 INFO 20300 [egg-multipart] stream mode enable
-2019-05-11 01:56:33,116 INFO 20300 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 01:56:33,122 INFO 20300 [egg-security] use methodnoallow middleware
-2019-05-11 01:56:33,129 INFO 20300 [egg-security] use noopen middleware
-2019-05-11 01:56:33,133 INFO 20300 [egg-security] use nosniff middleware
-2019-05-11 01:56:33,135 INFO 20300 [egg-security] use xssProtection middleware
-2019-05-11 01:56:33,137 INFO 20300 [egg-security] use xframe middleware
-2019-05-11 01:56:33,139 INFO 20300 [egg-security] use dta middleware
-2019-05-11 01:56:33,139 INFO 20300 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 01:56:33,261 INFO 20300 [egg:core] dump config after load, 32ms
-2019-05-11 01:56:33,340 INFO 20300 [egg-watcher:application] watcher start success
-2019-05-11 01:56:33,458 INFO 20300 [egg:core] dump config after ready, 11ms
-2019-05-11 01:57:14,808 INFO 19796 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 01:57:15,024 INFO 19796 [egg-multipart] stream mode enable
-2019-05-11 01:57:17,225 INFO 19796 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 01:57:17,230 INFO 19796 [egg-security] use methodnoallow middleware
-2019-05-11 01:57:17,232 INFO 19796 [egg-security] use noopen middleware
-2019-05-11 01:57:17,235 INFO 19796 [egg-security] use nosniff middleware
-2019-05-11 01:57:17,236 INFO 19796 [egg-security] use xssProtection middleware
-2019-05-11 01:57:17,237 INFO 19796 [egg-security] use xframe middleware
-2019-05-11 01:57:17,238 INFO 19796 [egg-security] use dta middleware
-2019-05-11 01:57:17,238 INFO 19796 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 01:57:17,441 INFO 19796 [egg:core] dump config after load, 53ms
-2019-05-11 01:57:17,517 INFO 19796 [egg-watcher:application] watcher start success
-2019-05-11 01:57:17,611 INFO 19796 [egg:core] dump config after ready, 12ms
-2019-05-11 01:59:42,322 INFO 476 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 01:59:42,506 INFO 476 [egg-multipart] stream mode enable
-2019-05-11 01:59:44,898 INFO 476 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 01:59:44,904 INFO 476 [egg-security] use methodnoallow middleware
-2019-05-11 01:59:44,906 INFO 476 [egg-security] use noopen middleware
-2019-05-11 01:59:44,909 INFO 476 [egg-security] use nosniff middleware
-2019-05-11 01:59:44,910 INFO 476 [egg-security] use xssProtection middleware
-2019-05-11 01:59:44,911 INFO 476 [egg-security] use xframe middleware
-2019-05-11 01:59:44,912 INFO 476 [egg-security] use dta middleware
-2019-05-11 01:59:44,912 INFO 476 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 01:59:45,063 INFO 476 [egg:core] dump config after load, 53ms
-2019-05-11 01:59:45,226 INFO 476 [egg-watcher:application] watcher start success
-2019-05-11 01:59:45,454 INFO 476 [egg:core] dump config after ready, 42ms
-2019-05-11 02:01:10,018 INFO 14212 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 02:01:10,153 INFO 14212 [egg-multipart] stream mode enable
-2019-05-11 02:01:12,230 INFO 14212 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 02:01:12,239 INFO 14212 [egg-security] use methodnoallow middleware
-2019-05-11 02:01:12,240 INFO 14212 [egg-security] use noopen middleware
-2019-05-11 02:01:12,243 INFO 14212 [egg-security] use nosniff middleware
-2019-05-11 02:01:12,244 INFO 14212 [egg-security] use xssProtection middleware
-2019-05-11 02:01:12,245 INFO 14212 [egg-security] use xframe middleware
-2019-05-11 02:01:12,246 INFO 14212 [egg-security] use dta middleware
-2019-05-11 02:01:12,246 INFO 14212 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 02:01:12,384 INFO 14212 [egg:core] dump config after load, 16ms
-2019-05-11 02:01:12,540 INFO 14212 [egg-watcher:application] watcher start success
-2019-05-11 02:01:12,829 INFO 14212 [egg:core] dump config after ready, 68ms
-2019-05-11 02:03:55,026 INFO 18468 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 02:03:55,181 INFO 18468 [egg-multipart] stream mode enable
-2019-05-11 02:03:57,813 INFO 18468 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 02:03:57,882 INFO 18468 [egg-security] use methodnoallow middleware
-2019-05-11 02:03:57,894 INFO 18468 [egg-security] use noopen middleware
-2019-05-11 02:03:57,899 INFO 18468 [egg-security] use nosniff middleware
-2019-05-11 02:03:57,908 INFO 18468 [egg-security] use xssProtection middleware
-2019-05-11 02:03:57,909 INFO 18468 [egg-security] use xframe middleware
-2019-05-11 02:03:57,910 INFO 18468 [egg-security] use dta middleware
-2019-05-11 02:03:57,910 INFO 18468 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 02:03:59,134 INFO 18468 [egg:core] dump config after load, 83ms
-2019-05-11 02:03:59,245 INFO 18468 [egg-watcher:application] watcher start success
-2019-05-11 02:03:59,475 INFO 18468 [egg:core] dump config after ready, 14ms
-2019-05-11 02:05:22,114 INFO 19372 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 02:05:22,287 INFO 19372 [egg-multipart] stream mode enable
-2019-05-11 02:05:25,592 INFO 19372 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 02:05:25,599 INFO 19372 [egg-security] use methodnoallow middleware
-2019-05-11 02:05:25,601 INFO 19372 [egg-security] use noopen middleware
-2019-05-11 02:05:25,603 INFO 19372 [egg-security] use nosniff middleware
-2019-05-11 02:05:25,605 INFO 19372 [egg-security] use xssProtection middleware
-2019-05-11 02:05:25,606 INFO 19372 [egg-security] use xframe middleware
-2019-05-11 02:05:25,608 INFO 19372 [egg-security] use dta middleware
-2019-05-11 02:05:25,608 INFO 19372 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 02:05:25,769 INFO 19372 [egg:core] dump config after load, 32ms
-2019-05-11 02:05:25,890 INFO 19372 [egg-watcher:application] watcher start success
-2019-05-11 02:05:26,059 INFO 19372 [egg:core] dump config after ready, 12ms
-2019-05-11 02:05:48,941 INFO 6240 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 02:05:49,276 INFO 6240 [egg-multipart] stream mode enable
-2019-05-11 02:05:52,167 INFO 6240 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 02:05:52,175 INFO 6240 [egg-security] use methodnoallow middleware
-2019-05-11 02:05:52,176 INFO 6240 [egg-security] use noopen middleware
-2019-05-11 02:05:52,179 INFO 6240 [egg-security] use nosniff middleware
-2019-05-11 02:05:52,191 INFO 6240 [egg-security] use xssProtection middleware
-2019-05-11 02:05:52,192 INFO 6240 [egg-security] use xframe middleware
-2019-05-11 02:05:52,194 INFO 6240 [egg-security] use dta middleware
-2019-05-11 02:05:52,194 INFO 6240 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 02:05:52,368 INFO 6240 [egg:core] dump config after load, 33ms
-2019-05-11 02:05:52,526 INFO 6240 [egg-watcher:application] watcher start success
-2019-05-11 02:05:52,691 INFO 6240 [egg:core] dump config after ready, 66ms
-2019-05-11 02:07:30,768 INFO 18076 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 02:07:31,000 INFO 18076 [egg-multipart] stream mode enable
-2019-05-11 02:07:33,584 INFO 18076 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 02:07:33,593 INFO 18076 [egg-security] use methodnoallow middleware
-2019-05-11 02:07:33,595 INFO 18076 [egg-security] use noopen middleware
-2019-05-11 02:07:33,598 INFO 18076 [egg-security] use nosniff middleware
-2019-05-11 02:07:33,599 INFO 18076 [egg-security] use xssProtection middleware
-2019-05-11 02:07:33,601 INFO 18076 [egg-security] use xframe middleware
-2019-05-11 02:07:33,602 INFO 18076 [egg-security] use dta middleware
-2019-05-11 02:07:33,602 INFO 18076 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 02:07:33,757 INFO 18076 [egg:core] dump config after load, 50ms
-2019-05-11 02:07:33,955 INFO 18076 [egg-watcher:application] watcher start success
-2019-05-11 02:07:34,083 INFO 18076 [egg:core] dump config after ready, 20ms
-2019-05-11 02:09:04,194 INFO 19032 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 02:09:04,980 INFO 19032 [egg-multipart] stream mode enable
-2019-05-11 02:09:07,530 INFO 19032 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 02:09:07,536 INFO 19032 [egg-security] use methodnoallow middleware
-2019-05-11 02:09:07,539 INFO 19032 [egg-security] use noopen middleware
-2019-05-11 02:09:07,541 INFO 19032 [egg-security] use nosniff middleware
-2019-05-11 02:09:07,543 INFO 19032 [egg-security] use xssProtection middleware
-2019-05-11 02:09:07,546 INFO 19032 [egg-security] use xframe middleware
-2019-05-11 02:09:07,548 INFO 19032 [egg-security] use dta middleware
-2019-05-11 02:09:07,548 INFO 19032 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 02:09:07,662 INFO 19032 [egg:core] dump config after load, 20ms
-2019-05-11 02:09:08,042 INFO 19032 [egg-watcher:application] watcher start success
-2019-05-11 02:09:08,178 INFO 19032 [egg:core] dump config after ready, 13ms
-2019-05-11 02:10:03,015 INFO 20240 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 02:10:03,288 INFO 20240 [egg-multipart] stream mode enable
-2019-05-11 02:10:05,931 INFO 20240 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 02:10:05,974 INFO 20240 [egg-security] use methodnoallow middleware
-2019-05-11 02:10:05,976 INFO 20240 [egg-security] use noopen middleware
-2019-05-11 02:10:05,980 INFO 20240 [egg-security] use nosniff middleware
-2019-05-11 02:10:05,982 INFO 20240 [egg-security] use xssProtection middleware
-2019-05-11 02:10:06,004 INFO 20240 [egg-security] use xframe middleware
-2019-05-11 02:10:06,005 INFO 20240 [egg-security] use dta middleware
-2019-05-11 02:10:06,005 INFO 20240 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 02:10:06,247 INFO 20240 [egg:core] dump config after load, 94ms
-2019-05-11 02:10:06,330 INFO 20240 [egg-watcher:application] watcher start success
-2019-05-11 02:10:07,074 INFO 20240 [egg:core] dump config after ready, 12ms
-2019-05-11 02:14:27,058 INFO 19472 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 02:14:27,282 INFO 19472 [egg-multipart] stream mode enable
-2019-05-11 02:14:29,771 INFO 19472 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 02:14:29,778 INFO 19472 [egg-security] use methodnoallow middleware
-2019-05-11 02:14:29,780 INFO 19472 [egg-security] use noopen middleware
-2019-05-11 02:14:29,782 INFO 19472 [egg-security] use nosniff middleware
-2019-05-11 02:14:29,783 INFO 19472 [egg-security] use xssProtection middleware
-2019-05-11 02:14:29,784 INFO 19472 [egg-security] use xframe middleware
-2019-05-11 02:14:29,785 INFO 19472 [egg-security] use dta middleware
-2019-05-11 02:14:29,786 INFO 19472 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 02:14:29,928 INFO 19472 [egg:core] dump config after load, 16ms
-2019-05-11 02:14:29,998 INFO 19472 [egg-watcher:application] watcher start success
-2019-05-11 02:14:30,111 INFO 19472 [egg:core] dump config after ready, 20ms
-2019-05-11 02:17:51,518 INFO 8796 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 02:17:51,766 INFO 8796 [egg-multipart] stream mode enable
-2019-05-11 02:17:54,045 INFO 8796 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 02:17:54,105 INFO 8796 [egg-security] use methodnoallow middleware
-2019-05-11 02:17:54,107 INFO 8796 [egg-security] use noopen middleware
-2019-05-11 02:17:54,112 INFO 8796 [egg-security] use nosniff middleware
-2019-05-11 02:17:54,113 INFO 8796 [egg-security] use xssProtection middleware
-2019-05-11 02:17:54,115 INFO 8796 [egg-security] use xframe middleware
-2019-05-11 02:17:54,116 INFO 8796 [egg-security] use dta middleware
-2019-05-11 02:17:54,116 INFO 8796 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 02:17:54,243 INFO 8796 [egg:core] dump config after load, 21ms
-2019-05-11 02:17:54,375 INFO 8796 [egg-watcher:application] watcher start success
-2019-05-11 02:17:54,602 INFO 8796 [egg:core] dump config after ready, 127ms
-2019-05-11 02:50:50,165 INFO 15192 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 02:50:50,349 INFO 15192 [egg-multipart] stream mode enable
-2019-05-11 02:50:52,583 INFO 15192 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 02:50:52,599 INFO 15192 [egg-security] use methodnoallow middleware
-2019-05-11 02:50:52,600 INFO 15192 [egg-security] use noopen middleware
-2019-05-11 02:50:52,603 INFO 15192 [egg-security] use nosniff middleware
-2019-05-11 02:50:52,604 INFO 15192 [egg-security] use xssProtection middleware
-2019-05-11 02:50:52,605 INFO 15192 [egg-security] use xframe middleware
-2019-05-11 02:50:52,606 INFO 15192 [egg-security] use dta middleware
-2019-05-11 02:50:52,606 INFO 15192 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 02:50:52,755 INFO 15192 [egg:core] dump config after load, 19ms
-2019-05-11 02:50:52,846 INFO 15192 [egg-watcher:application] watcher start success
-2019-05-11 02:50:52,993 INFO 15192 [egg:core] dump config after ready, 12ms
-2019-05-11 03:02:33,819 INFO 20256 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 03:02:34,193 INFO 20256 [egg-multipart] stream mode enable
-2019-05-11 03:02:37,387 INFO 20256 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 03:02:37,396 INFO 20256 [egg-security] use methodnoallow middleware
-2019-05-11 03:02:37,398 INFO 20256 [egg-security] use noopen middleware
-2019-05-11 03:02:37,400 INFO 20256 [egg-security] use nosniff middleware
-2019-05-11 03:02:37,402 INFO 20256 [egg-security] use xssProtection middleware
-2019-05-11 03:02:37,403 INFO 20256 [egg-security] use xframe middleware
-2019-05-11 03:02:37,405 INFO 20256 [egg-security] use dta middleware
-2019-05-11 03:02:37,405 INFO 20256 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 03:02:37,649 INFO 20256 [egg:core] dump config after load, 43ms
-2019-05-11 03:02:38,106 INFO 20256 [egg-watcher:application] watcher start success
-2019-05-11 03:02:38,812 INFO 20256 [egg:core] dump config after ready, 99ms
-2019-05-11 03:03:36,184 INFO 7232 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 03:03:36,372 INFO 7232 [egg-multipart] stream mode enable
-2019-05-11 03:03:38,647 INFO 7232 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 03:03:38,666 INFO 7232 [egg-security] use methodnoallow middleware
-2019-05-11 03:03:38,667 INFO 7232 [egg-security] use noopen middleware
-2019-05-11 03:03:38,673 INFO 7232 [egg-security] use nosniff middleware
-2019-05-11 03:03:38,674 INFO 7232 [egg-security] use xssProtection middleware
-2019-05-11 03:03:38,676 INFO 7232 [egg-security] use xframe middleware
-2019-05-11 03:03:38,678 INFO 7232 [egg-security] use dta middleware
-2019-05-11 03:03:38,678 INFO 7232 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 03:03:38,818 INFO 7232 [egg:core] dump config after load, 17ms
-2019-05-11 03:03:39,014 INFO 7232 [egg-watcher:application] watcher start success
-2019-05-11 03:03:39,290 INFO 7232 [egg:core] dump config after ready, 63ms
-2019-05-11 03:04:10,517 INFO 15332 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 03:04:10,917 INFO 15332 [egg-multipart] stream mode enable
-2019-05-11 03:04:13,892 INFO 15332 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 03:04:13,901 INFO 15332 [egg-security] use methodnoallow middleware
-2019-05-11 03:04:13,905 INFO 15332 [egg-security] use noopen middleware
-2019-05-11 03:04:13,907 INFO 15332 [egg-security] use nosniff middleware
-2019-05-11 03:04:13,909 INFO 15332 [egg-security] use xssProtection middleware
-2019-05-11 03:04:13,910 INFO 15332 [egg-security] use xframe middleware
-2019-05-11 03:04:13,911 INFO 15332 [egg-security] use dta middleware
-2019-05-11 03:04:13,911 INFO 15332 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 03:04:14,148 INFO 15332 [egg:core] dump config after load, 110ms
-2019-05-11 03:04:14,276 INFO 15332 [egg-watcher:application] watcher start success
-2019-05-11 03:04:14,525 INFO 15332 [egg:core] dump config after ready, 11ms
-2019-05-11 03:04:23,662 INFO 16508 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 03:04:23,974 INFO 16508 [egg-multipart] stream mode enable
-2019-05-11 03:04:32,004 INFO 16508 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 03:04:32,010 INFO 16508 [egg-security] use methodnoallow middleware
-2019-05-11 03:04:32,012 INFO 16508 [egg-security] use noopen middleware
-2019-05-11 03:04:32,015 INFO 16508 [egg-security] use nosniff middleware
-2019-05-11 03:04:32,016 INFO 16508 [egg-security] use xssProtection middleware
-2019-05-11 03:04:32,018 INFO 16508 [egg-security] use xframe middleware
-2019-05-11 03:04:32,019 INFO 16508 [egg-security] use dta middleware
-2019-05-11 03:04:32,019 INFO 16508 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 03:04:32,309 INFO 16508 [egg:core] dump config after load, 96ms
-2019-05-11 03:04:32,464 INFO 16508 [egg-watcher:application] watcher start success
-2019-05-11 03:04:32,813 INFO 16508 [egg:core] dump config after ready, 12ms
-2019-05-11 03:04:47,328 INFO 9924 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 03:04:47,689 INFO 9924 [egg-multipart] stream mode enable
-2019-05-11 03:04:51,161 INFO 9924 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 03:04:51,167 INFO 9924 [egg-security] use methodnoallow middleware
-2019-05-11 03:04:51,168 INFO 9924 [egg-security] use noopen middleware
-2019-05-11 03:04:51,173 INFO 9924 [egg-security] use nosniff middleware
-2019-05-11 03:04:51,174 INFO 9924 [egg-security] use xssProtection middleware
-2019-05-11 03:04:51,175 INFO 9924 [egg-security] use xframe middleware
-2019-05-11 03:04:51,177 INFO 9924 [egg-security] use dta middleware
-2019-05-11 03:04:51,177 INFO 9924 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 03:04:51,394 INFO 9924 [egg:core] dump config after load, 69ms
-2019-05-11 03:04:51,598 INFO 9924 [egg-watcher:application] watcher start success
-2019-05-11 03:04:51,840 INFO 9924 [egg:core] dump config after ready, 73ms
-2019-05-11 03:05:02,055 INFO 10732 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 03:05:02,443 INFO 10732 [egg-multipart] stream mode enable
-2019-05-11 03:05:06,416 INFO 10732 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 03:05:06,430 INFO 10732 [egg-security] use methodnoallow middleware
-2019-05-11 03:05:06,432 INFO 10732 [egg-security] use noopen middleware
-2019-05-11 03:05:06,435 INFO 10732 [egg-security] use nosniff middleware
-2019-05-11 03:05:06,437 INFO 10732 [egg-security] use xssProtection middleware
-2019-05-11 03:05:06,439 INFO 10732 [egg-security] use xframe middleware
-2019-05-11 03:05:06,440 INFO 10732 [egg-security] use dta middleware
-2019-05-11 03:05:06,440 INFO 10732 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 03:05:06,588 INFO 10732 [egg:core] dump config after load, 15ms
-2019-05-11 03:05:06,717 INFO 10732 [egg-watcher:application] watcher start success
-2019-05-11 03:05:07,011 INFO 10732 [egg:core] dump config after ready, 12ms
-2019-05-11 03:05:41,004 INFO 17540 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 03:05:41,233 INFO 17540 [egg-multipart] stream mode enable
-2019-05-11 03:05:44,293 INFO 17540 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 03:05:44,302 INFO 17540 [egg-security] use methodnoallow middleware
-2019-05-11 03:05:44,304 INFO 17540 [egg-security] use noopen middleware
-2019-05-11 03:05:44,307 INFO 17540 [egg-security] use nosniff middleware
-2019-05-11 03:05:44,308 INFO 17540 [egg-security] use xssProtection middleware
-2019-05-11 03:05:44,311 INFO 17540 [egg-security] use xframe middleware
-2019-05-11 03:05:44,312 INFO 17540 [egg-security] use dta middleware
-2019-05-11 03:05:44,312 INFO 17540 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 03:05:44,503 INFO 17540 [egg:core] dump config after load, 30ms
-2019-05-11 03:05:44,589 INFO 17540 [egg-watcher:application] watcher start success
-2019-05-11 03:05:44,995 INFO 17540 [egg:core] dump config after ready, 35ms
-2019-05-11 03:08:24,112 INFO 20280 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 03:08:24,559 INFO 20280 [egg-multipart] stream mode enable
-2019-05-11 03:08:26,996 INFO 20280 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 03:08:27,003 INFO 20280 [egg-security] use methodnoallow middleware
-2019-05-11 03:08:27,007 INFO 20280 [egg-security] use noopen middleware
-2019-05-11 03:08:27,013 INFO 20280 [egg-security] use nosniff middleware
-2019-05-11 03:08:27,015 INFO 20280 [egg-security] use xssProtection middleware
-2019-05-11 03:08:27,067 INFO 20280 [egg-security] use xframe middleware
-2019-05-11 03:08:27,068 INFO 20280 [egg-security] use dta middleware
-2019-05-11 03:08:27,068 INFO 20280 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 03:08:27,250 INFO 20280 [egg:core] dump config after load, 16ms
-2019-05-11 03:08:27,452 INFO 20280 [egg-watcher:application] watcher start success
-2019-05-11 03:08:27,634 INFO 20280 [egg:core] dump config after ready, 14ms
-2019-05-11 03:11:52,435 INFO 6816 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 03:11:52,752 INFO 6816 [egg-multipart] stream mode enable
-2019-05-11 03:11:55,755 INFO 6816 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 03:11:55,761 INFO 6816 [egg-security] use methodnoallow middleware
-2019-05-11 03:11:55,772 INFO 6816 [egg-security] use noopen middleware
-2019-05-11 03:11:55,775 INFO 6816 [egg-security] use nosniff middleware
-2019-05-11 03:11:55,777 INFO 6816 [egg-security] use xssProtection middleware
-2019-05-11 03:11:55,781 INFO 6816 [egg-security] use xframe middleware
-2019-05-11 03:11:55,782 INFO 6816 [egg-security] use dta middleware
-2019-05-11 03:11:55,782 INFO 6816 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 03:11:55,936 INFO 6816 [egg:core] dump config after load, 19ms
-2019-05-11 03:11:56,147 INFO 6816 [egg-watcher:application] watcher start success
-2019-05-11 03:11:56,250 INFO 6816 [egg:core] dump config after ready, 12ms
-2019-05-11 04:05:24,276 INFO 6700 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 04:05:24,339 INFO 6700 [egg-multipart] stream mode enable
-2019-05-11 04:05:24,962 INFO 6700 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 04:05:24,966 INFO 6700 [egg-security] use methodnoallow middleware
-2019-05-11 04:05:24,967 INFO 6700 [egg-security] use noopen middleware
-2019-05-11 04:05:24,970 INFO 6700 [egg-security] use nosniff middleware
-2019-05-11 04:05:24,971 INFO 6700 [egg-security] use xssProtection middleware
-2019-05-11 04:05:24,972 INFO 6700 [egg-security] use xframe middleware
-2019-05-11 04:05:24,973 INFO 6700 [egg-security] use dta middleware
-2019-05-11 04:05:24,973 INFO 6700 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 04:05:25,170 INFO 6700 [egg:core] dump config after load, 9ms
-2019-05-11 04:05:25,212 INFO 6700 [egg-watcher:application] watcher start success
-2019-05-11 04:05:25,242 INFO 6700 [egg:core] dump config after ready, 7ms
-2019-05-11 05:14:01,861 INFO 1960 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 05:14:01,924 INFO 1960 [egg-multipart] stream mode enable
-2019-05-11 05:14:02,457 INFO 1960 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 05:14:02,462 INFO 1960 [egg-security] use methodnoallow middleware
-2019-05-11 05:14:02,463 INFO 1960 [egg-security] use noopen middleware
-2019-05-11 05:14:02,465 INFO 1960 [egg-security] use nosniff middleware
-2019-05-11 05:14:02,465 INFO 1960 [egg-security] use xssProtection middleware
-2019-05-11 05:14:02,466 INFO 1960 [egg-security] use xframe middleware
-2019-05-11 05:14:02,467 INFO 1960 [egg-security] use dta middleware
-2019-05-11 05:14:02,467 INFO 1960 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 05:14:02,520 INFO 1960 [egg:core] dump config after load, 10ms
-2019-05-11 05:14:02,568 INFO 1960 [egg-watcher:application] watcher start success
-2019-05-11 05:14:02,613 INFO 1960 [egg:core] dump config after ready, 9ms
-2019-05-11 05:16:46,735 INFO 14972 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 05:16:46,806 INFO 14972 [egg-multipart] stream mode enable
-2019-05-11 05:16:48,216 INFO 14972 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 05:16:48,219 INFO 14972 [egg-security] use methodnoallow middleware
-2019-05-11 05:16:48,220 INFO 14972 [egg-security] use noopen middleware
-2019-05-11 05:16:48,221 INFO 14972 [egg-security] use nosniff middleware
-2019-05-11 05:16:48,222 INFO 14972 [egg-security] use xssProtection middleware
-2019-05-11 05:16:48,222 INFO 14972 [egg-security] use xframe middleware
-2019-05-11 05:16:48,223 INFO 14972 [egg-security] use dta middleware
-2019-05-11 05:16:48,223 INFO 14972 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 05:16:48,268 INFO 14972 [egg:core] dump config after load, 10ms
-2019-05-11 05:16:48,293 INFO 14972 [egg-watcher:application] watcher start success
-2019-05-11 05:16:48,339 INFO 14972 [egg:core] dump config after ready, 6ms
-2019-05-11 05:22:36,697 INFO 13892 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 05:22:36,838 INFO 13892 [egg-multipart] stream mode enable
-2019-05-11 05:22:37,935 INFO 13892 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 05:22:37,940 INFO 13892 [egg-security] use methodnoallow middleware
-2019-05-11 05:22:37,941 INFO 13892 [egg-security] use noopen middleware
-2019-05-11 05:22:37,944 INFO 13892 [egg-security] use nosniff middleware
-2019-05-11 05:22:37,945 INFO 13892 [egg-security] use xssProtection middleware
-2019-05-11 05:22:37,946 INFO 13892 [egg-security] use xframe middleware
-2019-05-11 05:22:37,947 INFO 13892 [egg-security] use dta middleware
-2019-05-11 05:22:37,947 INFO 13892 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 05:22:38,026 INFO 13892 [egg:core] dump config after load, 14ms
-2019-05-11 05:23:43,707 INFO 14260 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 05:23:43,825 INFO 14260 [egg-multipart] stream mode enable
-2019-05-11 05:23:45,069 INFO 14260 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 05:23:45,074 INFO 14260 [egg-security] use methodnoallow middleware
-2019-05-11 05:23:45,076 INFO 14260 [egg-security] use noopen middleware
-2019-05-11 05:23:45,078 INFO 14260 [egg-security] use nosniff middleware
-2019-05-11 05:23:45,079 INFO 14260 [egg-security] use xssProtection middleware
-2019-05-11 05:23:45,080 INFO 14260 [egg-security] use xframe middleware
-2019-05-11 05:23:45,082 INFO 14260 [egg-security] use dta middleware
-2019-05-11 05:23:45,082 INFO 14260 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 05:23:45,162 INFO 14260 [egg:core] dump config after load, 15ms
-2019-05-11 05:28:35,349 INFO 8268 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 05:28:35,457 INFO 8268 [egg-multipart] stream mode enable
-2019-05-11 05:28:36,529 INFO 8268 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 05:28:36,542 INFO 8268 [egg-security] use methodnoallow middleware
-2019-05-11 05:28:36,543 INFO 8268 [egg-security] use noopen middleware
-2019-05-11 05:28:36,545 INFO 8268 [egg-security] use nosniff middleware
-2019-05-11 05:28:36,546 INFO 8268 [egg-security] use xssProtection middleware
-2019-05-11 05:28:36,553 INFO 8268 [egg-security] use xframe middleware
-2019-05-11 05:28:36,561 INFO 8268 [egg-security] use dta middleware
-2019-05-11 05:28:36,561 INFO 8268 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 05:28:36,667 INFO 8268 [egg:core] dump config after load, 16ms
-2019-05-11 05:30:36,897 INFO 3008 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 05:30:36,985 INFO 3008 [egg-multipart] stream mode enable
-2019-05-11 05:30:38,062 INFO 3008 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 05:30:38,068 INFO 3008 [egg-security] use methodnoallow middleware
-2019-05-11 05:30:38,069 INFO 3008 [egg-security] use noopen middleware
-2019-05-11 05:30:38,072 INFO 3008 [egg-security] use nosniff middleware
-2019-05-11 05:30:38,076 INFO 3008 [egg-security] use xssProtection middleware
-2019-05-11 05:30:38,077 INFO 3008 [egg-security] use xframe middleware
-2019-05-11 05:30:38,078 INFO 3008 [egg-security] use dta middleware
-2019-05-11 05:30:38,078 INFO 3008 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 05:30:38,172 INFO 3008 [egg:core] dump config after load, 20ms
-2019-05-11 05:33:10,770 INFO 10488 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 05:33:10,875 INFO 10488 [egg-multipart] stream mode enable
-2019-05-11 05:33:11,644 INFO 10488 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 05:33:11,649 INFO 10488 [egg-security] use methodnoallow middleware
-2019-05-11 05:33:11,650 INFO 10488 [egg-security] use noopen middleware
-2019-05-11 05:33:11,653 INFO 10488 [egg-security] use nosniff middleware
-2019-05-11 05:33:11,654 INFO 10488 [egg-security] use xssProtection middleware
-2019-05-11 05:33:11,655 INFO 10488 [egg-security] use xframe middleware
-2019-05-11 05:33:11,656 INFO 10488 [egg-security] use dta middleware
-2019-05-11 05:33:11,656 INFO 10488 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 05:33:11,724 INFO 10488 [egg:core] dump config after load, 10ms
-2019-05-11 05:33:11,859 INFO 10488 [egg-watcher:application] watcher start success
-2019-05-11 05:33:16,670 INFO 10488 [egg:core] dump config after ready, 7ms
-2019-05-11 05:33:32,059 INFO 8944 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-05-11 05:33:32,221 INFO 8944 [egg-multipart] stream mode enable
-2019-05-11 05:33:33,924 INFO 8944 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
-2019-05-11 05:33:33,944 INFO 8944 [egg-security] use methodnoallow middleware
-2019-05-11 05:33:33,946 INFO 8944 [egg-security] use noopen middleware
-2019-05-11 05:33:33,952 INFO 8944 [egg-security] use nosniff middleware
-2019-05-11 05:33:33,953 INFO 8944 [egg-security] use xssProtection middleware
-2019-05-11 05:33:33,954 INFO 8944 [egg-security] use xframe middleware
-2019-05-11 05:33:33,955 INFO 8944 [egg-security] use dta middleware
-2019-05-11 05:33:33,955 INFO 8944 [egg-security] compose 6 middlewares into one security middleware
-2019-05-11 05:33:34,062 INFO 8944 [egg:core] dump config after load, 17ms
-2019-05-11 05:33:34,129 INFO 8944 [egg-watcher:application] watcher start success
-2019-05-11 05:33:34,352 INFO 8944 [egg:core] dump config after ready, 14ms
+2019-05-18 00:00:01,035 INFO 9820 [egg-logrotator] app logger reload: got log-reload message
+2019-05-18 00:12:43,902 INFO 12632 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-05-18 00:12:43,982 INFO 12632 [egg-multipart] stream mode enable
+2019-05-18 00:12:45,248 INFO 12632 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
+2019-05-18 00:12:45,262 INFO 12632 [egg-security] use methodnoallow middleware
+2019-05-18 00:12:45,263 INFO 12632 [egg-security] use noopen middleware
+2019-05-18 00:12:45,265 INFO 12632 [egg-security] use nosniff middleware
+2019-05-18 00:12:45,266 INFO 12632 [egg-security] use xssProtection middleware
+2019-05-18 00:12:45,267 INFO 12632 [egg-security] use xframe middleware
+2019-05-18 00:12:45,268 INFO 12632 [egg-security] use dta middleware
+2019-05-18 00:12:45,268 INFO 12632 [egg-security] compose 6 middlewares into one security middleware
+2019-05-18 00:12:45,363 INFO 12632 [egg:core] dump config after load, 21ms
+2019-05-18 00:12:45,416 INFO 12632 [egg-watcher:application] watcher start success
+2019-05-18 00:12:45,512 INFO 12632 [egg:core] dump config after ready, 13ms
+2019-05-18 00:29:42,915 INFO 212 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-05-18 00:29:43,031 INFO 212 [egg-multipart] stream mode enable
+2019-05-18 00:29:44,091 INFO 212 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
+2019-05-18 00:29:44,097 INFO 212 [egg-security] use methodnoallow middleware
+2019-05-18 00:29:44,098 INFO 212 [egg-security] use noopen middleware
+2019-05-18 00:29:44,100 INFO 212 [egg-security] use nosniff middleware
+2019-05-18 00:29:44,101 INFO 212 [egg-security] use xssProtection middleware
+2019-05-18 00:29:44,102 INFO 212 [egg-security] use xframe middleware
+2019-05-18 00:29:44,103 INFO 212 [egg-security] use dta middleware
+2019-05-18 00:29:44,103 INFO 212 [egg-security] compose 6 middlewares into one security middleware
+2019-05-18 00:29:44,196 INFO 212 [egg:core] dump config after load, 20ms
+2019-05-18 00:29:44,701 INFO 212 [egg-watcher:application] watcher start success
+2019-05-18 00:29:44,780 INFO 212 [egg:core] dump config after ready, 12ms
+2019-05-18 00:31:08,119 INFO 6524 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-05-18 00:31:08,323 INFO 6524 [egg-multipart] stream mode enable
+2019-05-18 00:31:09,543 INFO 6524 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
+2019-05-18 00:31:09,547 INFO 6524 [egg-security] use methodnoallow middleware
+2019-05-18 00:31:09,548 INFO 6524 [egg-security] use noopen middleware
+2019-05-18 00:31:09,549 INFO 6524 [egg-security] use nosniff middleware
+2019-05-18 00:31:09,550 INFO 6524 [egg-security] use xssProtection middleware
+2019-05-18 00:31:09,551 INFO 6524 [egg-security] use xframe middleware
+2019-05-18 00:31:09,553 INFO 6524 [egg-security] use dta middleware
+2019-05-18 00:31:09,554 INFO 6524 [egg-security] compose 6 middlewares into one security middleware
+2019-05-18 00:31:09,627 INFO 6524 [egg:core] dump config after load, 14ms
+2019-05-18 00:31:09,665 INFO 6524 [egg-watcher:application] watcher start success
+2019-05-18 00:31:09,740 INFO 6524 [egg:core] dump config after ready, 13ms
+2019-05-18 00:34:03,501 INFO 19068 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-05-18 00:34:03,767 INFO 19068 [egg-multipart] stream mode enable
+2019-05-18 00:34:05,516 INFO 19068 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
+2019-05-18 00:34:05,531 INFO 19068 [egg-security] use methodnoallow middleware
+2019-05-18 00:34:05,532 INFO 19068 [egg-security] use noopen middleware
+2019-05-18 00:34:05,535 INFO 19068 [egg-security] use nosniff middleware
+2019-05-18 00:34:05,536 INFO 19068 [egg-security] use xssProtection middleware
+2019-05-18 00:34:05,538 INFO 19068 [egg-security] use xframe middleware
+2019-05-18 00:34:05,539 INFO 19068 [egg-security] use dta middleware
+2019-05-18 00:34:05,539 INFO 19068 [egg-security] compose 6 middlewares into one security middleware
+2019-05-18 00:34:05,643 INFO 19068 [egg:core] dump config after load, 17ms
+2019-05-18 00:34:05,746 INFO 19068 [egg-watcher:application] watcher start success
+2019-05-18 00:34:05,829 INFO 19068 [egg:core] dump config after ready, 12ms
+2019-05-18 00:34:09,495 INFO 4580 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-05-18 00:34:09,643 INFO 4580 [egg-multipart] stream mode enable
+2019-05-18 00:34:12,467 INFO 4580 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
+2019-05-18 00:34:12,475 INFO 4580 [egg-security] use methodnoallow middleware
+2019-05-18 00:34:12,483 INFO 4580 [egg-security] use noopen middleware
+2019-05-18 00:34:12,488 INFO 4580 [egg-security] use nosniff middleware
+2019-05-18 00:34:12,490 INFO 4580 [egg-security] use xssProtection middleware
+2019-05-18 00:34:12,492 INFO 4580 [egg-security] use xframe middleware
+2019-05-18 00:34:12,500 INFO 4580 [egg-security] use dta middleware
+2019-05-18 00:34:12,500 INFO 4580 [egg-security] compose 6 middlewares into one security middleware
+2019-05-18 00:34:12,736 INFO 4580 [egg:core] dump config after load, 46ms
+2019-05-18 00:34:12,982 INFO 4580 [egg-watcher:application] watcher start success
+2019-05-18 00:34:13,093 INFO 4580 [egg:core] dump config after ready, 14ms
+2019-05-18 02:53:29,154 INFO 14284 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-05-18 02:53:29,284 INFO 14284 [egg-multipart] stream mode enable
+2019-05-18 02:53:31,365 INFO 14284 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
+2019-05-18 02:53:31,371 INFO 14284 [egg-security] use methodnoallow middleware
+2019-05-18 02:53:31,376 INFO 14284 [egg-security] use noopen middleware
+2019-05-18 02:53:31,379 INFO 14284 [egg-security] use nosniff middleware
+2019-05-18 02:53:31,381 INFO 14284 [egg-security] use xssProtection middleware
+2019-05-18 02:53:31,382 INFO 14284 [egg-security] use xframe middleware
+2019-05-18 02:53:31,383 INFO 14284 [egg-security] use dta middleware
+2019-05-18 02:53:31,384 INFO 14284 [egg-security] compose 6 middlewares into one security middleware
+2019-05-18 02:53:31,515 INFO 14284 [egg:core] dump config after load, 29ms
+2019-05-18 02:53:31,582 INFO 14284 [egg-watcher:application] watcher start success
+2019-05-18 02:53:31,709 INFO 14284 [egg:core] dump config after ready, 24ms

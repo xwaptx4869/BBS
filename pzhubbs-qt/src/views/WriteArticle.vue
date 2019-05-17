@@ -9,7 +9,7 @@
               <el-input v-model="news.title" placeholder="请填写标题"></el-input>
             </el-form-item>
             <el-form-item label="简介" prop="introduction">
-              <el-input v-model="news.introduction" placeholder="请填写简介"></el-input>
+              <el-input type="textarea" rows="3" v-model="news.introduction" placeholder="请填写简介"></el-input>
             </el-form-item>
             <el-form-item label="封面" prop="poster">
               <el-upload
@@ -87,7 +87,8 @@ export default {
       classifications: [],
       value: [],
       newsRules: {
-        title: [{ required: true, message: "请输入文章标题", trigger: "blur" }],
+        title: [{ required: true, message: "请输入文章标题", trigger: "blur" },
+        { min: 1,max:20, message: "请输入20位以内标题", trigger: "blur" }],
         labels: [{ required: true, message: "请输入标签", trigger: "blur" }],
          introduction: [{ required: true, message: "请填写简介", trigger: "blur" }],
         classifications: [
@@ -149,7 +150,7 @@ export default {
       console.log(this.news);
       this.$axios.post("http://127.0.0.1:7001/frontend/v1/article/add", this.news).then(response => {
         const { status, data, message } = response.data;
-        if (status !== 0) return this.$message.error("创建失败，请检查参数");
+        if (status !== 0) return this.$message.error(status);
         this.$message.success("创建文章成功");
         this.$router.go(-1);
       });

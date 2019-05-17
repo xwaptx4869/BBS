@@ -7,11 +7,11 @@
         <i class="el-icon-s-custom"></i>
         <span class="name">{{datalist.username}}</span>
         <i class="el-icon-time"></i>
-        <span class="time">{{datalist.uptime}}</span>
+        <span class="time">{{xutils.formatTime(datalist.created_at)}}</span>
         <i class="el-icon-chat-dot-square"></i>
-        <span class="comment">{{ datalist.commentnum ?'评论数:'+datalist.commentnum : '暂无评论' }}</span>
+        <span class="comment">{{ datalist.comment_num ?'评论数:'+datalist.comment_num : '暂无评论' }}</span>
         <i class="el-icon-collection"></i>
-        <span class="classifition">{{datalist.classifition}}</span>
+        <span class="classifition">{{datalist.classification_ids}}</span>
       </div>
     </div>
     <div v-else class="box title">

@@ -7,9 +7,9 @@
       <div class="comments-list">
         <div class="comment" v-for=" (item,index) in data" :key="index">
           <div class="avatar">
-            <img :src="item.poster" alt>
+            <img :src="item.poster ? item.poster : 'https://q.qlogo.cn/g?b=qq&nk=1183927842&s=100' " alt>
             <div class="commentuser-msg">
-              <b>{{item.username}}</b>
+              <b>{{$store.state.username}}</b>
               <p>{{xutils.formatTime(item.created_at)}}</p>
             </div>
           </div>
@@ -18,15 +18,15 @@
             <el-button
               size="mini"
               type="primary"
-              @click="ifreply = true;secondifreply = false; clickindex = index;"
+              @click="ifreply = true;secondifreply = false; clickindex = index;replyform.connect_id = item.id;"
             >回复</el-button>
           </div>
           <div v-if="item.replylist" class="secondlevelreply-box">
             <div v-for=" (ite,inde) in item.replylist" :key="inde" class="reply-list">
               <div class="reply-avatar">
-                <img :src="ite.imgSrc" alt>
+                <img :src="ite.poster ? ite.poster : 'https://q.qlogo.cn/g?b=qq&nk=1183927842&s=100'" alt>
                 <div class="replyuser-msg">
-                  <b>{{ite.username}}</b>
+                  <b>{{$store.state.username}}</b>
                   <p>{{xutils.formatTime(ite.created_at)}}</p>
                 </div>
               </div>
@@ -35,18 +35,18 @@
                 <el-button
                   size="mini"
                   type="primary"
-                  @click="ifreply = false;;secondifreply = true; secondclick = inde;form.connect_id = ite.id"
+                  @click="ifreply = false;;secondifreply = true; secondclick = inde;form2.connect_id = item.id"
                 >回复</el-button>
               </div>
-              <div v-if="secondifreply&& secondclick == inde " class="reply-box">
+              <div v-if="secondifreply&& secondclick == inde && item.id == ite.connect_id  " class="reply-box">
                 <div class="comments-reply-box">
-                  <el-form :model="form" ref="form2">
+                  <el-form :model="form2" ref="form2">
                     <el-form-item>
                       <span>回复：@{{ite.username}}</span>
-                      <el-input type="textarea" placeholder="说点什么吧" v-model="form.content" rows="3"></el-input>
+                      <el-input type="textarea" placeholder="说点什么吧" v-model="form2.content" rows="3"></el-input>
                     </el-form-item>
                     <el-form-item>
-                      <el-button size="small" type="primary">发表回复</el-button>
+                      <el-button size="small"  @click="addNews2" type="primary">发表回复</el-button>
                       <el-button size="small" @click="secondifreply = false;">取消回复</el-button>
                     </el-form-item>
                   </el-form>
@@ -103,10 +103,15 @@ export default {
 				connect_id: '',
 				content: ''
       },
+      form2: {
+        user_id: '',
+        content: '',
+				connect_id: '1'
+      },
       replyform:{
 				user_id: '',
         content: '',
-				connect_id: ''
+				connect_id: '1'
       },
       ifreply: false,
       secondifreply: false,
@@ -126,8 +131,8 @@ export default {
   },
   methods:{
       addComments () {
-      this.form.type = '1';
-      this.form.connect_id = this.$route.params.id+'';
+      this.form.type = this.commenttype;
+      this.form.connect_id = this.$route.params.id +'';
 			this.$axios.post('http://127.0.0.1:7001/frontend/v1/comment/add', this.form).then(response => {
 				const {status, data, message} = response.data
         if(status !== 0) return this.$message.error(status);
@@ -137,11 +142,25 @@ export default {
 			})
     },
     addNews () {
-      this.replyform.user_id = this.$route.params.id+'';
+      this.replyform.user_id = this.$store.state.userId+'';
 			this.$axios.post('http://127.0.0.1:7001/frontend/v1/reply/add', this.replyform).then(response => {
 				const {status, data, message} = response.data
-				if(status !== 0) return this.$message.error(status);
-        this.$message.success('创建回复成功');
+        if(status !== 0) return this.$message.error(status);
+        this.replyform.content = '';
+        this.ifreply = false;
+        this.$message.success('回复成功');
+        this.$emit("transfercomment");
+        
+			})
+    },
+     addNews2 () {
+      this.form2.user_id = this.$store.state.userId+'';
+			this.$axios.post('http://127.0.0.1:7001/frontend/v1/reply/add', this.form2).then(response => {
+				const {status, data, message} = response.data
+        if(status !== 0) return this.$message.error(status);
+        this.form2.content = '';
+        this.secondifreply = false;
+        this.$message.success('回复成功');
         this.$emit("transfercomment");
         
 			})
@@ -185,6 +204,9 @@ export default {
         }
       }
     }
+  }
+  .reply-list{
+    margin-top: 6px;
   }
   .reply-box {
     .el-form-item {

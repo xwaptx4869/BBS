@@ -50,7 +50,7 @@ export default {
 			fileclassSource,
 			addTopicString: '',
 			FileType,
-			type:'',
+			type:'add',
 			FileList: {
 				type: '',
 				file_src:''

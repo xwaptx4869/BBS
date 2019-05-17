@@ -1,20 +1,21 @@
 <template>
   <div>
-    <page-header :data="articleData.data"></page-header>
+    <page-header :data="data"></page-header>
     <div class="content-box">
       <div class="article-box">
         <div class="title">
           <div
-            v-if="articleData.poster"
+            v-if="data.poster"
             class="img-box"
-            :style="{ backgroundImage:'url('+ articleData.poster+ ')' }"
+            :style="{ backgroundImage:'url('+ data.poster+ ')' }"
           ></div>
+           <p class="introduction">{{data.introduction}}</p>
         </div>
-        <div class="content" v-html="articleData.content">
+        <div class="content" v-html="data.content">
         </div>
         <div class="footer">
           <div class="copyright">
-            <p>版权属于：{{articleData.data.username}}</p>
+            <p>版权属于：{{data.username}}</p>
             <p>
               您必须遵守：
               <a
@@ -25,7 +26,7 @@
           </div>
           <div class="bootom-msg">
             <i class="el-icon-time"></i>
-            <span>最后修改：{{articleData.data.uptime}}</span>
+            <span>最后修改：{{xutils.formatTime(data.updated_at)}}</span>
             <span class="copyrightfor">©著作权归作者所有</span>
           </div>
         </div>
@@ -43,70 +44,24 @@ export default {
     comment
   },
   data() {
-    return {
-      id:null,
-      articleData: {
-        data: {
-          title: "关于web语义化、自定义命名的规范",
-          username: "xuwei",
-          created_at: "2019-5-9",
-          commentnum: 5,
-          classifition: "技术文章",
-          isArticle: true
-        },
+    this.articleData={
+        username:'aptx4869',
         content:'',
         poster:''
-      },
-      commentdata: [
-        {
-          poster:
-            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557392706246&di=7bb2b9f657c3435d65af2f14f58db546&imgtype=0&src=http%3A%2F%2F00.minipic.eastday.com%2F20170818%2F20170818115355_d41d8cd98f00b204e9800998ecf8427e_1.jpeg",
-          username: "shasha",
-          uptime: "2019-5-8",
-          replylist: [
-            {
-              poster:
-                "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557392706246&di=7bb2b9f657c3435d65af2f14f58db546&imgtype=0&src=http%3A%2F%2F00.minipic.eastday.com%2F20170818%2F20170818115355_d41d8cd98f00b204e9800998ecf8427e_1.jpeg",
-              username: "xuwei",
-              uptime: "2019-5-10"
-            },
-            {
-              poster:
-                "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557987500&di=4715165b2cd8a22379faee6df6792f9e&imgtype=jpg&er=1&src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farchive%2F676ede2f1238ae497d67c4aff1be1733076a66f8.jpg",
-              username: "xuwei",
-              uptime: "2019-5-10"
-            },
-
-          ]
+      }
+    return {
+      id:null,
+      data: {
+          title: this.articleData.title,
+          username: this.articleData.username,
+          created_at: this.articleData.created_at,
+          comment_num:this.articleData.commentnum,
+          classifition:this.articleData.classifition,
+          isArticle: true,
+          content:'',
+          poster:''
         },
-        {
-          poster:
-            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557392706246&di=7bb2b9f657c3435d65af2f14f58db546&imgtype=0&src=http%3A%2F%2F00.minipic.eastday.com%2F20170818%2F20170818115355_d41d8cd98f00b204e9800998ecf8427e_1.jpeg",
-          username: "shasha",
-          uptime: "2019-5-8"
-        },
-        {
-          poster:
-            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557392706246&di=7bb2b9f657c3435d65af2f14f58db546&imgtype=0&src=http%3A%2F%2F00.minipic.eastday.com%2F20170818%2F20170818115355_d41d8cd98f00b204e9800998ecf8427e_1.jpeg",
-          username: "shasha",
-          uptime: "2019-5-8",
-           replylist: [
-            {
-              poster:
-                "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557392706246&di=7bb2b9f657c3435d65af2f14f58db546&imgtype=0&src=http%3A%2F%2F00.minipic.eastday.com%2F20170818%2F20170818115355_d41d8cd98f00b204e9800998ecf8427e_1.jpeg",
-              username: "xuwei",
-              uptime: "2019-5-10"
-            },
-            {
-              poster:
-                "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557987500&di=4715165b2cd8a22379faee6df6792f9e&imgtype=jpg&er=1&src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farchive%2F676ede2f1238ae497d67c4aff1be1733076a66f8.jpg",
-              username: "xuwei",
-              uptime: "2019-5-10"
-            },
-
-          ]
-        }
-      ]
+      commentdata: []
     };
   },
   mounted() {
@@ -121,18 +76,12 @@ export default {
       this.$axios.get(`http://127.0.0.1:7001/frontend/v1/article/${this.id}`).then(response => {
         const { status, data, message } = response.data;
         if (status !== 0) return this.$message.error(message);
-        this.articleData.data.title = response.data.data.title;
-        this.articleData.data.created_at = response.data.data.created_at;
-        this.articleData.data.comment_num = response.data.data.comment_num;
-        this.articleData.poster = response.data.data.poster;
-        console.log( this.articleData.poster);
-        // this.news.label_ids = this.xcommon.arrayHandle(data.labels)
-        // this.news.classification_ids = this.xcommon.arrayHandle(data.classifications)
-        // this.xEditor.txt.html(data.content);
+        this.articleData = response.data.data;
+        Object.assign(this.data,this.articleData) ;
       });
     },
     getcomments(){
-      this.$axios.post('http://127.0.0.1:7001/frontend/v1/comment').then(response => {
+      this.$axios.post('http://127.0.0.1:7001/frontend/v1/comment',{type:'1',connect_id:this.id}).then(response => {
 				const {status, data, message} = response.data
 				if(status !== 0) return this.$message.error(status);
 				this.commentdata = data
@@ -168,9 +117,16 @@ export default {
         transform: scale(1.03);
       }
     }
+    .introduction{
+          margin: 0 0 20px 0;
+          font-size: 1.1em;
+    }
     .content {
       padding-bottom: 30px;
       border-bottom: 2px dotted #eee;
+       img{
+         max-width: 100%;
+       }
     }
     .copyright {
       margin-top: 10px;

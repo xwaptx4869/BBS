@@ -1,6 +1,7 @@
 <template>
     <div class="page">
          <page-header :data="userData.data"></page-header>
+         
     </div>
 </template>
 <script>

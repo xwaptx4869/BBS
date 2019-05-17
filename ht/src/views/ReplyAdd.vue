@@ -37,10 +37,10 @@ export default {
 	data () {
 		return {
 			addTopicString: '',
-			news: {
-				user_id: '',
-				content: '',
-			},
+				news: {
+					user_id: '',
+					content: '',
+				},
 			newsRules: {
 				user_id: [
 					{required: true, message: '请输入相关ID', trigger: 'blur'},

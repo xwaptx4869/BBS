@@ -99,7 +99,6 @@ export default {
     return {
       searchValue: "",
       isLogin: false,
-      userId:233,
       user: {
         name: "xuwei"
       },
@@ -111,6 +110,16 @@ export default {
     };
   },
   created() {},
+  computed:{
+    userId(){
+      return this.$store.state.userId
+    }
+  },
+  watch:{
+     userId(news,old){
+      this.userId = news;
+    }
+  },
   methods: {}
 };
 </script>

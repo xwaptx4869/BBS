@@ -329,7 +329,7 @@ export default {
 	 * @return {Promise}
 	 */
 	fileUpload (file, fileMode) {
-		const DOMAINKEY = 'taiheUp@#' //项目标识
+		const DOMAINKEY = 'sherlock@#' //项目标识
 		const formData = new FormData()
 		const fileUploadUrl = '/upload/upload'
 		const FILEMODE = { mp4: 2, mp3: 1, png: 3, jpg: 3, jpeg: 3 }

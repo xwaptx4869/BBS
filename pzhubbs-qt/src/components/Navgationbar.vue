@@ -11,27 +11,27 @@
       <div class="rightbox">
         <span
           class="write"
-          @click=" usermsg.isLogin ? $router.push({ name:'writearticle' }): setVisible('登录')  "
+          @click=" isLogin ? $router.push({ name:'writearticle' }): setVisible('登录')  "
         >
           <i class="el-icon-tickets"></i> 写文章
         </span>
-        <span v-if="!usermsg.isLogin">
+        <span v-if="!isLogin">
           <a @click="setVisible('登录')" href="javascript:;">登录</a>
           ·
           <a @click="setVisible('注册') " href="javascript:;">注册</a>
         </span>
-        <span v-if="usermsg.isLogin" class="nav-right-action">
+        <span v-if="isLogin" class="nav-right-action">
           <svg-icon icon-class="bell"/>
         </span>
-        <el-dropdown v-if="usermsg.isLogin" trigger="click" @command="handleCommand">
+        <el-dropdown v-if="isLogin" trigger="click" @command="handleCommand">
           <span class="el-dropdown-link nav-right-action">
             <svg-icon icon-class="people"/>
-            <span>{{ usermsg.username }}</span>
+            <span>{{ $store.state.username }}</span>
           </span>
           <el-dropdown-menu slot="dropdown">
-            <el-dropdown-item command="/personal">个人信息</el-dropdown-item>
-            <el-dropdown-item command="/articlemanage">文章管理</el-dropdown-item>
-            <el-dropdown-item divided @click="logout">退出登录</el-dropdown-item>
+            <el-dropdown-item command="usercenter">个人信息</el-dropdown-item>
+            <el-dropdown-item command="writearticle">文章管理</el-dropdown-item>
+            <el-dropdown-item command="logout" >退出登录</el-dropdown-item>
           </el-dropdown-menu>
         </el-dropdown>
       </div>
@@ -47,31 +47,35 @@ export default {
   },
   props: {
     userData: {
-      type: Object
     }
   },
   data() {
     return {
-      usermsg: {
-        isLogin: false
-      },
+      isLogin:this.$store.state.role,
       searchValue: "",
-
       user: {
         name: "xuwei"
       },
       title: "登录",
       visible: false,
-      status: ""
+      status: "",
+      userId:233,
     };
   },
-  created() {},
+  computed:{
+    logoin(){
+      return this.$store.state.role
+    }
+  },
   watch: {
     visible(val) {
       this.status = val;
     },
     userData(val) {
       this.usermsg = val;
+    },
+    logoin(news,old){
+      this.isLogin = news;
     }
   },
   methods: {
@@ -81,16 +85,14 @@ export default {
           this.logout();
           break;
         default:
-          this.$router.push({ path: command });
+          this.$router.push( { name:command,params:{ id: this.userId}});
           break;
       }
     },
     // 前端登出
     logout() {
-    //   this.$store.dispatch("Logout").then(() => {
-    //     location.reload(); // In order to re-instantiate the vue-router object to avoid bugs
-    //   });
-        this.usermsg.isLogin = false;
+        this.$store.commit('changerole',false)
+         this.$store.commit('changeuserid','')
     },
     setVisible(val) {
       this.visible = true;

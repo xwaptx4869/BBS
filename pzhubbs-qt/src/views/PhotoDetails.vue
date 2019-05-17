@@ -14,8 +14,9 @@
         class="upload-demo"
         drag
         action="/"
+       :http-request="onFileUpload"
         :before-upload="xcommon.beforeAvatarUpload"
-        multiple
+        
       >
         <i class="el-icon-upload"></i>
         <div class="el-upload__text">
@@ -59,6 +60,23 @@ export default {
         ]
       }
     };
+  },
+  methods:{
+    // 图片
+		picSuccess (res, file) {
+			if(res.code) return this.$message.success(res.message);
+			console.log(res.data);
+			this.photo.poster = res.data.data;
+			console.log(this.photo.poster)
+		},
+		// 文件上传
+		onFileUpload (elFrom) {
+			console.log(elFrom)
+			this.xcommon.fileUpload(elFrom.file).then(res => {
+				console.log(res);
+				this.picSuccess(res)
+			})
+		},
   }
 };
 </script>

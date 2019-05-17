@@ -67,6 +67,7 @@
   </div>
 </template>
 <script>
+import {mapState} from 'vuex';
 export default {
   props: {
     isvisible: {
@@ -98,6 +99,10 @@ export default {
     };
     return {
       openstatus: this.isvisible,
+      userMsg:{
+        username:'',
+        userId:"",
+      },
       dtitle: this.title,
       ruleForm: {
         username: "",
@@ -127,7 +132,9 @@ export default {
       });
     },
      resetForm(formName) {
-        this.$refs[formName].resetFields();
+        this.$nextTick(()=>{
+                    this.$refs[formName].resetFields();
+          }) 
       },
     login(){
         this.$axios.post(`http://127.0.0.1:7001/frontend/v1/login`,this.ruleForm).then(response => {
@@ -137,6 +144,9 @@ export default {
         this.userData.data.isLogin = true;
         this.$emit("transferuserData",  this.userData.data);
         this.openstatus = false;
+        this.$store.commit('changeuername',response.data.data.username)
+        this.$store.commit('changeuserid',response.data.data.id)
+        this.$store.commit('changerole',true)
       });
     },
     register(){

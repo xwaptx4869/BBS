@@ -82,7 +82,7 @@ export default {
 		return {
 			selectUser: {},
 			userDialogVisible: false,
-			userTotal: 0,
+			userTotal: 10,
 			userTotalDay: '',
 			topTen: {
 				keywordTopTen: [],

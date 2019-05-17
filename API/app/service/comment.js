@@ -118,14 +118,28 @@ module.exports = app =>{
                          {
                             offset: index,
                             limit: size,
-                            // where:{
-                            //     type:data.type,
-                            //     connect_id:data.connect_id
-                            // }
+                            where: data.type ? {
+                                type:data.type,
+                                connect_id:data.connect_id
+                            } : {}
                          }
                      )
+                const newComments = JSON.parse(JSON.stringify(Comments))
+                 for(let i =0;i<newComments.length;i++){
+                    let conncetid = newComments[i].id;
+                    const replys = await this.ctx.model.Reply.findAll(
+                                {
+                                   offset: index,
+                                   limit: size,
+                                   where:{
+                                       connect_id:conncetid
+                                   }
+                                }
+                            )
+                    newComments[i].replylist = replys;
+                 };
                  return this.ServerResponse.success(
-                         Comments,
+                          newComments,
                          '评论获取成功'
                      )
             }catch(error){
@@ -147,8 +161,8 @@ module.exports = app =>{
 			)
               }
             //   检查关联ID是否存在
-            const validtitle = await this.checkUser('id',datalist.connect_id)
-            if (!validtitle.isSuccess()) return validtitle
+            // const validtitle = await this.checkUser('id',datalist.connect_id)
+            // if (!validtitle.isSuccess()) return validtitle
                 try {
                     let createComment = await this.ctx.model.Comment.create(
                         datalist
