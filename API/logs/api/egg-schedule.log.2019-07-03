@@ -1,0 +1,10 @@
+2019-07-03 23:49:02,753 INFO 6204 [egg-schedule]: register schedule C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-07-03 23:49:02,753 INFO 6204 [egg-schedule]: register schedule C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-07-03 23:49:05,910 INFO 13172 [Timer] C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 654093ms at 2019-07-04 00:00:00.003
+2019-07-03 23:49:05,911 INFO 13172 [Timer] C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 655089ms at 2019-07-04 00:00:01.000
+2019-07-04 00:00:00,016 INFO 13172 [Timer] C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 86399991ms at 2019-07-05 00:00:00.007
+2019-07-04 00:00:00,011 INFO 6204 [Job#156216960000735759916441951] C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\egg-logrotator\app\schedule\clean_log.js executing by app
+2019-07-04 00:00:00,038 INFO 6204 [Job#156216960000735759916441951] C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\egg-logrotator\app\schedule\clean_log.js execute succeed, used 26ms
+2019-07-04 00:00:01,003 INFO 13172 [Timer] C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 86399999ms at 2019-07-05 00:00:01.002
+2019-07-04 00:00:01,002 INFO 6204 [Job#156216960100135769850647931] C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\egg-logrotator\app\schedule\rotate_by_file.js executing by app
+2019-07-04 00:00:01,016 INFO 6204 [Job#156216960100135769850647931] C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\egg-logrotator\app\schedule\rotate_by_file.js execute succeed, used 14ms

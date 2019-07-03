@@ -106,6 +106,24 @@ module.exports = app => {
 			if (!users) return this.ServerResponse.error(100005)
 			return users
 		}
+
+		/**
+		 * 获取用户
+		 * @param {Number} page 下标
+		 * @param {Number} size 长度
+		 * @return {Array} users 用户列表
+		 */
+		async getUser (id) {
+			const users = await this.UserModel.findOne({
+				where: {
+					id: id,
+				},
+			})
+			if (!users) return this.ServerResponse.error(100005)
+			return users
+		}
+
+
 	}
 	return UserService
 }

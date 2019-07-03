@@ -74,9 +74,9 @@ module.exports = app =>{
                          {
                             offset: index,
                             limit: size,
-                            // where:{
-                            //     search
-                            // }
+                            where:search.searchName ? {
+                                title:search.searchValue
+                            } : ''
                             // include:[{
                             //     model:this.ctx.model.Label,
                             //     'where':{

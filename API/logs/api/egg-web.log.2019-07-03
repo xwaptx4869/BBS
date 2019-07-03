@@ -1,0 +1,19 @@
+2019-05-23 00:00:01,011 INFO 14852 [egg-logrotator] app logger reload: got log-reload message
+2019-05-23 00:52:16,681 WARN 14852 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-07-03 23:49:02,654 INFO 6204 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-03 23:49:02,754 INFO 6204 [egg-multipart] stream mode enable
+2019-07-03 23:49:05,343 INFO 6204 [egg-static] starting static serve /public/ -> C:\Users\xuwei\Desktop\BBS\BBS\API\app\public
+2019-07-03 23:49:05,346 INFO 6204 [egg-security] use methodnoallow middleware
+2019-07-03 23:49:05,347 INFO 6204 [egg-security] use noopen middleware
+2019-07-03 23:49:05,348 INFO 6204 [egg-security] use nosniff middleware
+2019-07-03 23:49:05,349 INFO 6204 [egg-security] use xssProtection middleware
+2019-07-03 23:49:05,349 INFO 6204 [egg-security] use xframe middleware
+2019-07-03 23:49:05,350 INFO 6204 [egg-security] use dta middleware
+2019-07-03 23:49:05,350 INFO 6204 [egg-security] compose 6 middlewares into one security middleware
+2019-07-03 23:49:05,780 INFO 6204 [egg:core] dump config after load, 9ms
+2019-07-03 23:49:05,819 INFO 6204 [egg-watcher:application] watcher start success
+2019-07-03 23:49:05,850 INFO 6204 [egg:core] dump config after ready, 8ms
+2019-07-04 00:00:00,024 INFO 6204 [egg-logrotator] start remove C:\Users\xuwei\Desktop\BBS\BBS\API\logs\api files: api-web.log.2019-05-10, api-web.log.2019-05-15, api-web.log.2019-05-16, api-web.log.2019-05-17, api-web.log.2019-05-22, common-error.log.2019-05-10, common-error.log.2019-05-15, common-error.log.2019-05-16, common-error.log.2019-05-17, common-error.log.2019-05-22, egg-agent.log.2019-05-10, egg-agent.log.2019-05-15, egg-agent.log.2019-05-16, egg-agent.log.2019-05-17, egg-agent.log.2019-05-22, egg-schedule.log.2019-05-10, egg-schedule.log.2019-05-15, egg-schedule.log.2019-05-16, egg-schedule.log.2019-05-17, egg-schedule.log.2019-05-22, egg-web.log.2019-05-10, egg-web.log.2019-05-15, egg-web.log.2019-05-16, egg-web.log.2019-05-17, egg-web.log.2019-05-22
+2019-07-04 00:00:00,038 INFO 6204 [egg-logrotator] clean all log before 31 days
+2019-07-04 00:00:01,016 INFO 6204 [egg-logrotator] broadcast log-reload
+2019-07-04 00:00:01,016 INFO 6204 [egg-logrotator] rotate files success by DayRotator, files ["C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api\\common-error.log -> C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api\\common-error.log.2019-07-03","C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api\\api-web.log -> C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api\\api-web.log.2019-07-03","C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api\\egg-web.log -> C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api\\egg-web.log.2019-07-03","C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api\\egg-schedule.log -> C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api\\egg-schedule.log.2019-07-03","C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api\\egg-agent.log -> C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api\\egg-agent.log.2019-07-03"]

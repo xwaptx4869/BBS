@@ -45,7 +45,7 @@ export default {
       this.$axios.get(`http://127.0.0.1:7001/frontend/v1/article`).then(response => {
         const { status, data, message } = response.data;
         if (status !== 0) return this.$message.error(message);
-        this.articles = data.rows;
+        this.articles = data.rows.reverse();
       });
     }
   }

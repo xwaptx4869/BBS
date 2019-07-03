@@ -15,9 +15,14 @@ class UserController extends Controller {
 		this.ctx.body = respponse
 	}
 
-	async login () {
+	async login () { 
 		const userInfo = this.ctx.request.body
 		const respponse = await this.UserService.login(userInfo)
+		this.ctx.body = respponse
+	}
+	async getUser () { 
+		const  {id} = this.ctx.params
+		const respponse = await this.UserService.getUser(id)
 		this.ctx.body = respponse
 	}
 }

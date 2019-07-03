@@ -1,0 +1,26 @@
+2019-05-23 00:00:01,011 INFO 14196 [egg-logrotator] agent logger reload: got log-reload message
+2019-05-23 00:52:16,680 ERROR 14196 nodejs.ClusterClientNoResponseError: client no response in 67288ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\xuwei\Desktop\BBS\BBS\API\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 14196
+hostname: DESKTOP-UHOS0OJ
+
+2019-07-03 23:48:42,777 INFO 13172 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\logs\\api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2019-07-03 23:48:55,795 INFO 13172 [egg:core] dump config after load, 7ms
+2019-07-03 23:48:56,896 INFO 13172 [egg-watcher] Start watching: ["C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\app","C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\config","C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\mocks","C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\mocks_proxy","C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\app.js"]
+2019-07-03 23:48:56,896 INFO 13172 [egg-watcher] Start watching: "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\app"
+2019-07-03 23:48:56,897 INFO 13172 [egg-watcher] Start watching: "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\config"
+2019-07-03 23:48:56,897 INFO 13172 [egg-watcher] Start watching: "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\mocks"
+2019-07-03 23:48:56,897 INFO 13172 [egg-watcher] Start watching: "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\mocks_proxy"
+2019-07-03 23:48:56,897 INFO 13172 [egg-watcher] Start watching: "C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\app.js"
+2019-07-03 23:48:56,900 INFO 13172 [egg-watcher:agent] watcher start success
+2019-07-03 23:48:57,866 INFO 13172 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2019-07-03 23:48:57,881 INFO 13172 [egg:core] dump config after ready, 8ms
+2019-07-03 23:57:07,612 INFO 13172 [egg-watcher] Recieved a change event from eventSource: {"event":"rename","path":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\app\\public\\upload\\image\\gakki my wife (2)1562169427603.png","stat":{"dev":2585520562,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":13792273859246044,"size":335999,"atimeMs":1562169427603.8489,"mtimeMs":1562169427603.8489,"ctimeMs":1562169427603.8489,"birthtimeMs":1562169427603.8489,"atime":"2019-07-03T15:57:07.604Z","mtime":"2019-07-03T15:57:07.604Z","ctime":"2019-07-03T15:57:07.604Z","birthtime":"2019-07-03T15:57:07.604Z"},"remove":false,"isDirectory":false,"isFile":true}
+2019-07-03 23:57:07,615 INFO 13172 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\app\\public\\upload\\image","stat":{"dev":2585520562,"mode":16822,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":5066549581977421,"size":0,"atimeMs":1562169427604.3503,"mtimeMs":1562169427604.3503,"ctimeMs":1562169427604.3503,"birthtimeMs":1557499240722.03,"atime":"2019-07-03T15:57:07.604Z","mtime":"2019-07-03T15:57:07.604Z","ctime":"2019-07-03T15:57:07.604Z","birthtime":"2019-05-10T14:40:40.722Z"},"remove":false,"isDirectory":true,"isFile":false}
+2019-07-03 23:57:07,621 INFO 13172 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\app\\public\\upload\\image\\gakki my wife (2)1562169427603.png","stat":{"dev":2585520562,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":13792273859246044,"size":507722,"atimeMs":1562169427603.8489,"mtimeMs":1562169427615.3616,"ctimeMs":1562169427615.3616,"birthtimeMs":1562169427603.8489,"atime":"2019-07-03T15:57:07.604Z","mtime":"2019-07-03T15:57:07.615Z","ctime":"2019-07-03T15:57:07.615Z","birthtime":"2019-07-03T15:57:07.604Z"},"remove":false,"isDirectory":false,"isFile":true}
+2019-07-03 23:57:07,622 INFO 13172 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"C:\\Users\\xuwei\\Desktop\\BBS\\BBS\\API\\app\\public\\upload\\image\\gakki my wife (2)1562169427603.png","stat":{"dev":2585520562,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":13792273859246044,"size":507722,"atimeMs":1562169427603.8489,"mtimeMs":1562169427615.3616,"ctimeMs":1562169427615.3616,"birthtimeMs":1562169427603.8489,"atime":"2019-07-03T15:57:07.604Z","mtime":"2019-07-03T15:57:07.615Z","ctime":"2019-07-03T15:57:07.615Z","birthtime":"2019-07-03T15:57:07.604Z"},"remove":false,"isDirectory":false,"isFile":true}
