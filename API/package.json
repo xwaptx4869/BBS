@@ -11,7 +11,7 @@
 		"egg-multipart": "^2.1.0",
 		"egg-sequelize": "^4.0.2",
 		"egg-validate": "^1.1.1",
-		"lodash": "^4.17.10",
+		"lodash": "^4.17.19",
 		"moment": "^2.22.2",
 		"mysql2": "^1.6.1",
 		"sequelize-cli": "^5.4.0",
